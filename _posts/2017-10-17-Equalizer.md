@@ -7,10 +7,10 @@ The projection method is known to fail at solving monotone variaitonal inequalit
 
 1) Let's derive a first order approximation to the Extragradient method (Korpelevich '76).
 \begin{align}
-  \hat{x}\_{k+1} &= x_k - \alpha F(x_k) \\\\
-  x\_{k+1} &= x_k - \alpha F(\hat{x}\_{k+1}) \\\\
-  F(x\_{k+1}) &= F(x_k) - \alpha J(F(x_k)) F(x_k) - \mathcal{O}(\alpha^2) \\\\
-  x\_{k+1} &= x_k - \alpha (F(x_k) - \alpha J(F(x_k)) F(x_k)) + \mathcal{O}(\alpha^3) \\\\
+  \hat{x}\_{k+1} &= x_k - \alpha F(x_k) \\
+  x\_{k+1} &= x_k - \alpha F(\hat{x}\_{k+1}) \\
+  F(x\_{k+1}) &= F(x_k) - \alpha J(F(x_k)) F(x_k) - \mathcal{O}(\alpha^2) \\
+  x\_{k+1} &= x_k - \alpha (F(x_k) - \alpha J(F(x_k)) F(x_k)) + \mathcal{O}(\alpha^3) \\
   &= x_k - \alpha (I - \alpha J(F(x_k))) F(x_k) + \mathcal{O}(\alpha^3)
 \end{align}
 From this, we can see that the Extragradient method is capturing higher order information.
