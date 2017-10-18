@@ -17,7 +17,7 @@ The projection method is known to fail at solving monotone variaitonal inequalit
 
 From this, we can see that the Extragradient method is capturing higher order information with $$J$$.
 
-2) Let's compare this to the consensus algorithm which includes a $$\gamma \nabla ||F||^2$$ term.
+2) Let's compare this to the consensus algorithm which includes a $$\gamma \nabla \|\|F\|\|^2$$ term.
 
 \begin{align}
   x\_{k+1} &= x_k - \alpha (F(x_k) - \gamma \nabla ||F||^2) \\\\
