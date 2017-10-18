@@ -20,7 +20,7 @@ From this, we can see that the Extragradient method is capturing higher order in
 2) Let's compare this to the consensus algorithm which includes a $$\gamma \nabla \|F\|^2$$ term.
 
 \begin{align}
-  x\_{k+1} &= x_k - \alpha (F(x_k) - \gamma \nabla ||F||^2) \\\\
+  x\_{k+1} &= x_k - \alpha (F(x_k) - \gamma \nabla ||F||^2) \ \
   &= x_k - \alpha (I + \gamma J^T) F(x_k)
 \end{align}
 
