@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extragradient, Consensus, and The Cross Product
+title: Extragradient, Consensus, and Crossing the Curl
 ---
 
 The projection method is known to fail at solving monotone variational inequalities: $$x_{k+1} = x_k - \alpha F(x_k)$$.
