@@ -10,7 +10,7 @@ The projection method is known to fail at solving monotone variational inequalit
 $$\begin{align}
   \hat{x}_{k+1} &= x_k - \alpha F(x_k) \\
   x_{k+1} &= x_k - \alpha F(\hat{x}_{k+1}) \\
-  F(x_{k+1}) &= F(x_k) - \alpha J(F(x_k)) F(x_k) - \mathcal{O}(\alpha^2) \\
+  F(\hat{x}_{k+1}) &= F(x_k) - \alpha J(F(x_k)) F(x_k) - \mathcal{O}(\alpha^2) \\
   x_{k+1} &= x_k - \alpha (F(x_k) - \alpha J(F(x_k)) F(x_k)) + \mathcal{O}(\alpha^3) \\
   &= x_k - \alpha (I - \alpha J(F(x_k))) F(x_k) + \mathcal{O}(\alpha^3)
 \end{align}$$
