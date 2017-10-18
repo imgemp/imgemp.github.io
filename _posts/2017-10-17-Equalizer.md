@@ -40,7 +40,7 @@ $$\begin{align}
   (\nabla \times F) \times F &= -F \times (\nabla \times F) \\
   &= -v \times (\nabla \times F) \text{ where } v=F \\
   &= -\nabla_F (v \cdot F) + (v \cdot \nabla) F \text{ where } \nabla_F \text{ is Feynman notation} \\
-  &= -\Big( v_1 [ \frac{\partial F_1}{\partial x_1}, \ldots, \frac{\partial F_1}{\partial x_n}) ] + \ldots + v_n [ (\frac{\partial F_n}{\partial x_1}, \ldots, \frac{\partial F_n}{\partial x_n}) ] \Big) \\
+  &= -\Big( v_1 \Big[ \frac{\partial F_1}{\partial x_1}, \ldots, \frac{\partial F_1}{\partial x_n}) \Big] + \ldots + v_n \Big[ (\frac{\partial F_n}{\partial x_1}, \ldots, \frac{\partial F_n}{\partial x_n}) \Big] \Big) \\
   &+ (v_1 \frac{\partial}{\partial x_1} + \ldots + v_n \frac{\partial}{\partial x_n}) F \\
   &= (J-J^T)F
 \end{align}$$
@@ -59,7 +59,7 @@ $$\begin{align}
 More generally,
 
 $$\begin{align}
-  F(x) &= \[ax_1 + bx_2, cx_1 + dx_2, 0\]^T \\
+  F(x) &= [ax_1 + bx_2, cx_1 + dx_2, 0]^T \\
   \nabla \times F &= [ 0, 0, c - b ] \\
   (\nabla \times F) \times F &= [ -(c-b)(cx_1+dx_2) , (c-b)(ax_1+bx_2) , 0 ] \\
   &= (c-b) [ -(cx_1+dx_2) , (ax_1+bx_2) , 0 ] \\
