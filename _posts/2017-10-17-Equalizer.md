@@ -2,7 +2,7 @@
 layout: post
 title: Extragradient, Consensus, and The Cross Product
 ---
-
+$$
 \begin{align*}
   u \times v &= \[ u_2 v_3 - u_3 v_2 , u_3 v_1 - u_1 v_3 , u_1 v_2 - u_2 v_1 \]
 \end{align*}
@@ -23,3 +23,4 @@ title: Extragradient, Consensus, and The Cross Product
   \nabla \times F &= \[ 0, 0, -2 \] \\
   (\nabla \times F) \times F &= \[ -2x_1 , -2x_2 , 0 \]
 \end{align*}
+$$
