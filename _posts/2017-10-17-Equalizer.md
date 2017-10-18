@@ -51,8 +51,8 @@ $$\begin{align}
   F(x) &= [x_2, -x_1, 0]^T \\
   \nabla \times F &= [ 0, 0, -2 ] \\
   (\nabla \times F) \times F &= [ -2x_1 , -2x_2 , 0 ] \\
-  J &= \begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix} \\
-  (J-J^T) &= \begin{bmatrix} 0 & 2 \\ -2 & 0 \end{bmatrix} \\
+  J &= \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \\
+  (J-J^T) &= \begin{pmatrix} 0 & 2 \\ -2 & 0 \end{pmatrix} \\
   (J-J^T)F &= [ -2x_1 , -2x_2 ] \surd
 \end{align}$$
 
@@ -63,8 +63,8 @@ $$\begin{align}
   \nabla \times F &= [ 0, 0, c - b ] \\
   (\nabla \times F) \times F &= [ -(c-b)(cx_1+dx_2) , (c-b)(ax_1+bx_2) , 0 ] \\
   &= (c-b) [ -(cx_1+dx_2) , (ax_1+bx_2) , 0 ] \\
-  J &= \begin{matrix} a & b \\\\ c & d \end{matrix} \\
-  (J-J^T) &= \begin{bmatrix} 0 & b-c \\\\ c-b & 0 \end{bmatrix} \\
+  J &= \begin{pmatrix} a & b \\\\ c & d \end{pmatrix} \\
+  (J-J^T) &= \begin{pmatrix} 0 & b-c \\\\ c-b & 0 \end{pmatrix} \\
   (J-J^T)F &= [ -(c-b)(cx_1 + dx_2) , (c-b)(ax_1 + bx_2) ] \surd
 \end{align}$$
 
