@@ -3,7 +3,7 @@ layout: post
 title: Extragradient, Consensus, and The Cross Product
 ---
 
-The projection method is known to fail at solving monotone variaitonal inequalities: $$x_{k+1} = x_k - \alpha F(x_k)$$.
+The projection method is known to fail at solving monotone variational inequalities: $$x_{k+1} = x_k - \alpha F(x_k)$$.
 
 1) Let's derive a first order approximation to the Extragradient method (Korpelevich '76).
 
