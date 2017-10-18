@@ -8,7 +8,7 @@ The projection method is known to fail at solving monotone variational inequalit
 1) Let's derive a first order approximation to the Extragradient method (Korpelevich '76).
 
 \begin{align}
-  \hat{x}\_{k+1} &= x_k - \alpha F(x_k) \\
+  \hat{x}\_{k+1} &= x_k - \alpha F(x_k) /\/\
   x\_{k+1} &= x_k - \alpha F(\hat{x}\_{k+1}) \\
   F(x\_{k+1}) &= F(x_k) - \alpha J(F(x_k)) F(x_k) - \mathcal{O}(\alpha^2) \\
   x\_{k+1} &= x_k - \alpha (F(x_k) - \alpha J(F(x_k)) F(x_k)) + \mathcal{O}(\alpha^3) \\
@@ -74,4 +74,4 @@ This suggests the following algorithm
   x\_{k+1} &= x_k - \alpha (I - \gamma(J-J^T))F
 \end{align}
 
-Putting all three algorithms side by side, we see that extragradient incorporates $$J$$, consensus incorporates $$J^T$$, and our proposed algorithm incorporates both. What's appealing about our proposed algorithm is that $$J-J^T = 0$ for optimization problems (i.e., 1-player systems), so that this approach nicely generalizes gradient descent.
+Putting all three algorithms side by side, we see that extragradient incorporates $$J$$, consensus incorporates $$J^T$$, and our proposed algorithm incorporates both. What's appealing about our proposed algorithm is that $$J-J^T = 0$$ for optimization problems (i.e., 1-player systems), so that this approach nicely generalizes gradient descent.
