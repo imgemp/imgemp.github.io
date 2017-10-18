@@ -20,11 +20,11 @@ From this, we can see that the Extragradient method is capturing higher order in
 2) Let's compare this to the consensus algorithm which includes a $$\gamma \nabla \|F\|^2$$ term.
 
 $$\begin{align}
-  x_{k+1} &= x_k - \alpha (F(x_k) - \gamma \nabla ||F||^2) \\
+  x_{k+1} &= x_k - \alpha (F(x_k) + \gamma \nabla ||F||^2) \\
   &= x_k - \alpha (I + \gamma J(x_k)^T) F(x_k)
 \end{align}$$
 
-The consensus algorithm is using $$J^T$$ while the extragradient algorithm is using $$-J$$. If $$J$$ is skew-symmetric (which is this case for a field with only rotation), then these are the same. However, this is not common in practice (zero-sum games for instance). Also, extragradient uses the factor $$\alpha$$ and the consensus algorithm uses an additional user defined scalar $$\gamma$$. I'll also note that the consensus paper explores the use of a preconditioning matrix, $$I-\gamma J^T$$, which is also covered by VI theory (see Dafermos - general iterative algorithm).
+The consensus algorithm is using $$J^T$$ while the extragradient algorithm is using $$-J$$. If $$J$$ is skew-symmetric (which is this case for a field with only rotation), then these are the same. However, this is not common in practice (zero-sum games for instance). Also, extragradient uses the factor $$\alpha$$ and the consensus algorithm uses an additional user defined scalar $$\gamma$$. We can consider $$(I+\gamma J^T)$$ as a preconditioning matrix. The consensus paper explores the use of a more general preconditioning matrix, which is also covered by VI theory (see Dafermos - general iterative algorithm).
 
 3) The problem with monotone fields is that they contain cycles or loops. In that case, we want to travel perpendicularly to the cycle. We can compute this direction using the curl and a cross-product. Intuitively (in 3d), the curl of a vector field gives it's axis of rotation (convention is counter clockwise rotation). The vector that is both perpendicular to the vector field (direction we are traveling if on a merry-go-round) and the axis of rotation will be a vector that points directly towards the center of the merry-go-round (it could also point radially outward, so we just need to get the sign right). Let $$F = F(x)$$ and $$J = J(F)(x)$$. Also, in the following derivations, $$x_i$$ refers to the ith component of the vector $$x$$, not $$x$$ at iteration $$i$$ of the algorithm.
 
@@ -71,7 +71,7 @@ $$\begin{align}
 This suggests the following algorithm
 
 $$\begin{align}
-  x\_{k+1} &= x_k - \alpha (I - \gamma(J-J^T))F
+  x_{k+1} &= x_k - \alpha (I - \gamma(J-J^T))F
 \end{align}$$
 
 Putting all three algorithms side by side, we see that extragradient incorporates $$J$$, consensus incorporates $$J^T$$, and our proposed algorithm incorporates both. What's appealing about our proposed algorithm is that $$J-J^T = 0$$ for optimization problems (i.e., 1-player systems), so that this approach nicely generalizes gradient descent.
