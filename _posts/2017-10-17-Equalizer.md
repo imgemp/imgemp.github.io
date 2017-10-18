@@ -5,14 +5,14 @@ title: Extragradient, Consensus, and Crossing the Curl
 
 The projection method is known to fail at solving monotone variational inequalities: $$x_{k+1} = x_k - \alpha F(x_k)$$.
 
-1) Let's derive a first order approximation to the Extragradient method (Korpelevich '76).
+1) Let's derive a first order approximation to the Extragradient method (Korpelevich '76). Let $$J(x)$$ be the Jacobian of $$F$$ at $$x$$.
 
 $$\begin{align}
   \hat{x}_{k+1} &= x_k - \alpha F(x_k) \\
   x_{k+1} &= x_k - \alpha F(\hat{x}_{k+1}) \\
-  F(\hat{x}_{k+1}) &= F(x_k) - \alpha J(F(x_k)) F(x_k) - \mathcal{O}(\alpha^2) \\
-  x_{k+1} &= x_k - \alpha (F(x_k) - \alpha J(F(x_k)) F(x_k)) + \mathcal{O}(\alpha^3) \\
-  &= x_k - \alpha (I - \alpha J(F(x_k))) F(x_k) + \mathcal{O}(\alpha^3)
+  F(\hat{x}_{k+1}) &= F(x_k) - \alpha J(x_k) F(x_k) - \mathcal{O}(\alpha^2) \\
+  x_{k+1} &= x_k - \alpha (F(x_k) - \alpha J(x_k) F(x_k)) + \mathcal{O}(\alpha^3) \\
+  &= x_k - \alpha (I - \alpha J(x_k)) F(x_k) + \mathcal{O}(\alpha^3)
 \end{align}$$
 
 From this, we can see that the Extragradient method is capturing higher order information with $$J$$.
@@ -21,12 +21,12 @@ From this, we can see that the Extragradient method is capturing higher order in
 
 $$\begin{align}
   x_{k+1} &= x_k - \alpha (F(x_k) - \gamma \nabla ||F||^2) \\
-  &= x_k - \alpha (I + \gamma J^T) F(x_k)
+  &= x_k - \alpha (I + \gamma J(x_k)^T) F(x_k)
 \end{align}$$
 
 The consensus algorithm is using $$J^T$$ while the extragradient algorithm is using $$-J$$. If $$J$$ is skew-symmetric (which is this case for a field with only rotation), then these are the same. However, this is not common in practice (zero-sum games for instance). Also, extragradient uses the factor $$\alpha$$ and the consensus algorithm uses an additional user defined scalar $$\gamma$$. I'll also note that the consensus paper explores the use of a preconditioning matrix, $$I-\gamma J^T$$, which is also covered by VI theory (see Dafermos - general iterative algorithm).
 
-3) The problem with monotone fields is that they contain cycles or loops. In that case, we want to travel perpendicularly to the cycle. We can compute this direction using the curl and a cross-product. Intuitively (in 3d), the curl of a vector field gives it's axis of rotation (convention is counter clockwise rotation). The vector that is both perpendicular to the vector field (direction we are traveling if on a merry-go-round) and the axis of rotation will be a vector that points directly towards the center of the merry-go-round (it could also point radially outward, so we just need to get the sign right).
+3) The problem with monotone fields is that they contain cycles or loops. In that case, we want to travel perpendicularly to the cycle. We can compute this direction using the curl and a cross-product. Intuitively (in 3d), the curl of a vector field gives it's axis of rotation (convention is counter clockwise rotation). The vector that is both perpendicular to the vector field (direction we are traveling if on a merry-go-round) and the axis of rotation will be a vector that points directly towards the center of the merry-go-round (it could also point radially outward, so we just need to get the sign right). Let $$F = F(x)$$ and $$J = J(F)(x)$$. Also, in the following derivations, $$x_i$$ refers to the ith component of the vector $$x$$, not $$x$$ at iteration $$i$$ of the algorithm.
 
 $$\begin{align}
   u \times v &= \[ u_2 v_3 - u_3 v_2 , u_3 v_1 - u_1 v_3 , u_1 v_2 - u_2 v_1 \]
