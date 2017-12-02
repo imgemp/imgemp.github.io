@@ -13,12 +13,12 @@ If the base of the logarithm is 2, the units for cross-entropy and entropy are c
 
 Why bits? How does this relate to base 2 representation of digits? Let’s assume $$Q(x)=P(x)$$, i.e., our assumption for the distribution is actually correct.
 $$X = [True,False]$$
-$$P[X] = [1,0] \rightarrow$ we don’t need any bits to convey value of $x$ because the answer is always True:
+$$P[X] = [1,0] \rightarrow$$ we don’t need any bits to convey value of $$x$$ because the answer is always True:
 $$\begin{align}
 H(p) &= -P[True]log(P[True]) - P[False]log(P[False]) = 0
 \end{align}$$
 
-$$P[X] = [0.5,0.5] \rightarrow$$ we need 1 bit to convey the value of $x$ because answer could be True or False ( 1 or 0 ):
+$$P[X] = [0.5,0.5] \rightarrow$$ we need 1 bit to convey the value of $$x$$ because answer could be True or False ( 1 or 0 ):
 $$\begin{align}
 H(p) &= -P[True]log(P[True]) - P[False]log(P[False]) = 0.5 + 0.5 = 1
 \end{align}$$
