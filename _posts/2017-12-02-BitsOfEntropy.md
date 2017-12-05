@@ -38,7 +38,9 @@ IC(z) &= \hat{K} \ln(z) + C \text{ move z to right and integrate again ($$C$$ is
 So now we have the functional form. Let's start considering the other properties that the function needs to satisfy.
 
 Take property 1: $$IC(1) = C = 0$$. That was easy.
+
 Take property 2: $$IC(z) \ge 0 \Rightarrow \hat{K} \le 0$$, so let $$K = -\hat{K} \ge 0$$.
+
 Take property 3: $$IC'(z) -\frac{K}{z} \le 0 \surd$$. This property is satisfied for any nonnegative $$K$$.
 
 That's it! Our information content function is just the negative logarithm multiplied by some constant! This constant effectively changes the base of our logarithm and leads to different measurement units. We'll come to this in a moment.
@@ -48,15 +50,20 @@ That's it! Our information content function is just the negative logarithm multi
 Let’s say $$P(x)$$ represents the true distribution over events (my $$Q(x)$$ might not be exactly correct). So if we’re walking around in the world, observing events $$x'$$, the amount of information content we would EXPECT to receive at any moment is $$E_P(x)[IC(x)] = -\sum P(x) log Q(x)$$ which is also called *cross-entropy*. If my $$Q(x)$$ is actually correct, then my expected information content is $$E_P(x)[IC(x)] = -\sum P(x) log P(x)$$ which is called *entropy*.
 If the base of the logarithm is 2, the units for cross-entropy and entropy are called "bits"; if the base is $$e$$, "nats", if 10, then "bans".
 
-Why bits? How does this relate to base 2 representation of digits? Let’s assume $$Q(x)=P(x)$$, i.e., our assumption for the distribution is actually correct. Consider a boolean random variable $$X \in \{\text{True},\text{False}\}$$. If $$P(X) = [1,0]$$ is the probability distribution over the values True and False, we don’t need any bits to convey the value of $$X$$ because the answer is always True:
+Why bits? How does this relate to base 2 representation of digits? Let’s assume $$Q(x)=P(x)$$, i.e., our assumption for the distribution is actually correct. Consider a boolean random variable $$X \in \{\text{True},\text{False}\}$$.
+
+If $$P(X) = [1,0]$$ is the probability distribution over the values True and False, we don’t need any bits to convey the value of $$X$$ because the answer is always True:
 $$\begin{align}
 H(p) &= -P[True] \log (P[True]) - P[False] \log (P[False]) = 0
 \end{align}$$
+
 This is exactly what entropy tells us! Coincidence? Let's try again.
+
 Let $$P(X) = [0.5,0.5]$$, then we need 1 bit to convey the value of $$X$$ because the answer could be True or False:
 $$\begin{align}
 H(p) &= -P[True] \log (P[True]) - P[False] \log (P[False]) = 0.5 + 0.5 = 1
 \end{align}$$
+
 Again! In general, $$\log_2 (N)$$ bits are needed to convey $$N$$ uniformly distributed events, i.e., $$\forall i$$ $$P(x_i)=1/N$$.
 $$\begin{align}
 H(p) &= \sum_{i=1}^N -P_i \log (P_i) = \sum_{i=1}^N -\frac{1}{N} \log (\frac{1}{N}) = \log(N)
