@@ -5,9 +5,9 @@ title: Entropy & Bits
 
 All of this information can be found on Wikipedia, but this post is meant to present a summary of what is important for understanding entropy vs cross-entropy vs KL divergence.
 
-# Information Content / Surprisal
+## Information Content / Surprisal
 
-Let $$Q(x)$$ be my distribution over what I think the chances are of different events happening in the world. If I’m positive some event $$x'$$ is going to happen, i.e., $$Q(x')=1$$ and you tell me that $$x'$$ just happened, then you’ve given me zero new information. I already knew that.
+Let $$Q(x)$$ be my personal distribution over what I think the chances are of different events happening in the world. If I’m positive some event $$x'$$ is going to happen, i.e., $$Q(x')=1$$ and you tell me that $$x'$$ just happened, then you’ve given me zero new information. I already knew that.
 
 Example: You tell me it will be dark tonight at midnight. Me: Ok, duh. I already knew that. But if you tell me it will be light tonight at midnight. Me: What! No way! How?! Is this some crazy astronomical event or something?! Therefore, the information content that comes with observing a high probability event is low and the information content of an event with low probability is high. We will assume from now on that decreasing the probability of an event strictly decreases its information content and vice versa.
 
@@ -23,14 +23,14 @@ So we have three properties for an information content function $$IC(q))$$:
 
 The last property is crucial to deriving the form of the function that will capture the proerpties of information content.
 
-For sake of notation, we'll use $$q=Q(x')$$ and $$p=Q(y')$$ in the following. Also, we'll denote the derivative of $$IC$$ evaluated at $$z$$ as $$IC'(z)$$: $$IC'(z) = \frac{IC(r)}{\partial r}\vert_z$$. The first step (not obvious) is to start with property 4 and take its derivative (both sides) with respect to $$q$$ ($$Q(x')$$).
+For sake of notation, we'll use $$q=Q(x')$$ and $$p=Q(y')$$ in the following. Also, we'll denote the derivative of $$IC$$ evaluated at $$z$$ as $$IC'(z)$$: $$IC'(z) = \frac{\partial IC(r)}{\partial r}\vert_z$$. The first step (not obvious) is to start with property 4 and take its derivative (both sides) with respect to $$q$$ ($$Q(x')$$).
 
 $$\begin{align}
 \frac{IC(qp)}{\partial q} &= \frac{IC(q) + IC(p)}{\partial q} \\
 IC'(qp)p &= IC'(q) \text{ took derivative wrt $$q$$} \\
 IC''(qp)qp + IC'(qp) = 0 \text{ took derivative wrt $$p$$} \\
 IC''(z)z + IC'(z) = 0 \text{ rename $$z=qp$$} \\
-\frac{}{\partial z}\{ zIC'(z) \} \text{ recognize above as derivative of single form} \\
+\frac{\partial}{\partial z}\{ zIC'(z) \} \text{ recognize above as derivative of single form} \\
 zIC'(z) = \hat{K} \text{ integrate ($$\hat{K}$$ is integration constant)} \\
 IC(z) = \hat{K} \ln(z) + C \text{ move z to right and integrate again ($$C$$ is integration constant)} \\
 \end{align}$$
@@ -38,27 +38,32 @@ IC(z) = \hat{K} \ln(z) + C \text{ move z to right and integrate again ($$C$$ is 
 So now we have the functional form. Let's start considering the other properties that the function needs to satisfy.
 
 Take property 1: $$IC(1) = C = 0$$. That was easy.
-Take property 2: $$IC(z) \ge 0 \implies \hat{K} \le 0$$, so let $$K = -\hat{K} \ge 0$$.
+Take property 2: $$IC(z) \ge 0 \Rightarrow \hat{K} \le 0$$, so let $$K = -\hat{K} \ge 0$$.
 Take property 3: $$IC'(z) -\frac{K}{z} \le 0 \surd$. This property is satisfied for any nonnegative $$K$$.
 
 That's it! Our information content function is just the negative logarithm multiplied by some constant! This constant effectively changes the base of our logarithm and leads to different measurement units. We'll come to this in a moment.
 
-# Entropy & Cross-Entropy
+## Entropy & Cross-Entropy
 
 Let’s say $$P(x)$$ represents the true distribution over events (my $$Q(x)$$ might not be exactly correct). So if we’re walking around in the world, observing events $$x'$$, the amount of information content we would EXPECT to receive at any moment is $$E_P(x)[IC(x)] = -\sum P(x) log Q(x)$$ which is also called *cross-entropy*. If my $$Q(x)$$ is actually correct, then my expected information content is $$E_P(x)[IC(x)] = -\sum P(x) log P(x)$$ which is called *entropy*.
 If the base of the logarithm is 2, the units for cross-entropy and entropy are called "bits"; if the base is $$e$$, "nats", if 10, then "bans".
 
-Why bits? How does this relate to base 2 representation of digits? Let’s assume $$Q(x)=P(x)$$, i.e., our assumption for the distribution is actually correct.
-$$X = [True,False]$$
-$$P[X] = [1,0] \rightarrow$$ we don’t need any bits to convey value of $$x$$ because the answer is always True:
+Why bits? How does this relate to base 2 representation of digits? Let’s assume $$Q(x)=P(x)$$, i.e., our assumption for the distribution is actually correct. Consider a boolean random variable $$X \in \{\text{True},\text{False}\}$$. If $$P(X) = [1,0]$$ is the probability distribution over the values True and False, we don’t need any bits to convey the value of $$X$$ because the answer is always True:
 $$\begin{align}
-H(p) &= -P[True]log(P[True]) - P[False]log(P[False]) = 0
+H(p) &= -P[True] \log (P[True]) - P[False] \log (P[False]) = 0
+\end{align}$$
+This is exactly what entropy tells us! Coincidence? Let's try again.
+Let $$P(X) = [0.5,0.5]$$, then we need 1 bit to convey the value of $$X$$ because the answer could be True or False:
+$$\begin{align}
+H(p) &= -P[True] \log (P[True]) - P[False] \log (P[False]) = 0.5 + 0.5 = 1
+\end{align}$$
+Again! In general, $$\log_2 (N)$$ bits are needed to convey $$N$$ uniformly distributed events, i.e., $$\forall i$$ $$P(x_i)=1/N$$.
+$$\begin{align}
+H(p) &= \sum_{i=1}^N -P_i \log (P_i) = \sum_{i=1}^N -\frac{1}{N} \log (\frac{1}{N}) = \log(N)
 \end{align}$$
 
-$$P[X] = [0.5,0.5] \rightarrow$$ we need 1 bit to convey the value of $$x$$ because answer could be True or False ( 1 or 0 ):
-$$\begin{align}
-H(p) &= -P[True]log(P[True]) - P[False]log(P[False]) = 0.5 + 0.5 = 1
-\end{align}$$
+So entropy measures the number of bits that we would expect to need in order to convey information content in a world with events distributed according to $$P(x)$$. Running with this, cross-entropy measures the number of bits we would expect to need in order to convey information content in the world distributed according to $$P(x)$$ but assuming $$Q(x)$$. If we assume $$Q(x)$$, and $$P(x)$$ is the true world, we would expect to be surprised way more often. So it would make sense that someone would need way more bits to convey information to us about what’s going on in this strange world $$P(x)$$.
 
-So entropy measures the number of bits that we would expect to need in order to convey information content in the world given by $$P(x)$$. Running with this, cross-entropy measures the number of bits we would expect to need in order to convey information content in the world given by $$P(x)$$ but assuming $$Q(x)$$. If we assume $$Q(x)$$, and $$P(x)$$ is the true world, we would expect to be surprised way more often. So it would make sense that someone would need way more bits to convey information to us about what’s going on in this strange world $$P(x)$$.
-The difference between these, cross-entropy $$-$$ entropy, is called the *Kullback-Leibler divergence*, $$KL(P|Q)$$, and it measures how many more bits you need to convey a message when you are assuming $$Q(x)$$ and the real world is really given by $$P(x)$$. So this tells you how much worse $$Q(x)$$ is when you should be using $$P(x)$$. The KL divergence is used a lot in ML to measure the difference between two distributions, i.e., how much worse Q is than P at encoding a message. Technically, it is not a distance because $$KL(P|Q) \ne KL(Q|P)$$. It also doesn’t satisfy the triangle inequality. And sometimes we end up trying to minimize $$KL(Q|P)$$ just because $$KL(P|Q)$$ is impossible. If $$KL(Q|P) = 0$$, then $$Q=P$$ almost everywhere.
+## Kulllback-Liebler Divergence
+
+The difference between these, cross-entropy & entropy, is called the *Kullback-Leibler divergence*, $$KL(P|Q)$$, and it measures how many more bits you need to convey a message when you are assuming $$Q(x)$$ and the real world is really given by $$P(x)$$. So this tells you how much worse $$Q(x)$$ is when you should be using $$P(x)$$. The KL divergence is used a lot in ML to measure the difference between two distributions, i.e., how much worse Q is than P at encoding a message. Technically, it is not a distance because $$KL(P|Q) \ne KL(Q|P)$$. It also doesn’t satisfy the triangle inequality. And sometimes we end up trying to minimize $$KL(Q|P)$$ just because $$KL(P|Q)$$ is impossible. If $$KL(Q|P) = 0$$, then $$Q=P$$ almost everywhere.
