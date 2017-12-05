@@ -17,7 +17,7 @@ Let's consider one more property. If two events are independent, then the inform
 
 So we have three properties for an information content function $$IC(q))$$:
 1. $$Q(x') = 1 \Rightarrow IC(Q(x')) = 0$$
-2. $$IC(Q(x')) \ge 0
+2. $$IC(Q(x')) \ge 0$$
 3. $$\frac{\partial IC(z)}{\partial z} < 0$$
 4. $$Q(x',y') = Q(x')Q(y') \Rightarrow IC(Q(x',y')) = IC(Q(x')Q(y')) = IC(Q(x')) + IC(Q(y'))$$
 
