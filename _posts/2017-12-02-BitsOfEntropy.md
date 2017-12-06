@@ -62,6 +62,7 @@ If the base of the logarithm is 2, the units for cross-entropy and entropy are c
 Why bits? How does this relate to base 2 representation of digits? Let’s assume $$Q(x)=P(x)$$, i.e., our assumption for the distribution is actually correct. Consider a boolean random variable $$X \in \{\text{True},\text{False}\}$$.
 
 If $$P(X) = [1,0]$$ is the probability distribution over the values True and False, we don’t need any bits to convey the value of $$X$$ because the answer is always True:
+
 $$\begin{align}
 H(p) &= -P[True] \log (P[True]) - P[False] \log (P[False]) = 0
 \end{align}$$
@@ -69,11 +70,13 @@ H(p) &= -P[True] \log (P[True]) - P[False] \log (P[False]) = 0
 This is exactly what entropy tells us! Coincidence? Let's try again.
 
 Let $$P(X) = [0.5,0.5]$$, then we need 1 bit to convey the value of $$X$$ because the answer could be True or False:
+
 $$\begin{align}
 H(p) &= -P[True] \log (P[True]) - P[False] \log (P[False]) = 0.5 + 0.5 = 1
 \end{align}$$
 
 Again! In general, $$\log_2 (N)$$ bits are needed to convey $$N$$ uniformly distributed events, i.e., $$\forall i$$ $$P(x_i)=1/N$$.
+
 $$\begin{align}
 H(p) &= \sum_{i=1}^N -P_i \log (P_i) = \sum_{i=1}^N -\frac{1}{N} \log (\frac{1}{N}) = \log(N)
 \end{align}$$
