@@ -27,12 +27,12 @@ For sake of notation, we'll use $$q=Q(x')$$ and $$p=Q(y')$$ in the following. Al
 
 $$\begin{align}
 \frac{\partial IC(qp)}{\partial q} &= \frac{\partial IC(q) + IC(p)}{\partial q} \\
-IC'(qp)p &= IC'(q) \text{ took derivative wrt $$q$$} \\
-IC''(qp)qp + IC'(qp) &= 0 \text{ took derivative wrt $$p$$} \\
-IC''(z)z + IC'(z) &= 0 \text{ rename $$z=qp$$} \\
-\frac{\partial}{\partial z} \{ zIC'(z) \} &= 0 \text{ recognize above as derivative of single form} \\
-zIC'(z) &= \hat{K} \text{ integrate ($$\hat{K}$$ is integration constant)} \\
-IC(z) &= \hat{K} \ln(z) + C \text{ move z to right and integrate again ($$C$$ is integration constant)} \\
+IC'(qp)p &= IC'(q) \\
+IC''(qp)qp + IC'(qp) &= 0 \\
+IC''(z)z + IC'(z) &= 0 \\
+\frac{\partial}{\partial z} \{ zIC'(z) \} &= 0 \\
+zIC'(z) &= \hat{K} \\
+IC(z) &= \hat{K} \ln(z) + C \\
 \end{align}$$
 
 So now we have the functional form. Let's start considering the other properties that the function needs to satisfy.
@@ -47,7 +47,16 @@ That's it! Our information content function is just the negative logarithm multi
 
 ## Entropy & Cross-Entropy
 
-Let’s say $$P(x)$$ represents the true distribution over events (my $$Q(x)$$ might not be exactly correct). So if we’re walking around in the world, observing events $$x'$$, the amount of information content we would EXPECT to receive at any moment is $$E_P(x)[IC(x)] = -\sum P(x) log Q(x)$$ which is also called *cross-entropy*. If my $$Q(x)$$ is actually correct, then my expected information content is $$E_P(x)[IC(x)] = -\sum P(x) log P(x)$$ which is called *entropy*.
+Let’s say $$P(x)$$ represents the true distribution over events (my $$Q(x)$$ might not be exactly correct). So if we’re walking around in the world, observing events $$x'$$, the amount of information content we would *expect* to receive at any moment is
+$$\begin{align}
+E_P(x)[IC(x)] = -\sum P(x) log Q(x)
+\end{align}$$
+which is also called *cross-entropy*. If my $$Q(x)$$ is actually correct, then my expected information content is
+$$\begin{align}
+E_P(x)[IC(x)] = -\sum P(x) log P(x)
+\end{align}$$
+which is called *entropy*.
+
 If the base of the logarithm is 2, the units for cross-entropy and entropy are called "bits"; if the base is $$e$$, "nats", if 10, then "bans".
 
 Why bits? How does this relate to base 2 representation of digits? Let’s assume $$Q(x)=P(x)$$, i.e., our assumption for the distribution is actually correct. Consider a boolean random variable $$X \in \{\text{True},\text{False}\}$$.
