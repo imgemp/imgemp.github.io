@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Entropy & Bits
+title: A Little Bit of Entropy
 ---
 
 All of this information can be found on Wikipedia, but this post is meant to present a summary of what is important for understanding entropy vs cross-entropy vs KL divergence.
