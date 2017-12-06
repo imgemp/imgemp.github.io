@@ -16,7 +16,7 @@ A somewhat innocuous property that we'll also assume (black holes aside) is that
 Let's consider one more property. If two events are independent, then the information content of both events happening should just be the sum of each event's information content. Intuitively, information about one event doesn't change the amount of information contained in another independent event.
 
 From now on, for sake of clarity, we'll use $$q=Q(x')$$ and $$p=Q(y')$$. Summarizing what we've observed so far, we see we have three properties for an information content function $$IC(q)$$:
-1. $$IC(q=1) = 0$$
+1. $$IC(1) = 0$$
 2. $$IC(q) \ge 0$$
 3. $$\frac{\partial IC(z)}{\partial z} < 0$$
 4. $$Q(x',y') = qp \Rightarrow IC(Q(x',y')) = IC(qp) = IC(q) + IC(p)$$
