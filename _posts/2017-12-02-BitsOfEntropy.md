@@ -48,13 +48,17 @@ That's it! Our information content function is just the negative logarithm multi
 ## Entropy & Cross-Entropy
 
 Let’s say $$P(x)$$ represents the true distribution over events (my $$Q(x)$$ might not be exactly correct). So if we’re walking around in the world, observing events $$x'$$, the amount of information content we would *expect* to receive at any moment is
+
 $$\begin{align}
 E_P(x)[IC(x)] = -\sum P(x) log Q(x)
 \end{align}$$
+
 which is also called *cross-entropy*. If my $$Q(x)$$ is actually correct, then my expected information content is
+
 $$\begin{align}
 E_P(x)[IC(x)] = -\sum P(x) log P(x)
 \end{align}$$
+
 which is called *entropy*.
 
 If the base of the logarithm is 2, the units for cross-entropy and entropy are called "bits"; if the base is $$e$$, "nats", if 10, then "bans".
