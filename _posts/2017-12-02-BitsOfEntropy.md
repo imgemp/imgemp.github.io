@@ -27,7 +27,7 @@ For sake of notation, we'll use $$q=Q(x')$$ and $$p=Q(y')$$ in the following. Al
 
 $$\begin{align}
 \frac{\partial IC(qp)}{\partial q} &= \frac{\partial}{\partial q} \{IC(q) + IC(p)\} \\
-\Rightarrow IC'(qp)p &= IC'(q) \\
+\Rightarrow IC'(qp)p &= IC'(q)  \text{ took derivative wrt $$q$$} \\
 IC''(qp)qp + IC'(qp) &= 0 \\
 IC''(z)z + IC'(z) &= 0 \\
 \frac{\partial}{\partial z} \{ zIC'(z) \} &= 0 \\
