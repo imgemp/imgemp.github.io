@@ -26,8 +26,8 @@ The last property is crucial to deriving the form of the function that will capt
 For sake of notation, we'll use $$q=Q(x')$$ and $$p=Q(y')$$ in the following. Also, we'll denote the derivative of $$IC$$ evaluated at $$z$$ as $$IC'(z)$$: $$IC'(z) = \frac{\partial IC(r)}{\partial r}\vert_z$$. The first step (not obvious) is to start with property 4 and take its derivative (both sides) with respect to $$q$$ ($$Q(x')$$).
 
 $$\begin{align}
-\frac{\partial IC(qp)}{\partial q} &= \frac{\partial IC(q) + IC(p)}{\partial q} \\
-IC'(qp)p &= IC'(q) \\
+\frac{\partial IC(qp)}{\partial q} &= \frac{\partial}{\partial q} \{IC(q) + IC(p)\} \\
+\Rightarrow IC'(qp)p &= IC'(q) \\
 IC''(qp)qp + IC'(qp) &= 0 \\
 IC''(z)z + IC'(z) &= 0 \\
 \frac{\partial}{\partial z} \{ zIC'(z) \} &= 0 \\
