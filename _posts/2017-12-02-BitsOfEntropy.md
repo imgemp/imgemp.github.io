@@ -26,13 +26,13 @@ The last property is crucial to deriving the form of the function that will capt
 For sake of notation, we'll use $$q=Q(x')$$ and $$p=Q(y')$$ in the following. Also, we'll denote the derivative of $$IC$$ evaluated at $$z$$ as $$IC'(z)$$: $$IC'(z) = \frac{\partial IC(r)}{\partial r}\vert_z$$. The first step (not obvious) is to start with property 4 and take its derivative (both sides) with respect to $$q$$ ($$Q(x')$$).
 
 $$\begin{align}
-\frac{\partial IC(qp)}{\partial q} &= \frac{\partial}{\partial q} \{IC(q) + IC(p)\} \\
-\Rightarrow IC'(qp)p &= IC'(q)  \text{ took derivative wrt } q \\
-IC''(qp)qp + IC'(qp) &= 0 \text{ took derivative wrt } p \\
-IC''(z)z + IC'(z) &= 0 \text{ rename } z=qp\\
-\frac{\partial}{\partial z} \{ zIC'(z) \} &= 0 \text{ recognize above as derivative of single form} \\
-zIC'(z) &= \hat{K} \text{ integrate (} \hat{K} \text{ is integration constant)} \\
-IC(z) &= \hat{K} \ln(z) + C \text{ move z to right and integrate again (} C \text{ is integration constant)}\\
+\frac{\partial IC(qp)}{\partial q} &= \frac{\partial}{\partial q} \{IC(q) + IC(p)\} & \\
+\Rightarrow IC'(qp)p &= IC'(q)  &\text{took derivative wrt } q \\
+IC''(qp)qp + IC'(qp) &= 0 &\text{took derivative wrt } p \\
+IC''(z)z + IC'(z) &= 0 &\text{rename } z=qp\\
+\frac{\partial}{\partial z} \{ zIC'(z) \} &= 0 &\text{recognize above as derivative of single form} \\
+zIC'(z) &= \hat{K} \text{ integrate (} \hat{K} &\text{is integration constant)} \\
+IC(z) &= \hat{K} \ln(z) + C &\text{move z to right and integrate again (} C \text{ is integration constant)}\\
 \end{align}$$
 
 So now we have the functional form. Let's start considering the other properties that the function needs to satisfy.
