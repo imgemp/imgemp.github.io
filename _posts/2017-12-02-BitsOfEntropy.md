@@ -15,15 +15,15 @@ A somewhat innocuous property that we'll also assume (black holes aside) is that
 
 Let's consider one more property. If two events are independent, then the information content of both events happening should just be the sum of each event's information content. Intuitively, information about one event doesn't change the amount of information contained in another independent event.
 
-So we have three properties for an information content function $$IC(q))$$:
-1. $$Q(x') = 1 \Rightarrow IC(Q(x')) = 0$$
-2. $$IC(Q(x')) \ge 0$$
+From now on, for sake of clarity, we'll use $$q=Q(x')$$ and $$p=Q(y')$$. Summarizing what we've observed so far, we see we have three properties for an information content function $$IC(q)$$:
+1. $$q = 1 \Rightarrow IC(q) = 0$$
+2. $$IC(q) \ge 0$$
 3. $$\frac{\partial IC(z)}{\partial z} < 0$$
-4. $$Q(x',y') = Q(x')Q(y') \Rightarrow IC(Q(x',y')) = IC(Q(x')Q(y')) = IC(Q(x')) + IC(Q(y'))$$
+4. $$Q(x',y') = qp \Rightarrow IC(Q(x',y')) = IC(qp) = IC(q) + IC(p)$$
 
 The last property is crucial to deriving the form of the function that will capture the proerpties of information content.
 
-For sake of notation, we'll use $$q=Q(x')$$ and $$p=Q(y')$$ in the following. Also, we'll denote the derivative of $$IC$$ evaluated at $$z$$ as $$IC'(z)$$: $$IC'(z) = \frac{\partial IC(r)}{\partial r}\vert_z$$. The first step (not obvious) is to start with property 4 and take its derivative (both sides) with respect to $$q$$ ($$Q(x')$$).
+We'll denote the derivative of $$IC$$ evaluated at $$z$$ as $$IC'(z)$$: $$IC'(z) = \frac{\partial IC(r)}{\partial r}\vert_z$$. The first step (not obvious) is to start with property 4 and take its derivative (both sides) with respect to $$q$$.
 
 $$\begin{align}
 \frac{\partial IC(qp)}{\partial q} &= \frac{\partial}{\partial q} \{IC(q) + IC(p)\} & \\
