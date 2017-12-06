@@ -31,7 +31,7 @@ $$\begin{align}
 IC''(qp)qp + IC'(qp) &= 0 &\text{took derivative wrt } p \\
 IC''(z)z + IC'(z) &= 0 &\text{rename } z=qp\\
 \frac{\partial}{\partial z} \{ zIC'(z) \} &= 0 &\text{recognize above as derivative of single form} \\
-zIC'(z) &= \hat{K} \text{ integrate (} \hat{K} &\text{is integration constant)} \\
+zIC'(z) &= \hat{K} &\text{ integrate (} \hat{K} \text{is integration constant)} \\
 IC(z) &= \hat{K} \ln(z) + C &\text{move z to right and integrate (} C \text{ is integ. con.)}\\
 \end{align}$$
 
