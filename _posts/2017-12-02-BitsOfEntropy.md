@@ -27,12 +27,12 @@ For sake of notation, we'll use $$q=Q(x')$$ and $$p=Q(y')$$ in the following. Al
 
 $$\begin{align}
 \frac{\partial IC(qp)}{\partial q} &= \frac{\partial}{\partial q} \{IC(q) + IC(p)\} \\
-\Rightarrow IC'(qp)p &= IC'(q)  \text{took derivative wrt} \\
-IC''(qp)qp + IC'(qp) &= 0 \\
-IC''(z)z + IC'(z) &= 0 \\
-\frac{\partial}{\partial z} \{ zIC'(z) \} &= 0 \\
-zIC'(z) &= \hat{K} \\
-IC(z) &= \hat{K} \ln(z) + C \\
+\Rightarrow IC'(qp)p &= IC'(q)  \text{ took derivative wrt } q \\
+IC''(qp)qp + IC'(qp) &= 0 \text{ took derivative wrt } p \\
+IC''(z)z + IC'(z) &= 0 \text{ rename } z=qp\\
+\frac{\partial}{\partial z} \{ zIC'(z) \} &= 0 \text{ recognize above as derivative of single form} \\
+zIC'(z) &= \hat{K} \text{ integrate (} \hat{K} \text{ is integration constant)} \\
+IC(z) &= \hat{K} \ln(z) + C \text{ move z to right and integrate again (} C \text{ is integration constant)}\\
 \end{align}$$
 
 So now we have the functional form. Let's start considering the other properties that the function needs to satisfy.
