@@ -41,7 +41,7 @@ Take property 1: $$IC(1) = C = 0$$. That was easy.
 
 Take property 2: $$IC(z) \ge 0 \Rightarrow \hat{K} \le 0$$, so let $$K = -\hat{K} \ge 0$$.
 
-Take property 3: $$IC'(z) = -\frac{K}{z} \le 0 \surd$$. This property is satisfied for any nonnegative $$K$$.
+Take property 3: $$IC'(z) = -\frac{K}{z} \le 0 \,\, \surd$$. This property is satisfied for any nonnegative $$K$$.
 
 That's it! Our information content function is just the negative logarithm multiplied by some constant! This constant effectively changes the base of our logarithm and leads to different measurement units. We'll come to this in a moment.
 
