@@ -50,13 +50,13 @@ That's it! Our information content function is just the negative logarithm multi
 Let’s say $$P(x)$$ represents the true distribution over events (my $$Q(x)$$ might not be exactly correct). So if we’re walking around in the world, observing events $$x'$$, the amount of information content we would *expect* to receive at any moment is
 
 $$\begin{align}
-E_P(x)[IC(x)] = -\sum P(x) log Q(x)
+E_{P(x)}[IC(x)] = -\sum P(x) log Q(x)
 \end{align}$$
 
 which is also called *cross-entropy*. If my $$Q(x)$$ is actually correct, then my expected information content is
 
 $$\begin{align}
-E_P(x)[IC(x)] = -\sum P(x) log P(x)
+E_{P(x)}[IC(x)] = -\sum P(x) log P(x)
 \end{align}$$
 
 which is called *entropy*.
@@ -89,4 +89,4 @@ So entropy measures the number of bits that we would expect to need in order to 
 
 ## Kulllback-Liebler Divergence
 
-The difference between these, cross-entropy & entropy, is called the *Kullback-Leibler divergence*, $$KL(P \vert Q)$$, and it measures how many more bits you need to convey a message when you are assuming $$Q(x)$$ and the real world is really given by $$P(x)$$. So this tells you how much worse $$Q(x)$$ is when you should be using $$P(x)$$. The KL divergence is used a lot in ML to measure the difference between two distributions, i.e., how much worse Q is than P at encoding a message. Technically, it is not a distance because $$KL(P \vert Q) \ne KL(Q \vert P)$$. It also doesn’t satisfy the triangle inequality. And sometimes we end up trying to minimize $$KL(Q \vert P)$$ just because $$KL(P \vert Q)$$ is impossible. If $$KL(Q \vert P) = 0$$, then $$Q=P$$ almost everywhere.
+The difference between these, cross-entropy & entropy, is called the *Kullback-Leibler divergence*, $$KL(P \vert Q)$$, and it measures how many more bits you need to convey a message when you are assuming $$Q(x)$$ and the real world is really given by $$P(x)$$. So this tells you how much worse $$Q(x)$$ is when you should be using $$P(x)$$. The KL divergence is used a lot in ML to measure the difference between two distributions, i.e., how much worse Q is than P at encoding a message. Technically, it is not a distance because $$KL(P \vert Q) \ne KL(Q \vert P)$$. It also doesn’t satisfy the triangle inequality. And sometimes we end up trying to minimize $$KL(Q \vert P)$$ just because minimizing $$KL(P \vert Q)$$ is intractable. However, if $$KL(Q \vert P) = 0$$, then $$Q=P$$ almost everywhere.
