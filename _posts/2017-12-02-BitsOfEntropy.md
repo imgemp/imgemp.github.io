@@ -9,7 +9,7 @@ All of this information can be found on Wikipedia, but this post is meant to pre
 
 Let $$Q(x)$$ be my personal distribution over what I think the chances are of different events happening in the world. If I’m positive some event $$x'$$ is going to happen, i.e., $$Q(x')=1$$ and you tell me that $$x'$$ just happened, then you’ve given me zero new information. I already knew that.
 
-Example: You tell me it will be dark tonight at midnight. Me: Ok, duh. I already knew that. But if you tell me it will be light tonight at midnight. Me: What! No way! How?! Is this some crazy astronomical event or something?! Therefore, the information content that comes with observing a high probability event is low and the information content of an event with low probability is high. We will assume from now on that decreasing the probability of an event strictly increases its information content and vice versa.
+Example: You tell me it will be dark tonight at midnight. Me: Ok, duh. I already knew that. But if you tell me it will be light tonight at midnight. Me: What! No way! How?! Is this some crazy astronomical event or something?! Therefore, the information content that comes with observing a high probability event is low and the information content of an event with low probability is high. We will assume from now on that increasing the probability of an event strictly decreases its information content and vice versa.
 
 A somewhat innocuous property that we'll also assume (black holes and quantum mechanics aside) is that information content is always non-negative.
 
