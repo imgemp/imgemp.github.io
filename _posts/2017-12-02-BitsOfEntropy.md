@@ -11,7 +11,7 @@ Let $$Q(x)$$ be my personal distribution over what I think the chances are of di
 
 Example: You tell me it will be dark tonight at midnight. Me: Ok, duh. I already knew that. But if you tell me it will be light tonight at midnight. Me: What! No way! How?! Is this some crazy astronomical event or something?! Therefore, the information content that comes with observing a high probability event is low and the information content of an event with low probability is high. We will assume from now on that decreasing the probability of an event strictly increases its information content and vice versa.
 
-A somewhat innocuous property that we'll also assume (black holes aside) is that information content is always non-negative.
+A somewhat innocuous property that we'll also assume (black holes and quantum mechanics aside) is that information content is always non-negative.
 
 Let's consider one more property. If two events are independent, then the information content of both events happening should just be the sum of each event's information content. Intuitively, information about one event doesn't change the amount of information contained in another independent event.
 
