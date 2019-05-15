@@ -1,18 +1,366 @@
----
-layout: default
----
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ian Gemp (@cs.umass.edu)</title>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <!-- Bootstrap -->
+    <link href="platform/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="platform/stylesheets/styles.css">
+    <link rel="stylesheet" href="platform/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="platform/stylesheets/pubs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+      ga('create', 'UA-52694615-1', 'auto');
+      ga('send', 'pageview');
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ian Gemp</h1>
+        <p>
+          <img width="75%" src="img/face/imgemp-face.jpg" class="img-rounded" alt="Ian Gemp">
+        </p>
+        <p>
+          <!--ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ol-->
+          <div class="list-group">
+            <a href="index.html" class="list-group-item active">Home</a>
+            <a href="pubs.html" class="list-group-item">Publications</a>
+            <a href="resume/imgemp_resume.pdf" class="list-group-item" onclick="ga('send', 'event', 'Downloads', 'click', 'Resume/CV PDF');">Resume/CV</a>
+            <!--a href="#" class="list-group-item">Code and Datasets</a>
+            <a href="#" class="list-group-item">Blog</a-->
+          </div>
+        </p>
+        <p>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">External Links</h3>
+            </div>
+            <div class="panel-body">
+              <a href="https://github.com/imgemp">Github</a> (<a href="https://github.com/all-umass">ALL</a>) &bull;
+              <a href="https://www.linkedin.com/pub/ian-gemp/9/4b1/145">LinkedIn</a> &bull;
+              <a href="http://scholar.google.com/citations?user=5vo3MeEAAAAJ">Google Scholar</a>
+            </div>
+          </div>
+        </p>
+        <p>
+          <small>Inspired by <a href="http://sameersingh.org/">Sameer Singh</a>; Powered by <a href="http://getbootstrap.com/">Bootstrap</a></small>
+        </p>
+      </header>
+      <section>
+        <div class="row">
+          <div class="col-sm-12">
+            <address>
+              <strong>Ian Gemp</strong><br>
+              CS 326 (ALL)<br>
+              Department of Computer Science<br>
+              University of Massachusetts<br>
+              140 Governor’s Drive<br>
+              Amherst MA 01003<br>
+            </address>
+            <address>
+              <!-- <span class="glyphicon glyphicon-earphone"/> -->
+              <span class="glyphicon glyphicon-envelope"/> imgemp at cs dot umass . edu
+              <!-- <a href="mailto:{AT}"></a> -->
+            </address>
+          </div>
+          <!-- <div class="col-sm-6">
+            div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">News</h3>
+              </div>
+              <div class="panel-body">
+                News 1<br>
+                News 2<br>
+                News 3<br>
+                News 3<br>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="container">
+          <!-- <p>
+            I am a first year MS-PhD student in the <a href="https://www.cs.umass.edu/">School of Computer Science</a> at <a href="https://www.umass.edu/">UMass Amherst</a> where I work with <a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">Sridhar Mahadevan</a> as part of the <a href="http://all.cs.umass.edu/index.shtml">Autonomous Learning Laboratory</a> (ALL) on topics concerning optimization, equilibration, reinforcement learning, multi-agent systems, and dimensionality reduction.
+          </p> -->
+          <p>
+            I am a recent PhD graduate of the <a href="https://www.cics.umass.edu/">College of Information and Computer Sciences</a> at <a href="https://www.umass.edu/">UMass Amherst</a> where I worked with <a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">Sridhar Mahadevan</a> as part of the <a href="http://all.cs.umass.edu/index.shtml">Autonomous Learning Laboratory</a> (ALL) on topics concerning <label data-toggle="collapse" data-target="#opt_descript"><a>optimization</a></label>, <label data-toggle="collapse" data-target="#equ_descript"><a>equilibration</a></label>, <label data-toggle="collapse" data-target="#rl_descript"><a>reinforcement learning</a></label>, <label data-toggle="collapse" data-target="#mas_descript"><a>multi-agent systems</a></label>, and <label data-toggle="collapse" data-target="#dr_descript"><a>dimensionality reduction</a></label>. My thesis focused on identifying equilibria in differentiable games, specifically those arise in machine learning applications. I will be starting at <a href="https://deepmind.com/">DeepMind</a> as a Research Scientist with the multi-agent systems team in late March 2019.
+          </p>
+
+          <div class="collapse" id="opt_descript">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+            <em><b>Selecting the "best" option.</b></em>
+            <br>
+            Consider the case where "best" means lowest altitude - find the longitude and latitude of the location with lowest altitude on a contour map.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="equ_descript">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+            <em><b>A point of balance between competing forces.</b></em>
+            <br>
+            This encompasses topics such as predator-prey models in biological systems, supply and demand in microeconomics, and even optimization (think about the force of gravity pulling a ball to the point of lowest altitude in a region).
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="rl_descript">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+            <em><b>Learning a strategy to maximize a reward.</b></em>
+            <br>
+            Imagine teaching a dog a trick or task by feeding it a treat each time it succeeds.  Eventually, the dog learns what it needs to do to earn the treat.  This area of machine learning draws inspiration from both biology and psychology.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="mas_descript">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+            <em><b>Multiple agents and their environment.</b></em>
+            <br>
+            This includes any situation where multiple humans, robots, etc are engaged in a scenario, whether it be competitive, cooperative, or neither so long as their actions affect each other either directly or through the shared environment.  It's nearly impossible to think of a situation in real life where this is not the case.  As an example, consider two people competing in a game of rock-paper-scissors.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="dr_descript">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+            <em><b>Reducing the number of dimensions.</b></em>
+            <br>
+            Dimensionality refers to the number of dimensions, features, attributes, etc (think columns on an excel sheet), so dimensionality reduction just means reducing the number of columns such that you still have enough information on the spreadsheet to complete your task but hopefully much faster now that there's less data to process.
+          </div>
+          </div>
+          </div>
+
+        </div>
+
+        <p></p>
+        <h3>Education</h3>
+        <div class="row">
+          <div class="col-xs-3">
+            <p class="text-center">
+              <strong>MS, PhD (CS)</strong>
+              <br><small>Univ of Massachusetts</small><br>
+              <a href="http://cs.umass.edu/" class="">
+                <img src="img/logos/umass.png" alt="...">
+              </a>
+              Amherst MA<br>
+              <em>2016, 2018</em>          
+            </p>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <p class="text-center">
+              <strong>MS (ESAM)</strong>
+              <br><small>Northwestern Univ</small><br>
+              <a href="http://www.northwestern.edu/" class="">
+                <img src="img/logos/northwestern.png" alt="...">
+              </a>
+              Evanston IL<br>
+              <em>2011</em>          
+            </p>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <p class="text-center">
+              <strong>BS (ME/ESAM)</strong>
+              <br><small>Northwestern Univ</small><br>
+              <a href="http://www.northwestern.edu/" class="">
+                <img src="img/logos/northwestern.png" alt="...">
+              </a>
+              Evanston IL<br>
+              <em>2010</em>          
+            </p>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <p class="text-center">
+              <strong>High School</strong>
+              <br><small>Kinkaid</small><br>
+              <a href="http://www.kinkaid.org/" class="">
+                <img src="img/logos/kinkaid.png" alt="...">
+              </a>
+              Houston TX<br>
+              <em>2006</em>          
+            </p>
+          </div>
+        </div>
+        <p></p>
+        <h3>Experience</h3>
+        <div class="row">
+          <div class="col-xs-4">
+            <p class="text-center">
+              <strong>DeepMind</strong>
+              <a href="https://deepmind.com/" class="">
+                <img width="75%" src="img/logos/deepmind_logo2.png" alt="...">
+              </a>
+              Research Scientist<br>
+              <em>2018 - Present</em>
+            </p>
+          </div>
+          <!--div class="col-xs-1"></div-->
+          <!-- <div class="col-xs-4">
+            <p class="text-center">
+              <strong>DeepMind</strong>
+              <a href="https://deepmind.com/" class="">
+                <img width="75%" src="img/logos/deepmind_logo2.png" alt="...">
+              </a>
+              Research Scientist<br>
+              <em>2018 - Present</em>
+            </p>
+          </div> -->
+          <!--div class="col-xs-1"></div-->
+          <!-- <div class="col-xs-4">
+            <p class="text-center">
+              <strong>DeepMind</strong>
+              <a href="https://deepmind.com/" class="">
+                <img width="75%" src="img/logos/deepmind_logo2.png" alt="...">
+              </a>
+              Research Scientist<br>
+              <em>2018 - Present</em>
+            </p>
+          </div> -->
+          <!--div class="col-xs-1"></div-->
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <p class="text-center">
+              <strong>UMass Amherst</strong><br>
+              Amherst MA<br>
+              <a href="http://cs.umass.edu/" class="">
+                <img width="75%" src="img/logos/umass.png" alt="...">
+              </a>
+              Research Assistant<br>
+              <em>2013 - 2018</em>
+            </p>
+          </div>
+          <!--div class="col-xs-1"></div-->
+          <div class="col-xs-4">
+            <p class="text-center">
+              <strong>AWS AI Algorithms</strong><br>
+              New York NY<br><br>
+              <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html" class="">
+                <img width="85%" src="img/logos/aws_logo.png" alt="...">
+              </a>
+              <br><br>Applied Scientist Intern<br>
+              <em>Summer 2018</em>          
+            </p>
+          </div>
+          <!--div class="col-xs-1"></div-->
+          <div class="col-xs-4">
+            <p class="text-center">
+              <strong>Adobe Research</strong><br>
+              San Jose CA<br>
+              <a href="https://research.adobe.com/" class="">
+                <img width="75%" src="img/logos/adobe_logo.jpg" alt="...">
+              </a>
+              <br>Data Science Intern<br>
+              <em>Summer+Fall 2016</em>          
+            </p>
+          </div>
+          <!--div class="col-xs-1"></div-->
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <p class="text-center">
+              <strong>Capgemini SA&I</strong><br>
+              Chicago IL<br>
+              <a href="http://www.capgemini.com/" class="">
+                <img width="100%" src="img/logos/capgemini.jpg" alt="...">
+              </a>
+              Consultant<br>
+              <em>2011-2013</em>          
+            </p>
+          </div>
+          <!--div class="col-xs-1"></div-->
+          <div class="col-xs-4">
+            <p class="text-center">
+              <strong>Northwestern Univ</strong><br>
+              Evanston IL<br>
+              <a href="http://www.northwestern.edu/" class="">
+                <img width="75%" src="img/logos/northwestern.png" alt="...">
+              </a>
+              Research Assistant<br>
+              <em>2007-2010</em>          
+            </p>
+          </div>
+          <!--div class="col-xs-1"></div-->
+          <div class="col-xs-4">
+            <p class="text-center">
+              <strong>UT Medical Center</strong><br>
+              Houston TX<br><br><br>
+              <a href="https://med.uth.edu/" class="">
+                <img width="150%" src="img/logos/uthealth.jpg" alt="...">
+              </a>
+              <br><br>Research Assistant<br>
+              <em>Summer 2008/2009</em>          
+            </p>
+          </div>
+          <!--div class="col-xs-1"></div-->
+          <!--
+          <div class="col-xs-4">
+            <p class="text-center">
+              <strong>Northwestern Univ</strong><br>
+              Evanston IL<br>
+              <a href="http://www.northwestern.edu/" class="">
+                <img width="75%" src="img/logos/northwestern.png" alt="...">
+              </a>
+              Research Assistant<br>
+              <em>2007-2010</em>          
+            </p>
+          </div>
+          -->
+        </div>
+        <!--<div class="row">
+          <div class="col-xs-2"></div>
+          <div class="col-xs-4">
+            <p class="text-center">
+              <strong>Yahoo! Labs</strong><br>
+              Sunnyvale CA<br>
+              <a href="http://labs.yahoo.com/" class="">
+                <img width="100%" src="img/logos/yahoo-labs.png" alt="...">
+              </a>
+              Research Intern<br>
+              <em>Summer 2009</em>          
+            </p>
+          </div>-->
+          <!--div class="col-xs-1"></div-->
+          <!--<div class="col-xs-4">
+            <p class="text-center">
+              <strong>Google</strong><br>
+              Piitsburgh PA<br>
+              <a href="http://www.google.com/about/jobs/locations/pittsburgh/" class="">
+                <img width="100%" src="img/logos/google.png" alt="...">
+              </a>
+              Research Intern<br>
+              <em>Summer, Fall 2007</em>          
+            </p>
+          </div>
+        </div>-->
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <script src="platform/javascripts/scale.fix.js"></script>
+    <script src="platform/javascripts/jquery.js"></script>
+    <script src="platform/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>

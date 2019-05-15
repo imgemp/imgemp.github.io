@@ -1,0 +1,108 @@
+.yearGroup {
+  font-size: 20px;
+}
+
+.papers {
+  padding-left: 5px;
+  margin: 5px;
+}
+
+.papers li {
+  margin: 10px;
+  padding-left: 0px;
+}
+
+.author {
+  color:#393939;
+}
+
+.mainAuthor {
+  color:#428bca;
+  font-weight: normal;
+}
+
+.mainAuthor a {
+  color:#428bca;
+  font-weight: normal;
+  border-style:none none dotted none;
+  border-width:1px;
+}
+
+.title {
+  color:#393939;
+  font-weight: bold;
+  display: block;
+}
+
+.venue {
+  color:#393939;
+  font-style: italic;
+}
+
+.year {
+  color:#393939;
+}
+
+.emphasisNote {
+  font-weight: bold;
+  color:#9900cc;
+}
+
+.note {
+  font-style: italic;
+  color:#999999;
+}
+
+
+.abstract {
+  color:#666666;
+  font-size: 12px;
+  display: none;
+}
+
+.link a {
+  display: inline-block;
+}
+
+.details-btn {
+  margin: 0px;
+  padding: 3px;
+  background-color: transparent;
+  color: #000000;
+}
+
+.details-panel {
+  margin: 2px;
+  padding: 2px;
+  font-size: 12px;
+}
+
+.details-panel ul {
+  margin: 0px;
+  border: 0px;
+  padding: 2px;
+  font-size: 12px;
+}
+
+.details-panel li {
+  margin: 0px;
+  border: 0px;
+  padding: 2px;
+  font-size: 12px;
+}
+
+.details-panel-body {
+  margin: 0px;
+  border: 0px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.details-panel-body:before {
+  content: "";
+}
+
+.details-panel-body:after {
+  content: "";
+}
+

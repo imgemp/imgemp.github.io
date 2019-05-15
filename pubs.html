@@ -1,0 +1,870 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ian Gemp (@cs.umass.edu)</title>
+
+    <!-- Bootstrap -->
+    <link href="platform/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="platform/stylesheets/styles.css">
+    <link rel="stylesheet" href="platform/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="platform/stylesheets/pubs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-52694615-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ian Gemp</h1>
+        <p>
+          <img width="75%" src="img/face/imgemp-face.jpg" class="img-rounded" alt="Ian Gemp">
+        </p>
+        <p>
+          <!--ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ol-->
+          <div class="list-group">
+            <a href="index.html" class="list-group-item">Home</a>
+            <a href="pubs.html" class="list-group-item active">Publications</a>
+            <a href="resume/imgemp_resume.pdf" class="list-group-item" onclick="ga('send', 'event', 'Downloads', 'click', 'Resume/CV PDF');">Resume/CV</a>
+            <!-- Neat trick for tracking all downloads: http://netnix.org/2014/04/27/tracking-downloads-with-google-analytics/ -->
+            <!--a href="#" class="list-group-item">Code and Datasets</a>
+            <a href="#" class="list-group-item">Blog</a-->
+          </div>
+        </p>
+        <p>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">External Links</h3>
+            </div>
+            <div class="panel-body">
+              <a href="https://github.com/imgemp">Github</a> (<a href="https://github.com/all-umass">ALL</a>) &bull;
+              <a href="https://www.linkedin.com/pub/ian-gemp/9/4b1/145">LinkedIn</a> &bull;
+              <a href="http://scholar.google.com/citations?user=5vo3MeEAAAAJ">Google Scholar</a>
+            </div>
+          </div>
+        </p>
+        <p>
+          <small>Inspired by <a href="http://sameersingh.org/">Sameer Singh</a>; Powered by <a href="http://getbootstrap.com/">Bootstrap</a></small>
+        </p>
+      </header>
+      <section>
+        <div class="container">
+          <h2>Publications</h2>
+          <div>
+            Publications (grouped by year): <a href="#2019">2019</a>, <a href="#2018">2018</a>, <a href="#2017">2017</a>, <a href="#2016">2016</a>, <a href="#2015">2015</a>, <a href="#2014">2014</a>, <a href="#2011">2011</a>, <a href="#2010">2010</a>.
+            <hr>
+          </div>
+
+          <span id="2019" class="yearGroup">2019</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=mZcPPW4AAAAJ">R. Nallapati</a></span>, <span class="author"><a href="https://dingran.github.io/">R. Ding</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0zyaD30AAAAJ&hl=en">F. Nan</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=A6yjdJAAAAAJ&hl=en">B. Xiang</a>. <span class="title">Weakly Semi-Supervised Neural Topic Models. </span><span class="venue">ICLR Workshop: Learning with Limited Labeled Data. </span><span class="year">2019</span><br/>
+
+          <!-- <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="pubs/thesis_2018.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div> -->
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2019ssntm_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2019ssntm_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2019ssntm_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          We consider the problem of topic modeling in a weakly semi-supervised setting. In this scenario, we assume that the user knows a priori a subset of the topics she wants the model to learn and is able to provide a few exemplar documents for those topics. In addition, while each document may typically consist of multiple topics, we do not assume that the user will identify all its topics exhaustively. Recent state-of-the-art topic models such as NVDM, referred to herein as Neural Topic Models (NTMs), fall under the variational autoencoder framework. We extend NTMs to the weakly semi-supervised setting by using informative priors in the training objective. After analyzing the effect of informative priors, we propose a simple modification of the NVDM model using a logit-normal posterior that we show achieves better alignment to user-desired topics versus other NTM models.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2019ssntm_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2019ssntm,
+          author={Gemp, Ian and Nallapati, Ramesh and Ding, Ran and Nan, Feng and Xiang, Bing},
+          title = {Weakly Semi-Supervised Neural Topic Models},
+          year = {2019}
+          journal = {ICLR Workshop: Learning with Limited Labeled Data},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
+
+          <span id="2018" class="yearGroup">2018</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>. <span class="title">From Optimization to Equilibration: Understanding an Emerging Paradigm in Artificial Intelligence and Machine Learning. </span><span class="venue">UMass Amherst Thesis. </span><span class="year">2018</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="pubs/thesis_2018.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2018thesis_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2018thesis_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2018thesis_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Many existing machine learning (ML) algorithms cannot be viewed as gradient descent on some single objective. The solution trajectories taken by these algorithms naturally exhibit rotation, sometimes forming cycles, a behavior that is not expected with (full-batch) gradient descent. However, these algorithms can be viewed more generally as solving for the equilibrium of a game with possibly multiple competing objectives. Moreover, some recent ML models, specifically generative adversarial net- works (GANs) and its variants, are now explicitly formulated as equilibrium problems. Equilibrium problems present challenges beyond those encountered in optimization such as limit-cycles and chaotic attractors and are able to abstract away some of the difficulties encountered when training models like GANs.
+          <br><br>
+          In this thesis, I aim to advance our understanding of equilibrium problems so as to improve state-of-the-art in GANs and related domains. In the following chapters, I will present work on
+          <ol>
+          <li>designing a no-regret framework for solving monotone equilibrium problems in online or streaming settings (with applications to Reinforcement Learning),</li>
+          <li>ensuring convergence when training a GAN to fit a normal distribution to data by Crossing-the-Curl,</li>
+          <li>improving state-of-the-art image generation with techniques derived from theory,</li>
+          <li>and borrowing tools from dynamical systems theory for analyzing the complex dynamics of GAN training.</li>
+          </ol>
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2018thesis_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2018thesis,
+          author={Gemp, Ian},
+          title = {From Optimization to Equilibration: Understanding an Emerging Paradigm in Artificial Intelligence and Machine Learning},
+          year = {2018}
+          journal = {UMass Amherst Technical Report},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span>. <span class="title">Global Convergence to the Equilibrium of GANs using Variational Inequalities. </span><span class="venue">arXiv preprint arXiv:1808.01531. </span><span class="year">2018</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/1808.01531.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2018crosscurl_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2018crosscurl_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2018crosscurl_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          In optimization, the negative gradient of a function denotes the direction of steepest descent. Furthermore, traveling in any direction orthogonal to the gradient maintains the value of the function. In this work, we show that these orthogonal directions that are ignored by gradient descent can be critical in equilibrium problems. Equilibrium problems have drawn heightened attention in machine learning due to the emergence of the Generative Adversarial Network (GAN). We use the framework of Variational Inequalities to analyze popular training algorithms for a fundamental GAN variant: the Wasserstein Linear-Quadratic GAN. We show that the steepest descent direction causes divergence from the equilibrium, and guaranteed convergence to the equilibrium is achieved through following a particular orthogonal direction. We call this successful technique Crossing-the-Curl, named for its mathematical derivation as well as its intuition: identify the game's axis of rotation and move "across" space in the direction towards smaller "curling".
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2018crosscurl_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2018crosscurl,
+          author={Gemp, Ian and Mahadevan, Sridhar},
+          title = {Global Convergence to the Equilibrium of GANs using Variational Inequalities},
+          year = {2018}
+          journal = {arXiv preprint arXiv:1808.01531},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://www.eng.auburn.edu/~bzl0056/">B. Liu</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="https://www.linkedin.com/in/mohammad-ghavamzadeh/">M. Ghavamzadeh</a></span>, <span class="author"><a href="http://www.cs.rochester.edu/~jliu/">J. Liu</a></span>,<span class="author"><a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span>, <span class="author"><a href="http://marek.petrik.us/">M. Petrik</a></span>. <span class="title">Proximal Gradient Temporal Difference Learning: Stable Reinforcement Learning with Polynomial Sample Complexity. </span><span class="venue">Journal of Artificial Intelligence Research. </span><span class="year">2018</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://www.eng.auburn.edu/~bzl0056/public_html/j-2018-jair.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#liu2018proximal_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#liu2018proximal_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="liu2018proximal_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          In this paper, we introduce proximal gradient temporal difference learning, which provides a principled way of designing and analyzing true stochastic gradient temporal difference learning algorithms. We show how gradient TD (GTD) reinforcement learning methods can be formally derived,  not by starting from their original objective functions, as previously attempted, but rather from a primal-dual saddle-point objective function. We also conduct a saddle-point error analysis to obtain finite-sample bounds on their performance. Previous analyses of this class of algorithms use stochastic approximation techniques to prove asymptotic convergence, and do not provide any finite-sample analysis. We also propose an accelerated algorithm, called GTD2-MP, that uses proximal ``mirror maps'' to yield an improved convergence rate. The results of our theoretical analysis imply that the GTD family of algorithms are comparable and may indeed be preferred over existing least squares TD methods for off-policy learning, due to their linear complexity. We provide experimental results showing the improved performance of our accelerated gradient TD methods.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="liu2018proximal_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{liu2018proximal,
+          title={Proximal Gradient Temporal Difference Learning: Stable Reinforcement Learning with Polynomial Sample Complexity},
+          author={Liu, Bo and Gemp, Ian and Ghavamzadeh, Mohammad and Liu, Ji and Mahadevan, Sridhar and Petrik, Marek},
+          journal={Journal of Artificial Intelligence Research},
+          volume={63},
+          pages={461--494},
+          year={2018}
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
+
+
+          <span id="2017" class="yearGroup">2017</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="http://mirsl.ecs.umass.edu/?q=node/69">M. Parente</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span>. <span class="title">Inverting VAEs for Improved Generative Accuracy. </span><span class="venue">NIPS Workshop: Advances in Approximate Bayesian Inference. </span><span class="year">2017</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="pubs/nips_ws_2017.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2017nips_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2017nips_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2017nips_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Recent advances in semi-supervised learning with deep generative models have shown promise in generalizing from small labeled datasets ($\mathbf{x}_l,\mathbf{y}_l$) to large unlabeled ones ($\mathbf{x}_u$). When the codomain ($\mathbf{y}$) has known structure, a large un\emph{featured} dataset ($\mathbf{y}_u$) is potentially available. We develop a parameter-efficient, deep semi-supervised generative model for the purpose of exploiting this untapped data source. Empirical results show improved performance in disentangling variable semantics as well as improved discriminative prediction on a new MNIST task.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2017nips_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2017nips,
+          author={Gemp, Ian and Parente, Mario and Mahadevan, Sridhar},
+          title = {Inverting VAEs for Improved Generative Accuracy},
+          year = {2017}
+          journal = {NIPS Workshop: Advances in Approximate Bayesian Inference},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span>. <span class="title">Online Monotone Games. </span><span class="venue">arXiv preprint arXiv:1710.07328. </span><span class="year">2017</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/1710.07328.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2017omg_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2017omg_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2017omg_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Algorithmic game theory (AGT) focuses on the design and analysis of algorithms for interacting agents, with interactions rigorously formalized within the framework of games. Results from AGT find applications in domains such as online bidding auctions for web advertisements and network routing protocols. Monotone games are games where agent strategies naturally converge to an equilibrium state. Previous results in AGT have been obtained for convex, socially-convex, or smooth games, but not monotone games. Our primary theoretical contributions are defining the monotone game setting and its extension to the online setting, a new notion of regret for this setting, and accompanying algorithms that achieve sub-linear regret. We demonstrate the utility of online monotone game theory on a variety of problem domains including variational inequalities, reinforcement learning, and generative adversarial networks.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2017omg_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2017omg,
+          author={Gemp, Ian and Mahadevan, Sridhar},
+          title = {Online Monotone Games},
+          year = {2017}
+          journal = {arXiv preprint arXiv:1710.07328},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><span class="author"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span></span>, <a href="http://mirsl.ecs.umass.edu/?q=node/69">M. Parente</a>, <a href="http://idurugkar.weebly.com/">I. Durugkar</a></span>, <a href="https://www.mtholyoke.edu/people/m-darby-dyar">D. Dyar</a></span>, <a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span> <span class="title">Inverting Variational Autoencoders for Improved Generative Accuracy. </span><span class="venue">arXiv preprint arXiv:1608.05983. </span><span class="year">2017</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/1608.05983.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2017untapped_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2017untapped_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2017untapped_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Recent advances in semi-supervised learning with deep generative models have shown promise in generalizing from small labeled datasets (x,y) to large unlabeled ones (x). In the case where the codomain has known structure, a large unfeatured dataset (y) is potentially available. We develop a parameter-efficient, deep semi-supervised generative model for the purpose of exploiting this untapped data source. Empirical results show improved performance in disentangling latent variable semantics as well as improved discriminative prediction on Martian spectroscopic and handwritten digit domains.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2017untapped_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2017untapped,
+          author={Gemp, Ian and Parente, Mario and Durugkar, Ishan and Dyar, Darby and Mahadevan, Sridhar},
+          title = {Inverting Variational Autoencoders for Improved Generative Accuracy},
+          year = {2017}
+          journal = {arXiv preprint arXiv:1608.05983},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><span class="author"><a href="http://idurugkar.weebly.com/">I. Durugkar</a></span>, <a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>,  <a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span> <span class="title">Generative Multi-Adversarial Networks. </span><span class="venue">ICLR. </span><span class="year">2017</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://openreview.net/pdf?id=Byk-VI9eg">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#durugkargemp2017gman_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#durugkargemp2017gman_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="durugkargemp2017gman_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Generative adversarial networks (GANs) are a framework for producing a generative model by way of a two-player minimax game. In this paper, we propose the Generative Multi-Adversarial Network (GMAN), a framework that extends GANs to multiple discriminators. In previous work, the successful training of GANs requires modifying the minimax objective to accelerate training early on. In contrast, GMAN can be reliably trained with the original, untampered objective. We explore a number of design perspectives with the discriminator role ranging from formidable adversary to forgiving teacher. Image generation tasks comparing the proposed framework to standard GANs demonstrate GMAN produces higher quality samples in a fraction of the iterations when measured by a pairwise GAM-type metric.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="durugkargemp2017gman_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{durugkargemp2017gman,
+          author={Durugkar, Ishan and Gemp, Ian and Mahadevan, Sridhar},
+          title = {Generative Multi-Adversarial Networks},
+          year = {2017}
+          journal = {ICLR},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="https://research.adobe.com/person/georgios-theocharous/">G. Theocharous</a></span>, <span class="author"><a href="https://research.adobe.com/person/mohammad-ghavamzadeh/">M. Ghavamzadeh</a></span>. <span class="title">Automated Data Cleansing through Meta-Learning. </span><span class="venue">IAAI Challenge Paper. </span><span class="year">2017</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="pubs/iaai_2017.pdf">Paper (PDF)</a></li>
+          <li><a href="datasets/iaai_2017.zip">Datasets (.zip)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2017datacleanse_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2017datacleanse_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2017datacleanse_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Data preprocessing or cleansing is one of the biggest hurdles in industry for developing successful machine learning applications. The process of data cleansing includes data imputation, feature normalization &amp; selection, dimensionality reduction, and data balancing applications. Currently such preprocessing is manual. One approach for automating this process is meta-learning. In this paper we experiment with state of the art meta-learning methodologies and identify the inadequacies and research challenges for solving such a problem.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2017datacleanse_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2017datacleanse,
+          author={Gemp, Ian and Theocharous, Georgios and Ghavamzadeh, Mohammad},
+          title = {Automated Data Cleansing through Meta-Learning},
+          year = {2017}
+          journal = {IAAI},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
+
+
+          <span id="2016" class="yearGroup">2016</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span>. <span class="title">Online Monotone Optimization. </span><span class="venue">arXiv preprint arXiv:1608.07888. </span><span class="year">2016</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/1608.07888.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2016online_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2016online_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2016online_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          This paper presents a new framework for analyzing and designing no-regret algorithms for dynamic (possibly adversarial) systems. The proposed framework generalizes the popular online convex optimization framework and extends it to its natural limit allowing it to capture a notion of regret that is intuitive for more general problems such as those encountered in game theory and variational inequalities. The framework hinges on a special choice of a system-wide loss function we have developed. Using this framework, we prove that a simple update scheme provides a no-regret algorithm for monotone systems. While previous results in game theory prove individual agents can enjoy unilateral no-regret guarantees, our result proves monotonicity sufficient for guaranteeing no-regret when considering the adjustments of multiple agent strategies in parallel. Furthermore, to our knowledge, this is the first framework to provide a suitable notion of regret for variational inequalities. Most importantly, our proposed framework ensures monotonicity a sufficient condition for employing multiple online learners safely in parallel.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2016online_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2016online,
+          author={Gemp, Ian and Mahadevan, Sridhar},
+          title = {Online Monotone Optimization},
+          year = {2016}
+          journal = {arXiv preprint arXiv:1608.07888},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
+
+          <span id="2015" class="yearGroup">2015</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>. <span class="title">Exploring the Dynamics of Variational Inequality Games with Non-Concave Utilities. </span><span class="venue">NIPS Workshop: Learning, Inference, and Control of Multi-Agent Systems. </span><span class="year">2015</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="pubs/nips_ws_2015.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2015nonconcave_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2015nonconcave_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2015nonconcave_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Variational inequality (VI) theory has proven useful in modeling and analyzing a variety economic markets. However, in order to ensure the analysis is tractable, models are usually constrained to an unrealistic regime of concave utilities and monotone operators undermining the reliability of real-world conclusions such as the uniqueness and location of equilibria. We argue that machine learning can help address this issue. In this paper, we ignore typical monotonicity requirements and construct a generic, yet more realistic market model possessing several desirable qualities. We then borrow a tool from dynamical systems to cope with our model’s lack of theoretical guarantees. Additionally, in order to handle the large size of standard VI game formulations, we further enhance the tool to accommodate more sophisticated numerical algorithms and propose a heuristic for efficient use of generated trajectories. We illustrate these enhancements by applying the resulting pipeline in the context of cloud services.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2015nonconcave_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2015nonconcave,
+          author={Gemp, Ian},
+          title = {Exploring the Dynamics of Variational Inequality Games with Non-Concave Utilities},
+          year = {2015}
+          booktitle={NIPS Workshop: Learning, Inference, and Control of Multi-Agent Systems},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span>. <span class="title">Finding Equilibria in Large Games using Variational Inequalities. </span><span class="venue">AAAI Spring Symposium. </span><span class="year">2015</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="pubs/aaai_ss_2015.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2015games_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2015games_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2015games_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          In this paper, we explore an approach to computational game theory based on variational inequalities (VIs).  VIs represent a comprehensive framework that provides a way to model and analyze both cooperative and non-cooperative games.  Given the potentially large size of real-world games, suitable algorithms must be designed that can scale gracefully with the dimension of the problems (e.g.,  number of players).  In this paper, we explore the effectiveness of novel Runge-Kutta methods on finding equilibrium solutions to two real-world games defined by oligopolistic economies.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2015games_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2015games,
+          author={Gemp, Ian and Mahadevan, Sridhar},
+          title = {Finding Equilibria in Large Games using Variational Inequalities},
+          year = {2015}
+          booktitle={AAAI Spring Symposium},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~boliu/">B. Liu</a></span>. <span class="title">Solving Large Sustainable Supply Chain Networks using Variational Inequalities. </span><span class="venue">AAAI Workshop: Computational Sustainability. </span><span class="year">2015</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="pubs/aaai_ws_2015.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2015supplychain_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2015supplychain_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2015supplychain_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          In this paper, we explore a new approach to computational sustainability based on variational inequalities (VIs). Our challenge is to compute the steady state behaviors of networks of sustainable supply chains with possibly conflicting objectives. VIs provide a way to model large networks with numerous conflicting goals. Given the size of real-world networks, suitable algorithms must be selected that can scale with the dimension of the problems. In this paper, we explore the effectiveness of novel Runge-Kutta methods on finding equilibrium solutions to two real-world sustainable supply chain problems.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2015supplychain_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2015supplychain,
+          author={Gemp, Ian and Mahadevan, Sridhar and Liu, Bo},
+          title = {Solving Large Sustainable Supply Chain Networks using Variational Inequalities},
+          year = {2015}
+          booktitle={AAAI Workshop: Computational Sustainability},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
+
+
+          <span id="2014" class="yearGroup">2014</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span>. <span class="title">Modeling Context in Cognition using Variational Inequalities. </span><span class="venue">AAAI Fall Symposium. </span><span class="year">2014</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="pubs/aaai_fs_2014.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2014context_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2014context_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2014context_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Important aspects of human cognition, like creativity and play, involve dealing with multiple divergent views of objects, goals, and plans. We argue in this paper that the current model of optimization that drives much of modern machine learning research is far too restrictive a paradigm to mathematically model the richness of human cognition. Instead, we propose a much more flexible and powerful framework of equilibration, which not only generalizes optimization, but also captures a rich variety of other problems, from game theory, complementarity problems, network equilibrium problems in economics, and equation solving. Our thesis is that creative activity involves dealing not with a single objective function, which optimization requires, but rather balancing multiple divergent and possibly  contradictory goals. Such modes of cognition are better modeled using the framework of variational inequalities (VIs). We provide a brief review of this paradigm for readers unfamiliar with the underlying mathematics, and sketch out how VIs can account for creativity and play in human and animal cognition.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2014context_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2014context,
+          author={Gemp, Ian and Mahadevan, Sridhar},
+          title = {Modeling Context in Cognition using Variational Inequalities},
+          year = {2014}
+          booktitle={AAAI Fall Symposium},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~mahadeva/Site/About_Me.html">S. Mahadevan</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~boliu/">B. Liu</a></span>, <span class="author"><a href="http://psthomas.com/">P. Thomas</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~wdabney/">W. Dabney</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~sgiguere/">S. Giguere</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~njacek/">N. Jacek</a></span>, <span class="author"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="">J. Liu</a></span>. <span class="title">Proximal Reinforcement Learning: A New Theory of Sequential Decision Making in Primal-Dual Spaces. </span><span class="venue">arXiv preprint arXiv:1405.6757. </span><span class="year">2014</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="http://arxiv.org/pdf/1405.6757v1">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#mahadevan2014proximal_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#mahadevan2014proximal_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="mahadevan2014proximal_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          In this paper, we set forth a new vision of reinforcement learning developed by us over the past few years, one that yields mathematically rigorous solutions to longstanding important questions that have remained unresolved: (i) how to design reliable, convergent, and robust reinforcement learning algorithms (ii) how to guarantee that reinforcement learning satisfies pre-specified "safety" guarantees, and remains in a stable region of the parameter space (iii) how to design "off-policy" temporal difference learning algorithms in a reliable and stable manner, and finally (iv) how to integrate the study of reinforcement learning into the rich theory of stochastic optimization. In this paper, we provide detailed answers to all these questions using the powerful framework of proximal operators. 
+          The key idea that emerges is the use of primal dual spaces connected through the use of a Legendre transform. This allows temporal difference updates to occur in dual spaces, allowing a variety of important technical advantages. The Legendre transform elegantly generalizes past algorithms for solving reinforcement learning problems, such as natural gradient methods, which we show relate closely to the previously unconnected framework of mirror descent methods. Equally importantly, proximal operator theory enables the systematic development of operator splitting methods that show how to safely and reliably decompose complex products of gradients that occur in recent variants of gradient-based temporal difference learning. This key technical innovation makes it possible to finally design "true" stochastic gradient methods for reinforcement learning. Finally, Legendre transforms enable a variety of other benefits, including modeling sparsity and domain geometry. Our work builds extensively on recent work on the convergence of saddle-point algorithms, and on the theory of monotone operators.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="mahadevan2014proximal_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{mahadevan2014proximal,
+          author={Mahadevan, Sridhar and Liu, Bo and Thomas, Philip and Dabney, Will and Giguere, Steve and Jacek, Nicholas and Gemp, Ian and Liu, Ji},
+          title = {Proximal Reinforcement Learning: A New Theory of Sequential Decision Making in Primal-Dual Spaces},
+          year = {2014},
+          journal={arXiv preprint arXiv:1405.6757},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
+
+
+          <span id="2011" class="yearGroup">2011</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="author"><a href="http://www.ibis.northwestern.edu/faculty/carthew.html">R. Carthew</a></span>, <span class="author"><a href="http://mechanical.illinois.edu/directory/faculty/sascha">S. Hilgenfeldt</a></span>. <span class="title">Cadherin-dependent cell morphology in an epithelium: constructing a quantitative dynamical model. </span><span class="venue">PLoS Computational Biology. </span><span class="year">2011</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="http://www.ploscompbiol.org/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pcbi.1002115&representation=PDF">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2011cadherin_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2011cadherin_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2011cadherin_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Cells in the Drosophila retina have well-defined morphologies that are attained during tissue morphogenesis. We present a
+          computer simulation of the epithelial tissue in which the global interfacial energy between cells is minimized. Experimental
+          data for both normal cells and mutant cells either lacking or misexpressing the adhesion protein N-cadherin can be
+          explained by a simple model incorporating salient features of morphogenesis that include the timing of N-cadherin
+          expression in cells and its temporal relationship to the remodeling of cell-cell contacts. The simulations reproduce the
+          geometries of wild-type and mutant cells, distinguish features of cadherin dynamics, and emphasize the importance of
+          adhesion protein biogenesis and its timing with respect to cell remodeling. The simulations also indicate that N-cadherin
+          protein is recycled from inactive interfaces to active interfaces, thereby modulating adhesion strengths between cells.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2011cadherin_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2011cadherin,
+          title={Cadherin-dependent cell morphology in an epithelium: constructing a quantitative dynamical model},
+          author={Gemp, Ian M and Carthew, Richard W and Hilgenfeldt, Sascha},
+          journal={PLoS computational biology},
+          volume={7},
+          number={7},
+          pages={e1002115},
+          year={2011},
+          publisher={Public Library of Science}
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
+
+
+          <span id="2010" class="yearGroup">2010</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="author">G. Duncan</span>, <span class="author">K. Rabl</span>, <span class="author"><a href="http://people.cs.umass.edu/~imgemp/">I. Gemp</a></span>, <span class="mainAuthor"><a href="http://nba.uth.tmc.edu/resources/faculty/members/heidelberger.htm">R. Heidelberger</a></span>, <span class="author">W.B. Thoreson</span>. <span class="title">Quantitative analysis of synaptic release at the photoreceptor synapse. </span><span class="venue">Biophysical Journal. </span><span class="year">2010</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2872209/pdf/main.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#duncan2010quantitative_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#duncan2010quantitative_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="duncan2010quantitative_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Exocytosis from the rod photoreceptor is stimulated by submicromolar Ca2+ and exhibits an unusually shallow dependence on presynaptic Ca2+. To provide a quantitative description of the photoreceptor Ca2+ sensor for exocytosis, we tested a family of conventional and allosteric computational models describing the final Ca2+-binding steps leading to exocytosis. Simulations were fit to two measures of release, evoked by flash-photolysis of caged Ca2+: exocytotic capacitance changes from individual rods and postsynaptic currents of second-order neurons. The best simulations supported the occupancy of only two Ca2+ binding sites on the rod Ca2+ sensor rather than the typical four or five. For most models, the on-rates for Ca2+ binding and maximal fusion rate were comparable to those of other neurons. However, the off-rates for Ca2+ unbinding were unexpectedly slow. In addition to contributing to the high-affinity of the photoreceptor Ca2+ sensor, slow Ca2+ unbinding may support the fusion of vesicles located at a distance from Ca2+ channels. In addition, partial sensor occupancy due to slow unbinding may contribute to the linearization of the first synapse in vision.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="duncan2010quantitative_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{duncan2010quantitative,
+          title={Quantitative analysis of synaptic release at the photoreceptor synapse},
+          author={Duncan, Gabriel and Rabl, Katalin and Gemp, Ian and Heidelberger, Ruth and Thoreson, Wallace B},
+          journal={Biophysical journal},
+          volume={98},
+          number={10},
+          pages={2102--2110},
+          year={2010},
+          publisher={Elsevier}
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <script src="platform/javascripts/scale.fix.js"></script>
+    <script src="platform/javascripts/jquery.js"></script>
+    <script src="platform/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
