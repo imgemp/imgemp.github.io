@@ -77,6 +77,49 @@
 
           <li>
 
+          <span class="mainAuthor"><a href="">T. Anthony</a></span>, <span class="mainauthor"><a href="">T. Eccles</a></span>, <span class="author"><a href="">A. Tacchetti</a>, <span class="author"><a href="">J. Kramár</a>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="">T. Hudson</a></span>, <span class="author"><a href="">N. Porcel</a></span>, <span class="author"><a href="">M. Lanctot</a></span>, <span class="author"><a href="">J. Pérolat</a></span>, <span class="author"><a href="">R. Everett</a></span>, <span class="author"><a href="">S. Singh</a></span>, <span class="author"><a href="">T. Graepel</a></span>, <span class="author"><a href="">Y. Bachrach</a></span>. <span class="title">Learning to Play No-Press Diplomacy with Best Response Policy Iteration. </span><span class="venue">arXiv preprint arXiv:2006.04635. </span><span class="year">2020</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2006.04635.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#anthony2020learning_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#anthony2020learning_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="anthony2020learning_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Recent advances in deep reinforcement learning (RL) have led to considerable progress in many 2-player zero-sum games, such as Go, Poker and Starcraft. The purely adversarial nature of such games allows for conceptually simple and principled application of RL methods. However real-world settings are many-agent, and agent interactions are complex mixtures of common-interest and competitive aspects. We consider Diplomacy, a 7-player board game designed to accentuate dilemmas resulting from many-agent interactions. It also features a large combinatorial action space and simultaneous moves, which are challenging for RL algorithms. We propose a simple yet effective approximate best response operator, designed to handle large combinatorial action spaces and simultaneous moves. We also introduce a family of policy iteration methods that approximate fictitious play. With these methods, we successfully apply RL to Diplomacy: we show that our agents convincingly outperform the previous state-of-the-art, and game theoretic equilibrium analysis shows that the new process yields consistent improvements.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="anthony2020learning_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{anthony2020learning,
+          author={Anthony, Thomas and Eccles, Tom and Tacchetti, Andrea and Kramár, János and Gemp, Ian and Hudson, Thomas C. and Porcel, Nicolas and Lanctot, Marc and Pérolat, Julien and Everett, Richard and Singh, Satinder and Graepel, Thore and Bachrach, Yoram},
+          title = {Learning to Play No-Press Diplomacy
+with Best Response Policy Iteration},
+          year = {2020}
+          journal = {arXiv preprint arXiv:2006.04635},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
           <span class="mainAuthor"><a href="">K. McKee</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://sites.google.com/view/mcbrian">B. McWilliams</a>, <span class="author"><a href="http://duenez.evolicious.org/">E. Duéñez-Guzmán</a>, <span class="author"><a href="">E. Hughes</a></span>, <span class="author"><a href="http://www.jzleibo.com/">J. Leibo</a></span>. <span class="title">Social Diversity and Social Preferences in Mixed-Motive Reinforcement Learning. </span><span class="venue">AAMAS. </span><span class="year">2020</span><br/>
 
           <div class="btn-group">
@@ -98,7 +141,7 @@
           <div class="collapse" id="kmckee2020divers_abstract">
           <div class="panel panel-primary">
           <div class="panel-body details-panel">
-          
+          Recent research on reinforcement learning in pure-conflict and pure-common interest games has emphasized the importance of population heterogeneity. In contrast, studies of reinforcement learning in mixed-motive games have primarily leveraged homogeneous approaches. Given the defining characteristic of mixedmotive games—the imperfect correlation of incentives between group members—we study the effect of population heterogeneity on mixed-motive reinforcement learning. We draw on interdependence theory from social psychology and imbue reinforcement learning agents with Social Value Orientation (SVO), a flexible formalization of preferences over group outcome distributions. We subsequently explore the effects of diversity in SVO on populations of reinforcement learning agents in two mixed-motive Markov games. We demonstrate that heterogeneity in SVO generates meaningful and complex behavioral variation among agents similar to that suggested by interdependence theory. Empirical results in these mixed-motive dilemmas suggest agents trained in heterogeneous populations develop particularly generalized, high-performing policies relative to those trained in homogeneous populations.
           </div>
           </div>
           </div>
@@ -107,7 +150,7 @@
           <div class="panel panel-info">
           <pre class="panel-body details-panel">
           @article{kmckee2020divers,
-          author={McKee, Kevin and Hughes, Edward and Leibo, Joel and Gemp, Ian and McWilliams, Brian and Duéñez-Guzmán, Edgar},
+          author={McKee, Kevin and Gemp, Ian and McWilliams, Brian and Duéñez-Guzmán, Edgar and Hughes, Edward and Leibo, Joel},
           title = {Social Diversity and Social Preferences in Mixed-Motive Reinforcement Learning},
           year = {2020}
           journal = {AAMAS},
