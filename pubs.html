@@ -68,16 +68,58 @@
         <div class="container">
           <h2>Publications</h2>
           <div>
-            Publications (grouped by year): <a href="#2021">2020-21</a>, <a href="#2019">2018-19</a>, <a href="#2017">2016-17</a>, <a href="#2015">2010-15</a>.
+            Publications (grouped by year): <a href="#2022">DeepMind (2019-)</a>, <a href="#2018">UMass / Internships (2013-18)</a>, <a href="#2010">Northwestern / UTexas (2006-11)</a>.
             <hr>
           </div>
 
-          <span id="2021" class="yearGroup">2021</span>
+          <span id="2022" class="yearGroup">2022</span>
           <ul class="papers">
 
           <li>
 
-          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://cgi.csc.liv.ac.uk/~rahul/">R. Savani</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=Ksz7c7YAAAAJ&hl=en">T. Anthony</a></span>, <span class="author"><a href="https://scholar.google.co.uk/citations?user=IIlnyWQAAAAJ&hl=en">R. Everett</a></span>, <span class="author"><a href="https://www.andreatacchetti.com/">A. Tacchetti</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=xgxzcn0AAAAJ&hl=en">T. Eccles</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=iW_lUIkAAAAJ&hl=en">J. Kramár</a></span>. <span class="title">Sample-based Approximation of Nash in Large Many-Player Games via Gradient Descent. </span><span class="venue">arXiv preprint arXiv:2106.01285. </span><span class="year">2021</span><br/>
+          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://www.empiricallykev.com/">K. R. McKee</a></span>, <span class="author"><a href="https://scholar.google.co.uk/citations?user=IIlnyWQAAAAJ&hl=en">R. Everett</a></span>, <span class="author"><a href="http://duenez.evolicious.org/">E. Duéñez-Guzmán</a>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://sites.google.com/site/dbalduzzi/home/home">D. Balduzzi</a></span>, <span class="author"><a href="https://www.andreatacchetti.com/">A. Tacchetti</a>. <span class="title">D3C: Reducing the Price of Anarchy in Multi-Agent Learning. </span><span class="venue">AAMAS. </span><span class="year">2022</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2010.00575.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2022d3c_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2022d3c_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2022d3c_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          In multiagent systems, the complex interaction of fixed incentives can lead agents to outcomes that are poor (inefficient) not only for the group, but also for each individual. Price of anarchy is a technical, game-theoretic definition that quantifies the inefficiency arising in these scenarios -- it compares the welfare that can be achieved through perfect coordination against that achieved by self-interested agents at a Nash equilibrium. We derive a differentiable, upper bound on a price of anarchy that agents can cheaply estimate during learning. Equipped with this estimator, agents can adjust their incentives in a way that improves the efficiency incurred at a Nash equilibrium. Agents do so by learning to mix their reward (equiv. negative loss) with that of other agents by following the gradient of our derived upper bound. We refer to this approach as D3C. In the case where agent incentives are differentiable, D3C resembles the celebrated Win-Stay, Lose-Shift strategy from behavioral game theory, thereby establishing a connection between the global goal of maximum welfare and an established agent-centric learning rule. In the non-differentiable setting, as is common in multiagent reinforcement learning, we show the upper bound can be reduced via evolutionary strategies, until a compromise is reached in a distributed fashion. We demonstrate that D3C improves outcomes for each agent and the group as a whole on several social dilemmas including a traffic network exhibiting Braess's paradox, a prisoner's dilemma, and several multiagent domains.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2022d3c_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2022d3c,
+          author={Gemp, Ian and McKee, Kevin R. and Everett, Richard and Duéñez-Guzmán, Edgar A. and Bachrach, Yoram and Balduzzi, David and Tacchetti, Andrea},
+          title = {D3C: Reducing the Price of Anarchy in Multi-Agent Learning},
+          year = {2022}
+          journal = {AAMAS},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://cgi.csc.liv.ac.uk/~rahul/">R. Savani</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=Ksz7c7YAAAAJ&hl=en">T. Anthony</a></span>, <span class="author"><a href="https://scholar.google.co.uk/citations?user=IIlnyWQAAAAJ&hl=en">R. Everett</a></span>, <span class="author"><a href="https://www.andreatacchetti.com/">A. Tacchetti</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=xgxzcn0AAAAJ&hl=en">T. Eccles</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=iW_lUIkAAAAJ&hl=en">J. Kramár</a></span>. <span class="title">Sample-based Approximation of Nash in Large Many-Player Games via Gradient Descent. </span><span class="venue">AAMAS. </span><span class="year">2022</span><br/>
 
           <div class="btn-group">
           <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
@@ -87,35 +129,40 @@
           </div>
 
           <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2021adidas_abstract">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2022adidas_abstract">
           <input type="checkbox" /> Abstract
           </label>
-          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2021adidas_bibtex">
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2022adidas_bibtex">
           <input type="checkbox" /> BibTex
           </label>
           </div>
 
-          <div class="collapse" id="gemp2021adidas_abstract">
+          <div class="collapse" id="gemp2022adidas_abstract">
           <div class="panel panel-primary">
           <div class="panel-body details-panel">
-          Nash equilibrium is a central concept in game theory. Several Nash solvers exist, yet none scale to normal-form games with many actions and many players, especially those with payoff tensors too big to be stored in memory. In this work, we propose an approach that iteratively improves an approximation to a Nash equilibrium through joint play. It accomplishes this by tracing a previously established homotopy which connects instances of the game defined with decaying levels of entropy regularization. To encourage iterates to remain near this path, we efficiently minimize \emph{average deviation incentive} via stochastic gradient descent, intelligently sampling entries in the payoff tensor as needed. This process can also be viewed as constructing and reacting to a polymatrix approximation to the game. In these ways, our proposed approach, \emph{average deviation incentive descent with adaptive sampling} (ADIDAS), is most similar to three classical approaches, namely homotopy-type, Lyapunov, and iterative polymatrix solvers. We demonstrate through experiments the ability of this approach to approximate a Nash equilibrium in normal-form games with as many as seven players and twenty one actions (over one trillion outcomes) that are orders of magnitude larger than those possible with prior algorithms.
+          Nash equilibrium is a central concept in game theory. Several Nash solvers exist, yet none scale to normal-form games with many actions and many players, especially those with payoff tensors too big to be stored in memory. In this work, we propose an approach that iteratively improves an approximation to a Nash equilibrium through joint play. It accomplishes this by tracing a previously established homotopy that defines a continuum of equilibria for the game regularized with decaying levels of entropy. This continuum asymptotically approaches the limiting logit equilibrium, proven by McKelvey and Palfrey (1995) to be unique in almost all games, thereby partially circumventing the well-known equilibrium selection problem of many-player games. To encourage iterates to remain near this path, we efficiently minimize average deviation incentive via stochastic gradient descent, intelligently sampling entries in the payoff tensor as needed. Monte Carlo estimates of the stochastic gradient from joint play are biased due to the appearance of a nonlinear max operator in the objective, so we introduce additional innovations to the algorithm to alleviate gradient bias. The descent process can also be viewed as repeatedly constructing and reacting to a polymatrix approximation to the game. In these ways, our proposed approach, average deviation incentive descent with adaptive sampling (ADIDAS), is most similar to three classical approaches, namely homotopy-type, Lyapunov, and iterative polymatrix solvers. The lack of local convergence guarantees for biased gradient descent prevents guaranteed convergence to Nash, however, we demonstrate through extensive experiments the ability of this approach to approximate a unique Nash in normal-form games with as many as seven players and twenty one actions (several billion outcomes) that are orders of magnitude larger than those possible with prior algorithms.
           </div>
           </div>
           </div>
 
-          <div class="collapse" id="gemp2021adidas_bibtex">
+          <div class="collapse" id="gemp2022adidas_bibtex">
           <div class="panel panel-info">
           <pre class="panel-body details-panel">
-          @article{gemp2021adidas,
+          @article{gemp2022adidas,
           author={Gemp, Ian and Savani, Rahul and Lanctot, Marc and Bachrach, Yoram and Anthony, Thomas and Everett, Richard and Tacchetti, Andrea and Eccles, Tom and Kramár, János},
           title = {Sample-based Approximation of Nash in Large Many-Player Games via Gradient Descent},
-          year = {2021}
-          journal = {arXiv preprint arXiv:2106.01285},
+          year = {2022}
+          journal = {AAMAS},
           }</pre>
           </div>
           </div>
 
           </li>
+
+          </ul>
+
+          <span id="2021" class="yearGroup">2021</span>
+          <ul class="papers">
 
           <li>
 
@@ -153,6 +200,49 @@
           title = {EigenGame Unloaded: When playing games is better than optimizing},
           year = {2021}
           journal = {arXiv preprint arXiv:2102.04152},
+          }</pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://www.martagarnelo.com/">M. Garnelo</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=iW_lUIkAAAAJ&hl=en">J. Kramár</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=xgxzcn0AAAAJ&hl=en">T. Eccles</a></span>, <span class="author"><a href="https://danrsm.github.io/">D. Rosenbaum</a></span>, <span class="author"><a href="https://thoregraepel.github.io/">T. Graepel</a></span>. <span class="title">A Neural Network Auction For Group Decision Making Over a Continuous Space. </span><span class="venue">IJCAI-21 Demonstrations Track. </span><span class="year">2021</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://www.ijcai.org/proceedings/2021/0706.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#bachrachneural_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#bachrachneural_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="bachrachneural_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          We propose a system for conducting an auction over locations in a continuous space. It enables participants to express their preferences over possible choices of location in the space, selecting the location that maximizes the total utility of all agents. We prevent agents from tricking the system into selecting a location that improves their individual utility at the expense of others by using a pricing rule that gives agents no incentive to misreport their true preferences. The system queries participants for their utility in many random locations, then trains a neural network to approximate the preference function of each participant. The parameters of these neural network models are transmitted and processed by the auction mechanism, which composes these into differentiable models that are optimized through gradient ascent to compute the final chosen location and charged prices.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="bachrachneural_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{bachrachneural,
+          author={Bachrach, Yoram and Gemp, Ian and Garnelo, Marta and Kramar, Janos and Eccles, Tom and Rosenbaum, Dan and Graepel, Thore},
+          title={A Neural Network Auction For Group Decision Making Over a Continuous Space},
+          year = {2021}
+          journal = {IJCAI-21 Demonstrations Track},
+          }
           }</pre>
           </div>
           </div>
@@ -203,7 +293,7 @@
 
           <li>
 
-          <span class="mainAuthor"><a href="http://cs.brown.edu/people/rpatel59/">R. Patel</a></span>, <span class="author"><a href="https://www.doc.ic.ac.uk/~mg4413/">M. Garnelo</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://www.cs.cmu.edu/~cdyer/">C. Dyer</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>. <span class="title">Game-theoretic Vocabulary Selection via the Shapley Value and Banzhaf Index. </span><span class="venue">NAACL. </span><span class="year">2021</span><br/>
+          <span class="mainAuthor"><a href="http://cs.brown.edu/people/rpatel59/">R. Patel</a></span>, <span class="author"><a href="https://www.martagarnelo.com/">M. Garnelo</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://www.cs.cmu.edu/~cdyer/">C. Dyer</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>. <span class="title">Game-theoretic Vocabulary Selection via the Shapley Value and Banzhaf Index. </span><span class="venue">NAACL. </span><span class="year">2021</span><br/>
 
           <div class="btn-group">
           <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
