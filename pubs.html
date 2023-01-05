@@ -68,9 +68,57 @@
         <div class="container">
           <h2>Publications</h2>
           <div>
-            Publications (grouped by year): <a href="#2022">DeepMind (2019-)</a>, <a href="#2018">UMass / Internships (2013-18)</a>, <a href="#2010">Northwestern / UTexas (2006-11)</a>.
+            Publications (grouped by year): <a href="#2023">DeepMind (2019-)</a>, <a href="#2018">UMass / Internships (2013-18)</a>, <a href="#2010">Northwestern / UTexas (2006-11)</a>.
             <hr>
           </div>
+
+          <span id="2023" class="yearGroup">2023</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://thedukevin.github.io/index.html">K. Du</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://jxwuyi.weebly.com/">Y. Wu</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=3D_o3JUAAAAJ&hl=en">Y. Wu</a></span>. <span class="title">AlphaSnake: Policy Iteration on a Nondeterministic NP-hard Markov Decision Process. </span><span class="venue">AAAI Student Program. </span><span class="year">2023</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2211.09622">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#du2023alphasnake_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#du2023alphasnake_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="du2023alphasnake_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Reinforcement learning has recently been used to approach well-known NP-hard combinatorial problems in graph theory. Among these problems, Hamiltonian cycle problems are exceptionally difficult to analyze, even when restricted to individual instances of structurally complex graphs. In this paper, we use Monte Carlo Tree Search (MCTS), the search algorithm behind many state-of-the-art reinforcement learning algorithms such as AlphaZero, to create autonomous agents that learn to play the game of Snake, a game centered on properties of Hamiltonian cycles on grid graphs. The game of Snake can be formulated as a single-player discounted Markov Decision Process (MDP) where the agent must behave optimally in a stochastic environment. Determining the optimal policy for Snake, defined as the policy that maximizes the probability of winning - or win rate - with higher priority and minimizes the expected number of time steps to win with lower priority, is conjectured to be NP-hard. Performance-wise, compared to prior work in the Snake game, our algorithm is the first to achieve a win rate over 0.5 (a uniform random policy achieves a win rate <2.57×10^15), demonstrating the versatility of AlphaZero in approaching NP-hard environments.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="du2023alphasnake_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{du2023alphasnake,
+            title={Alpha{S}nake: Policy Iteration on a Nondeterministic {NP}-hard {M}arkov Decision Process},
+            author={Du, Kevin and Gemp, Ian and Wu, Yi and Wu, Yingying},
+            booktitle={AAAI 2023 Student Abstract and Poster Program},
+            year={2023}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
 
           <span id="2022" class="yearGroup">2022</span>
           <ul class="papers">
