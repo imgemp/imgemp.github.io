@@ -68,16 +68,571 @@
         <div class="container">
           <h2>Publications</h2>
           <div>
-            Publications (grouped by year): <a href="#2023">DeepMind (2019-)</a>, <a href="#2018">UMass / Internships (2013-18)</a>, <a href="#2010">Northwestern / UTexas (2006-11)</a>.
+            Publications (grouped by year): <a href="#2023">Google DeepMind (2019-)</a>, <a href="#2018">UMass / Internships (2013-18)</a>, <a href="#2010">Northwestern / UTexas (2006-11)</a>.
             <hr>
           </div>
+
+          <span id="2024" class="yearGroup">2024</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>. <span class="title">Nash Equilibria via Stochastic Eigendecomposition. </span><span class="venue">arXiv. </span><span class="year">2024</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2411.02308">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2024nash_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2024nash_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2024nash_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          This work proposes a novel set of techniques for approximating a Nash equilibrium in a finite, normal-form game. It achieves this by constructing a new reformulation as solving a parameterized system of multivariate polynomials with tunable complexity. In doing so, it forges an itinerant loop from game theory to machine learning and back. We show a Nash equilibrium can be approximated with purely calls to stochastic, iterative variants of singular value decomposition and power iteration, with implications for biological plausibility. We provide pseudocode and experiments demonstrating solving for all equilibria of a general-sum game using only these readily available linear algebra tools.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2024nash_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2024nash,
+            title={Nash Equilibria via Stochastic Eigendecomposition},
+            author={Gemp, Ian},
+            journal={arXiv preprint arXiv:2411.02308},
+            year={2024}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://cs.uwaterloo.ca/~klarson/">K. Larson</a></span>, <span class="author"><a href="http://michaelkaisers.com/">M. Kaisers</a></span>, <span class="author"><a href="https://q-berthet.github.io/">Q. Berthet</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://sites.google.com/view/rrmaura">R.R. Maura-Rivero</a></span>, <span class="author"><a href="https://manfreddiaz.github.io/">M. Diaz</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://annakoop.com/">A. Koop</a></span>, <span class="author"><a href="https://rl.cs.mcgill.ca/people/doina-precup/">D. Precup</a></span>. <span class="title">Soft Condorcet Optimization for Ranking of General Agents. </span><span class="venue">arXiv. </span><span class="year">2024</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2411.00119">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#lanctot2024soft_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#lanctot2024soft_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="lanctot2024soft_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          A common way to drive progress of AI models and agents is to compare their performance on standardized benchmarks. Comparing the performance of general agents requires aggregating their individual performances across a potentially wide variety of different tasks. In this paper, we describe a novel ranking scheme inspired by social choice frameworks, called Soft Condorcet Optimization (SCO), to compute the optimal ranking of agents: the one that makes the fewest mistakes in predicting the agent comparisons in the evaluation data. This optimal ranking is the maximum likelihood estimate when evaluation data (which we view as votes) are interpreted as noisy samples from a ground truth ranking, a solution to Condorcet's original voting system criteria. SCO ratings are maximal for Condorcet winners when they exist, which we show is not necessarily true for the classical rating system Elo. We propose three optimization algorithms to compute SCO ratings and evaluate their empirical performance. When serving as an approximation to the Kemeny-Young voting method, SCO rankings are on average 0 to 0.043 away from the optimal ranking in normalized Kendall-tau distance across 865 preference profiles from the PrefLib open ranking archive. In a simulated noisy tournament setting, SCO achieves accurate approximations to the ground truth ranking and the best among several baselines when 59\% or more of the preference data is missing. Finally, SCO ranking provides the best approximation to the optimal ranking, measured on held-out test sets, in a problem containing 52,958 human players across 31,049 games of the classic seven-player game of Diplomacy.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="lanctot2024soft_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{lanctot2024soft,
+            title={Soft Condorcet Optimization for Ranking of General Agents},
+            author={Lanctot, Marc and Larson, Kate and Kaisers, Michael and Berthet, Quentin and Gemp, Ian and Diaz, Manfred and Maura-Rivero, Roberto-Rafael and Bachrach, Yoram and Koop, Anna and Precup, Doina},
+            journal={arXiv preprint arXiv:2411.00119},
+            year={2024}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://www.andyhaupt.com/">A. Haupt</a></span>, <span class="author"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="https://siqi.fr/">S. Liu</a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>. <span class="title">Convex Markov Games: A Framework for Fairness, Imitation, and Creativity in Multi-Agent Learning. </span><span class="venue">arXiv. </span><span class="year">2024</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2410.16600">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2024convex_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2024convex_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2024convex_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Expert imitation, behavioral diversity, and fairness preferences give rise to preferences in sequential decision making domains that do not decompose additively across time. We introduce the class of convex Markov games that allow general convex preferences over occupancy measures. Despite infinite time horizon and strictly higher generality than Markov games, pure strategy Nash equilibria exist under strict convexity. Furthermore, equilibria can be approximated efficiently by performing gradient descent on an upper bound of exploitability. Our experiments imitate human choices in ultimatum games, reveal novel solutions to the repeated prisoner's dilemma, and find fair solutions in a repeated asymmetric coordination game. In the prisoner's dilemma, our algorithm finds a policy profile that deviates from observed human play only slightly, yet achieves higher per-player utility while also being three orders of magnitude less exploitable.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2024convex_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2024convex,
+            title={Convex Markov Games: A Framework for Fairness, Imitation, and Creativity in Multi-Agent Learning},
+            author={Gemp, Ian and Haupt, Andreas and Marris, Luke and Liu, Siqi and Piliouras, Georgios},
+            journal={arXiv preprint arXiv:2410.16600},
+            year={2024}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://siqi.fr/">S. Liu</a></span>, <span class="author"><a href="http://www.jzleibo.com/">J. Leibo</a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>. <span class="title">Visualizing 2x2 Normal-Form Games: twoxtwogame LaTeX Package. </span><span class="venue">arXiv. </span><span class="year">2024</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2402.16985">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#marris2024visualizing_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#marris2024visualizing_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="marris2024visualizing_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Normal-form games with two players, each with two strategies, are the most studied class of games. These so-called 2x2 games are used to model a variety of strategic interactions. They appear in game theory, economics, and artificial intelligence research. However, there lacks tools for describing and visualizing such games. This work introduces a LaTeX package for visualizing 2x2 games. This work has two goals: first, to provide high-quality tools and vector graphic visualizations, suitable for scientific publications. And second, to help promote standardization of names and representations of 2x2 games. The LaTeX package, twoxtwogame, is maintained on GitHub and mirrored on CTAN, and is available under a permissive Apache 2 license.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="marris2024visualizing_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{marris2024visualizing,
+            title={Visualizing 2x2 Normal-Form Games: twoxtwogame LaTeX Package},
+            author={Marris, Luke and Gemp, Ian and Liu, Siqi and Leibo, Joel Z and Piliouras, Georgios},
+            journal={arXiv preprint arXiv:2402.16985},
+            year={2024}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://siqi.fr/">S. Liu</a></span>, <span class="author"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=79k7bGEAAAAJ&hl=en&oi=sra">N. Heess</a></span>. <span class="title">NFGTransformer: Equivariant representation learning for normal-form games. </span><span class="venue">ICLR. </span><span class="year">2024</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#liunfgtransformer_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#liunfgtransformer_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+          
+          <div class="collapse" id="liunfgtransformer_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Normal-form games (NFGs) are the fundamental model of strategic interaction. We study their representation using neural networks. We describe the inherent equivariance of NFGs -- any permutation of strategies describes an equivalent game -- as well as the challenges this poses for representation learning. We then propose the NfgTransformer architecture that leverages this equivariance, leading to state-of-the-art performance in a range of game-theoretic tasks including equilibrium-solving, deviation gain estimation and ranking, with a common approach to NFG representation. We show that the resulting model is interpretable and versatile, paving the way towards deep learning systems capable of game-theoretic reasoning when interacting with humans and with each other.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="liunfgtransformer_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @inproceedings{liunfgtransformer,
+            title={NfgTransformer: Equivariant Representation Learning for Normal-form Games},
+            author={Liu, Siqi and Marris, Luke and Piliouras, Georgios and Gemp, Ian and Heess, Nicolas},
+            booktitle={The Twelfth International Conference on Learning Representations}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="">Y. Mao</a></span>, <span class="author"><a href="http://duenez.evolicious.org/">E. Duéñez-Guzmán</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=pTdKgHQAAAAJ&hl=fr">S. Perrin</a></span>, <span class="author"><a href="https://www.szit.bme.hu/~gya/">A. Gyorgy</a></span>, <span class="author"><a href="https://perso.math.u-pem.fr/elie.romuald/elie.html">R. Elie</a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>, <span class="author"><a href="http://michaelkaisers.com/">M. Kaisers</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=cMHsYdcAAAAJ&hl=en">D. Hennes</a></span>, <span class="author"><a href="https://www.kaleshabullard.com/">K. Bullard</a></span>, <span class="author"><a href="https://cs.uwaterloo.ca/~klarson/">K. Larson</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>. <span class="title">Approximating the Core via Iterative Coalition Sampling. </span><span class="venue">AAMAS. </span><span class="year">2024</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2402.03928">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2024approximating_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2024approximating_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2024approximating_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          The core is a central solution concept in cooperative game theory, defined as the set of feasible allocations or payments such that no subset of agents has incentive to break away and form their own subgroup or coalition. However, it has long been known that the core (and approximations, such as the least-core) are hard to compute. This limits our ability to analyze cooperative games in general, and to fully embrace cooperative game theory contributions in domains such as explainable AI (XAI), where the core can complement the Shapley values to identify influential features or instances supporting predictions by black-box models. We propose novel iterative algorithms for computing variants of the core, which avoid the computational bottleneck of many other approaches; namely solving large linear programs. As such, they scale better to very large problems as we demonstrate across different classes of cooperative games, including weighted voting games, induced subgraph games, and marginal contribution networks. We also explore our algorithms in the context of XAI, providing further evidence of the power of the core for such applications.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2024approximating_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2024approximating,
+            title={Approximating the Core via Iterative Coalition Sampling},
+            author={Gemp, Ian and Lanctot, Marc and Marris, Luke and Mao, Yiran and Du{\'e}{\~n}ez-Guzm{\'a}n, Edgar and Perrin, Sarah and Gyorgy, Andras and Elie, Romuald and Piliouras, Georgios and Kaisers, Michael and others},
+            journal={arXiv preprint arXiv:2402.03928},
+            year={2024}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="http://cs.brown.edu/people/rpatel59/">R. Patel</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=BrhJ6-EAAAAJ&hl=en&oi=ao">V. Dasagi</a></span>, <span class="author"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href=""> </a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>, <span class="author"><a href="https://siqi.fr/">S. Liu</a></span>, <span class="author"><a href="https://www.karltuyls.net/">K. Tuyls</a></span>. <span class="title">Steering Language Models with Game-Theoretic Solvers. </span><span class="venue">ICML Workshop: Agentic Markets. </span><span class="year">2024</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2402.01704">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2024steering_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2024steering_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2024steering_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Mathematical models of strategic interactions among rational agents have long been studied in game theory. However the interactions studied are often over a small set of discrete actions which is very different from how humans communicate in natural language. To bridge this gap, we introduce a framework that allows equilibrium solvers to work over the space of natural language dialogue generated by large language models (LLMs). Specifically, by modelling a dialogue task in terms of the players, strategies and payoffs of the ``game" of dialogue, we can create a binding from natural language interactions to the conventional symbolic logic of game theory. Given this binding, we can ask existing game-theoretic algorithms to provide us with strategic solutions (e.g., what string an LLM should generate to maximize payoff at equilibrium), giving us predictors of stable, rational conversational strategies that current LLMs can employ when generating dialogue. We focus on three domains that require different negotiation strategies: scheduling meetings, trading fruit and debate, and evaluate a state-of-the-art pre-trained LLM's ability to generate language when guided by solvers. Our evaluation assesses whether LLMs are more strategic against their partners when guided by equilibrium solvers and whether the language generated under these solutions results in higher payoff. We see that LLMs that do follow game-theory solvers result in dialogue generations that are less exploitable than the control (no guidance from solvers) in our three negotiation domains. We discuss future implications of this work, and how game-theoretic solvers that can leverage the expressivity of natural language can open up a new avenue of guiding language research.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2024steering_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @inproceedings{gemp2024steering,
+            title={Steering Language Models with Game-Theoretic Solvers},
+            author={Gemp, Ian and Patel, Roma and Bachrach, Yoram and Lanctot, Marc and Dasagi, Vibhavari and Marris, Luke and Piliouras, Georgios and Liu, Siqi and Tuyls, Karl},
+            booktitle={Agentic Markets Workshop at ICML 2024},
+            year={2024}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://marcojira.github.io/">M. Jiralerspong</a></span>, <a href="https://joeybose.github.io/">J. Bose</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://www.chongliqin.com/">C. Qin</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://gauthiergidel.github.io/">G. Gidel</a></span>. <span class="title">Feature likelihood divergence: evaluating the generalization of generative models using samples. </span><span class="venue">NeurIPS. </span><span class="year">2024</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/68b138608ef80b08d65b1bd9594d9559-Paper-Conference.pdf">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#jiralerspong2023feature_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#jiralerspong2023feature_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="jiralerspong2023feature_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          The past few years have seen impressive progress in the development of deep generative models capable of producing high-dimensional, complex, and photo-realistic data. However, current methods for evaluating such models remain incomplete: standard likelihood-based metrics do not always apply and rarely correlate with perceptual fidelity, while sample-based metrics, such as FID, are insensitive to overfitting, i.e., inability to generalize beyond the training set. To address these limitations, we propose a new metric called the Feature Likelihood Divergence (FLD), a parametric sample-based score that uses density estimation to provide a comprehensive trichotomic evaluation accounting for novelty (i.e., different from the training samples), fidelity, and diversity of generated samples. We empirically demonstrate the ability of FLD to identify specific overfitting problem cases, where previously proposed metrics fail. We also extensively evaluate FLD on various image datasets and model classes, demonstrating its ability to match intuitions of previous metrics like FID while offering a more comprehensive evaluation of generative models.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="jiralerspong2023feature_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @inproceedings{jiralerspong2023feature,
+            title={Feature likelihood divergence: evaluating the generalization of generative models using samples},
+            author={Jiralerspong, Marco and Bose, Joey and Gemp, Ian and Qin, Chongli and Bachrach, Yoram and Gidel, Gauthier},
+            booktitle={Thirty-seventh Conference on Neural Information Processing Systems}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>. <span class="title">Approximating nash equilibria in normal-form games via stochastic optimization. </span><span class="venue">ICLR (Outstanding Paper Honorable Mention). </span><span class="year">2024</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2310.06689">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gempapproximating_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gempapproximating_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gempapproximating_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          We propose the first loss function for approximate Nash equilibria of normal-form games that is amenable to unbiased Monte Carlo estimation. This construction allows us to deploy standard non-convex stochastic optimization techniques for approximating Nash equilibria, resulting in novel algorithms with provable guarantees. We complement our theoretical analysis with experiments demonstrating that stochastic gradient descent can outperform previous state-of-the-art approaches.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gempapproximating_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @inproceedings{gempapproximating,
+            title={Approximating Nash Equilibria in Normal-Form Games via Stochastic Optimization},
+            author={Gemp, Ian and Marris, Luke and Piliouras, Georgios},
+            booktitle={The Twelfth International Conference on Learning Representations}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
 
           <span id="2023" class="yearGroup">2023</span>
           <ul class="papers">
 
           <li>
 
-          <span class="mainAuthor"><a href="https://scholar.google.com/citations?user=dvTeSX4AAAAJ&hl=en">L. Marris</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>. <span class="title">Equilibrium-Invariant Embedding, Metric Space, and Fundamental Set of 2x2 Normal-Form Games. </span><span class="venue">arXiv. </span><span class="year">2023</span><br/>
+          <span class="mainAuthor"><a href="https://scholar.google.com/citations?user=ZwnVwKMAAAAJ&hl=en">M. Kwon</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=Neh81vwAAAAJ&hl=en">J. Agapiou</a></span>, <span class="author"><a href="http://duenez.evolicious.org/">E. Duéñez-Guzmán</a></span>, <span class="author"><a href="https://perso.math.u-pem.fr/elie.romuald/elie.html">R. Elie</a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>, <span class="author"><a href="https://www.kaleshabullard.com/">K. Bullard</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>. <span class="title">Auto-Aligning Multiagent Incentives with Global Objectives. </span><span class="venue">AAMAS Workshop: Adaptive and Learning Agents (Most Visionary Paper). </span><span class="year">2023</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#kwon2023auto_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#kwon2023auto_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="kwon2023auto_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          The general ability to achieve a singular task with a set of decentralized, intelligent agents is an important goal in multiagent research. The complex interaction between individual agents' incentives makes designing their objectives such that the resulting multiagent system aligns with a desired global goal particularly challenging. In this work, instead of considering the problem of designing suitable incentives from scratch, we assume a multiagent system with given preset incentives and consider $\textit{automatically modifying}$ these incentives online to achieve a new goal. This reduces the search space over possible individual incentives and takes advantage of the effort instilled by the previous system designer. We demonstrate the promise as well as the limitations of re-purposing multiagent systems in this way, both theoretically and empirically, on a variety of domains. Surprisingly, we show that training a diverse multiagent system to align with a modified global objective ($g \rightarrow g')$ can, in at least one case, lead to better generalization performance in unseen test scenarios, when evaluated on the original objective ($g$).
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="kwon2023auto_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @inproceedings{kwon2023auto,
+            title={Auto-aligning multiagent incentives with global objectives},
+            author={Kwon, Minae and Agapiou, John P and Du{\'e}{\~n}ez-Guzm{\'a}n, Edgar A and Elie, Romuald and Piliouras, Georgios and Bullard, Kalesha and Gemp, Ian},
+            booktitle={AAMAS Workshop on Adaptive and Learning Agents (ALA)}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://www.denizalpgoktas.com/">D. Goktas</a></span>, <span class="author"><a href="https://parkes.seas.harvard.edu/">D. C. Parkes</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>, <span class="author"><a href="https://perso.math.u-pem.fr/elie.romuald/elie.html">R. Elie</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=1XgR518AAAAJ&hl=en">G. Lever</a></span>, <span class="author"><a href="https://www.andreatacchetti.com/">A. Tacchetti</a></span>. <span class="title">Generative adversarial equilibrium solvers. </span><span class="venue">ICLR. </span><span class="year">2023</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/abs/2302.06607">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#goktasgenerative_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#goktasgenerative_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="goktasgenerative_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          We introduce the use of generative adversarial learning to compute equilibria in general game-theoretic settings, specifically the generalized Nash equilibrium (GNE) in pseudo-games, and its specific instantiation as the competitive equilibrium (CE) in Arrow-Debreu competitive economies. Pseudo-games are a generalization of games in which players' actions affect not only the payoffs of other players but also their feasible action spaces. Although the computation of GNE and CE is intractable in the worst-case, i.e., PPAD-hard, in practice, many applications only require solutions with high accuracy in expectation over a distribution of problem instances. We introduce Generative Adversarial Equilibrium Solvers (GAES): a family of generative adversarial neural networks that can learn GNE and CE from only a sample of problem instances. We provide computational and sample complexity bounds, and apply the framework to finding Nash equilibria in normal-form games, CE in Arrow-Debreu competitive economies, and GNE in an environmental economic model of the Kyoto mechanism.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="goktasgenerative_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @inproceedings{goktasgenerative,
+            title={Generative Adversarial Equilibrium Solvers},
+            author={Goktas, Denizalp and Parkes, David C and Gemp, Ian and Marris, Luke and Piliouras, Georgios and Elie, Romuald and Lever, Guy and Tacchetti, Andrea},
+            booktitle={The Twelfth International Conference on Learning Representations}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://rezunli96.github.io/">Z. Li</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://www.empiricallykev.com/">K. R. McKee</a></span>, <a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=cMHsYdcAAAAJ&hl=en">D. Hennes</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=mvb2bX0AAAAJ&hl=en">P. Muller</a></span>, <span class="author"><a href="https://cs.uwaterloo.ca/~klarson/">K. Larson</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://strategicreasoning.org/michael-p-wellman/">M. P. Wellman</a></span>. <span class="title">Combining tree-search, generative models, and Nash bargaining concepts in game-theoretic reinforcement learning. </span><span class="venue">arXiv. </span><span class="year">2023</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2302.00797">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#li2023combining_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#li2023combining_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="li2023combining_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Multiagent reinforcement learning (MARL) has benefited significantly from population-based and game-theoretic training regimes. One approach, Policy-Space Response Oracles (PSRO), employs standard reinforcement learning to compute response policies via approximate best responses and combines them via meta-strategy selection. We augment PSRO by adding a novel search procedure with generative sampling of world states, and introduce two new meta-strategy solvers based on the Nash bargaining solution. We evaluate PSRO's ability to compute approximate Nash equilibrium, and its performance in two negotiation games: Colored Trails, and Deal or No Deal. We conduct behavioral studies where human participants negotiate with our agents (N=346). We find that search with generative modeling finds stronger policies during both training time and test time, enables online Bayesian co-player prediction, and can produce agents that achieve comparable social welfare negotiating with humans as humans trading among themselves.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="li2023combining_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{li2023combining,
+            title={Combining tree-search, generative models, and Nash bargaining concepts in game-theoretic reinforcement learning},
+            author={Li, Zun and Lanctot, Marc and McKee, Kevin R and Marris, Luke and Gemp, Ian and Hennes, Daniel and Muller, Paul and Larson, Kate and Bachrach, Yoram and Wellman, Michael P},
+            journal={arXiv preprint arXiv:2302.00797},
+            year={2023}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>. <span class="title">Negotiation and honesty in artificial intelligence methods for the board game of Diplomacy. </span><span class="venue">Nature Communications. </span><span class="year">2023</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://people.sutd.edu.sg/~georgios/">G. Piliouras</a></span>. <span class="title">Equilibrium-Invariant Embedding, Metric Space, and Fundamental Set of 2x2 Normal-Form Games. </span><span class="venue">arXiv. </span><span class="year">2023</span><br/>
 
           <div class="btn-group">
           <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
@@ -163,7 +718,7 @@
 
           <li>
 
-          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="mainAuthor"><a href="https://github.com/charliexchen">C. Chen</a></span>, <span class="author"><a href="https://sites.google.com/view/mcbrian">B. McWilliams</a></span>. <span class="title">The Symmetric Generalized Eigenvalue Problem as a Nash Equilibrium. </span><span class="venue">ICLR. </span><span class="year">2023</span><br/>
+          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="mainAuthor"><a href="https://github.com/charliexchen">C. Chen</a></span>, <span class="author"><a href="https://sites.google.com/view/mcbrian">B. McWilliams</a></span>. <span class="title">The Symmetric Generalized Eigenvalue Problem as a Nash Equilibrium. </span><span class="venue">ICLR (Spotlight: Notable Top-25%). </span><span class="year">2023</span><br/>
 
           <div class="btn-group">
           <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
@@ -211,7 +766,7 @@
 
           <li>
 
-          <span class="mainAuthor"><a href="https://scholar.google.com/citations?user=dvTeSX4AAAAJ&hl=en">L. Marris</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=Ksz7c7YAAAAJ&hl=en">T. Anthony</a></span>, <span class="author"><a href="https://www.andreatacchetti.com/">A. Tacchetti</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>. <span class="title">Turbocharging Solution Concepts: Solving NEs, CEs and CCEs with Neural Equilibrium Solvers. </span><span class="venue">Neurips. </span><span class="year">2022</span><br/>
+          <span class="mainAuthor"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=Ksz7c7YAAAAJ&hl=en">T. Anthony</a></span>, <span class="author"><a href="https://www.andreatacchetti.com/">A. Tacchetti</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>. <span class="title">Turbocharging Solution Concepts: Solving NEs, CEs and CCEs with Neural Equilibrium Solvers. </span><span class="venue">Neurips. </span><span class="year">2022</span><br/>
 
           <div class="btn-group">
           <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
@@ -301,7 +856,7 @@
 
           <li>
 
-          <span class="mainAuthor"><a href="https://scholar.google.com/citations?user=dvTeSX4AAAAJ&hl=en">L. Marris</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=nm5wMNUAAAAJ&hl=en">S. Omidshafie</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=iEFL4-YAAAAJ&hl=en">S. McAleer</a></span>, <span class="author"><a href="">J. Connor</a></span>, <span class="author"><a href="https://www.karltuyls.net/">K. Tuyls</a></span>, <span class="author"><a href="https://thoregraepel.github.io/">T. Graepel</a></span>. <span class="title">Game Theoretic Rating in N-player General-sum Games with Equilibria. </span><span class="venue">arXiv. </span><span class="year">2022</span><br/>
+          <span class="mainAuthor"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=nm5wMNUAAAAJ&hl=en">S. Omidshafie</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=iEFL4-YAAAAJ&hl=en">S. McAleer</a></span>, <span class="author"><a href="">J. Connor</a></span>, <span class="author"><a href="https://www.karltuyls.net/">K. Tuyls</a></span>, <span class="author"><a href="https://thoregraepel.github.io/">T. Graepel</a></span>. <span class="title">Game Theoretic Rating in N-player General-sum Games with Equilibria. </span><span class="venue">arXiv. </span><span class="year">2022</span><br/>
 
           <div class="btn-group">
           <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
@@ -430,7 +985,7 @@
 
           <li>
 
-          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=Ksz7c7YAAAAJ&hl=en">T. Anthony</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=ccfKPnsAAAAJ&hl=en">A. Bhoopchand</a></span>, <span class="author"><a href="https://www.kaleshabullard.com/">K. Bullard</a></span>, <span class="author"><a href="">J. Connor</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=BrhJ6-EAAAAJ&hl=en&oi=ao">V. Dasagi</a></span>, <span class="author"><a href="https://scholar.google.be/citations?user=lJOF61YAAAAJ&hl=en">B. De Vylder</a></span>, <span class="author"><a href="http://duenez.evolicious.org/">E. Duéñez-Guzmán</a></span>, <span class="author"><a href="https://perso.math.u-pem.fr/elie.romuald/elie.html">R. Elie</a></span>, <span class="author"><a href="https://scholar.google.co.uk/citations?user=IIlnyWQAAAAJ&hl=en">R. Everett</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=cMHsYdcAAAAJ&hl=en">D. Hennes</a></span>, <span class="author"><a href="https://edwardhughes.io/">E. Hughes</a></span>, <span class="author"><a href="https://khanmina.github.io/#/">M. Khan</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://cs.uwaterloo.ca/~klarson/">K. Larson</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=1XgR518AAAAJ&hl=en">G. Lever</a></span>, <span class="author"><a href="https://siqi.fr/">S. Liu</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=dvTeSX4AAAAJ&hl=en">L. Marris</a></span>, <span class="author"><a href="https://www.empiricallykev.com/">K. R. McKee</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=mvb2bX0AAAAJ&hl=en">P. Muller</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=3DBCJt0AAAAJ&hl=en">J. Pérolat</a></span>, <span class="author"><a href="https://fstrub95.github.io/">F. Strub</a></span>, <span class="author"><a href="https://www.andreatacchetti.com/">A. Tacchetti</a></span>, <span class="author"><a href="">E. Tarassov</a></span>, <span class="author"><a href="">Z. Wang</a></span>, <span class="mainAuthor"><a href="https://www.karltuyls.net/">K. Tuyls</a></span>. <span class="title">Developing, Evaluating and Scaling Learning Agents in Multi-agent Environments. </span><span class="venue">AI Communications. </span><span class="year">2022</span><br/>
+          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=Ksz7c7YAAAAJ&hl=en">T. Anthony</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=ccfKPnsAAAAJ&hl=en">A. Bhoopchand</a></span>, <span class="author"><a href="https://www.kaleshabullard.com/">K. Bullard</a></span>, <span class="author"><a href="">J. Connor</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=BrhJ6-EAAAAJ&hl=en&oi=ao">V. Dasagi</a></span>, <span class="author"><a href="https://scholar.google.be/citations?user=lJOF61YAAAAJ&hl=en">B. De Vylder</a></span>, <span class="author"><a href="http://duenez.evolicious.org/">E. Duéñez-Guzmán</a></span>, <span class="author"><a href="https://perso.math.u-pem.fr/elie.romuald/elie.html">R. Elie</a></span>, <span class="author"><a href="https://scholar.google.co.uk/citations?user=IIlnyWQAAAAJ&hl=en">R. Everett</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=cMHsYdcAAAAJ&hl=en">D. Hennes</a></span>, <span class="author"><a href="https://edwardhughes.io/">E. Hughes</a></span>, <span class="author"><a href="https://khanmina.github.io/#/">M. Khan</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://cs.uwaterloo.ca/~klarson/">K. Larson</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=1XgR518AAAAJ&hl=en">G. Lever</a></span>, <span class="author"><a href="https://siqi.fr/">S. Liu</a></span>, <span class="author"><a href="https://www.lukemarris.info/">L. Marris</a></span>, <span class="author"><a href="https://www.empiricallykev.com/">K. R. McKee</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=mvb2bX0AAAAJ&hl=en">P. Muller</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=3DBCJt0AAAAJ&hl=en">J. Pérolat</a></span>, <span class="author"><a href="https://fstrub95.github.io/">F. Strub</a></span>, <span class="author"><a href="https://www.andreatacchetti.com/">A. Tacchetti</a></span>, <span class="author"><a href="">E. Tarassov</a></span>, <span class="author"><a href="">Z. Wang</a></span>, <span class="mainAuthor"><a href="https://www.karltuyls.net/">K. Tuyls</a></span>. <span class="title">Developing, Evaluating and Scaling Learning Agents in Multi-agent Environments. </span><span class="venue">AI Communications. </span><span class="year">2022</span><br/>
 
           <div class="btn-group">
           <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
@@ -560,7 +1115,7 @@
 
           <li>
 
-          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://cgi.csc.liv.ac.uk/~rahul/">R. Savani</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=Ksz7c7YAAAAJ&hl=en">T. Anthony</a></span>, <span class="author"><a href="https://scholar.google.co.uk/citations?user=IIlnyWQAAAAJ&hl=en">R. Everett</a></span>, <span class="author"><a href="https://www.andreatacchetti.com/">A. Tacchetti</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=xgxzcn0AAAAJ&hl=en">T. Eccles</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=iW_lUIkAAAAJ&hl=en">J. Kramár</a></span>. <span class="title">Sample-based Approximation of Nash in Large Many-Player Games via Gradient Descent. </span><span class="venue">AAMAS. </span><span class="year">2022</span><br/>
+          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://cgi.csc.liv.ac.uk/~rahul/">R. Savani</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=Ksz7c7YAAAAJ&hl=en">T. Anthony</a></span>, <span class="author"><a href="https://scholar.google.co.uk/citations?user=IIlnyWQAAAAJ&hl=en">R. Everett</a></span>, <span class="author"><a href="https://www.andreatacchetti.com/">A. Tacchetti</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=xgxzcn0AAAAJ&hl=en">T. Eccles</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=iW_lUIkAAAAJ&hl=en">J. Kramár</a></span>. <span class="title">Sample-based Approximation of Nash in Large Many-Player Games via Gradient Descent. </span><span class="venue">AAMAS (Oral). </span><span class="year">2022</span><br/>
 
           <div class="btn-group">
           <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
@@ -831,7 +1386,7 @@ with Best Response Policy Iteration},
 
           <li>
 
-          <span class="mainAuthor"><a href="https://www.empiricallykev.com/">K. R. McKee</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://sites.google.com/view/mcbrian">B. McWilliams</a>, <span class="author"><a href="http://duenez.evolicious.org/">E. Duéñez-Guzmán</a>, <span class="author"><a href="https://edwardhughes.io/">E. Hughes</a></span>, <span class="author"><a href="http://www.jzleibo.com/">J. Leibo</a></span>. <span class="title">Social Diversity and Social Preferences in Mixed-Motive Reinforcement Learning. </span><span class="venue">AAMAS. </span><span class="year">2020</span><br/>
+          <span class="mainAuthor"><a href="https://www.empiricallykev.com/">K. R. McKee</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://sites.google.com/view/mcbrian">B. McWilliams</a>, <span class="author"><a href="http://duenez.evolicious.org/">E. Duéñez-Guzmán</a></span>, <span class="author"><a href="https://edwardhughes.io/">E. Hughes</a></span>, <span class="author"><a href="http://www.jzleibo.com/">J. Leibo</a></span>. <span class="title">Social Diversity and Social Preferences in Mixed-Motive Reinforcement Learning. </span><span class="venue">AAMAS. </span><span class="year">2020</span><br/>
 
           <div class="btn-group">
           <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
