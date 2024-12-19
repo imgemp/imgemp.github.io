@@ -72,6 +72,97 @@
             <hr>
           </div>
 
+          <span id="2025" class="yearGroup">2025</span>
+          <ul class="papers">
+
+          <li>
+
+          <span class="mainAuthor"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://cs.uwaterloo.ca/~klarson/">K. Larson</a></span>, <span class="author"><a href="http://michaelkaisers.com/">M. Kaisers</a></span>, <span class="author"><a href="https://q-berthet.github.io/">Q. Berthet</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://sites.google.com/view/rrmaura">R.R. Maura-Rivero</a></span>, <span class="author"><a href="https://manfreddiaz.github.io/">M. Diaz</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://annakoop.com/">A. Koop</a></span>, <span class="author"><a href="https://rl.cs.mcgill.ca/people/doina-precup/">D. Precup</a></span>. <span class="title">Soft Condorcet Optimization for Ranking of General Agents. </span><span class="venue">AAMAS. </span><span class="year">2025</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2411.00119">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#lanctot2025soft_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#lanctot2025soft_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="lanctot2025soft_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          A common way to drive progress of AI models and agents is to compare their performance on standardized benchmarks. Comparing the performance of general agents requires aggregating their individual performances across a potentially wide variety of different tasks. In this paper, we describe a novel ranking scheme inspired by social choice frameworks, called Soft Condorcet Optimization (SCO), to compute the optimal ranking of agents: the one that makes the fewest mistakes in predicting the agent comparisons in the evaluation data. This optimal ranking is the maximum likelihood estimate when evaluation data (which we view as votes) are interpreted as noisy samples from a ground truth ranking, a solution to Condorcet's original voting system criteria. SCO ratings are maximal for Condorcet winners when they exist, which we show is not necessarily true for the classical rating system Elo. We propose three optimization algorithms to compute SCO ratings and evaluate their empirical performance. When serving as an approximation to the Kemeny-Young voting method, SCO rankings are on average 0 to 0.043 away from the optimal ranking in normalized Kendall-tau distance across 865 preference profiles from the PrefLib open ranking archive. In a simulated noisy tournament setting, SCO achieves accurate approximations to the ground truth ranking and the best among several baselines when 59\% or more of the preference data is missing. Finally, SCO ranking provides the best approximation to the optimal ranking, measured on held-out test sets, in a problem containing 52,958 human players across 31,049 games of the classic seven-player game of Diplomacy.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="lanctot2025soft_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{lanctot2025soft,
+            title={Soft Condorcet Optimization for Ranking of General Agents},
+            author={Lanctot, Marc and Larson, Kate and Kaisers, Michael and Berthet, Quentin and Gemp, Ian and Diaz, Manfred and Maura-Rivero, Roberto-Rafael and Bachrach, Yoram and Koop, Anna and Precup, Doina},
+            journal={AAMAS},
+            year={2025}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://datanatives.io/speakers/benjamin-kempinski/">B. Kempinski</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://cs.uwaterloo.ca/~klarson/">K. Larson</a></span>, <span class="author"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://sites.google.com/cerebrnita.com/talkachman/home">T. Kachman</a></span>. <span class="title">Game of Thoughts: Iterative Reasoning in Game-Theoretic Domains with Large Language Models. </span><span class="venue">AAMAS. </span><span class="year">2025</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="">Paper (PDF) Not Yet Available</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#kempinski2025got_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#kempinski2025got_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="kempinski2025got_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          We explore the strategic reasoning capabilities of large language models (LLMs). We first show that naively allowing LLMs to select actions in games can lead to sub-optimal and easily exploitable strategies.  To address this limitation we propose several algorithms that guide LLMs to iteratively refine their action choices by simulating game outcomes in self-play, akin to cognitive hierarchy models used to characterize human thought processes in strategic settings. Our empirical results in several prominent resource allocation and auction settings indicate that our approach produces stronger and less exploitable strategies. Hence, emulating human decision-making models can enable us to improve the reasoning capabilities of LLMs in multiagent interactions.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="kempinski2025got_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{kempinski2025got,
+            title={Game of Thoughts: Iterative Reasoning in Game-Theoretic Domains with Large Language Models},
+            author={Kempinski, Benjamin and Gemp, Ian and Larson, Kate and Lanctot, Marc and Bachrach, Yoram and Kachman, Tal},
+            journal={AAMAS},
+            year={2025}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          </ul>
+
           <span id="2024" class="yearGroup">2024</span>
           <ul class="papers">
 
@@ -153,49 +244,6 @@
             title={Nash Equilibria via Stochastic Eigendecomposition},
             author={Gemp, Ian},
             journal={arXiv preprint arXiv:2411.02308},
-            year={2024}
-          }
-          </pre>
-          </div>
-          </div>
-
-          </li>
-
-          <li>
-
-          <span class="mainAuthor"><a href="http://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://cs.uwaterloo.ca/~klarson/">K. Larson</a></span>, <span class="author"><a href="http://michaelkaisers.com/">M. Kaisers</a></span>, <span class="author"><a href="https://q-berthet.github.io/">Q. Berthet</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://sites.google.com/view/rrmaura">R.R. Maura-Rivero</a></span>, <span class="author"><a href="https://manfreddiaz.github.io/">M. Diaz</a></span>, <span class="author"><a href="https://scholar.google.com/citations?user=0W63ivcAAAAJ&hl=en">Y. Bachrach</a></span>, <span class="author"><a href="https://annakoop.com/">A. Koop</a></span>, <span class="author"><a href="https://rl.cs.mcgill.ca/people/doina-precup/">D. Precup</a></span>. <span class="title">Soft Condorcet Optimization for Ranking of General Agents. </span><span class="venue">arXiv. </span><span class="year">2024</span><br/>
-
-          <div class="btn-group">
-          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
-          <ul class="dropdown-menu details-panel" role="menu">
-          <li><a href="https://arxiv.org/pdf/2411.00119">Paper (PDF)</a></li>
-          </ul>
-          </div>
-
-          <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#lanctot2024soft_abstract">
-          <input type="checkbox" /> Abstract
-          </label>
-          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#lanctot2024soft_bibtex">
-          <input type="checkbox" /> BibTex
-          </label>
-          </div>
-
-          <div class="collapse" id="lanctot2024soft_abstract">
-          <div class="panel panel-primary">
-          <div class="panel-body details-panel">
-          A common way to drive progress of AI models and agents is to compare their performance on standardized benchmarks. Comparing the performance of general agents requires aggregating their individual performances across a potentially wide variety of different tasks. In this paper, we describe a novel ranking scheme inspired by social choice frameworks, called Soft Condorcet Optimization (SCO), to compute the optimal ranking of agents: the one that makes the fewest mistakes in predicting the agent comparisons in the evaluation data. This optimal ranking is the maximum likelihood estimate when evaluation data (which we view as votes) are interpreted as noisy samples from a ground truth ranking, a solution to Condorcet's original voting system criteria. SCO ratings are maximal for Condorcet winners when they exist, which we show is not necessarily true for the classical rating system Elo. We propose three optimization algorithms to compute SCO ratings and evaluate their empirical performance. When serving as an approximation to the Kemeny-Young voting method, SCO rankings are on average 0 to 0.043 away from the optimal ranking in normalized Kendall-tau distance across 865 preference profiles from the PrefLib open ranking archive. In a simulated noisy tournament setting, SCO achieves accurate approximations to the ground truth ranking and the best among several baselines when 59\% or more of the preference data is missing. Finally, SCO ranking provides the best approximation to the optimal ranking, measured on held-out test sets, in a problem containing 52,958 human players across 31,049 games of the classic seven-player game of Diplomacy.
-          </div>
-          </div>
-          </div>
-
-          <div class="collapse" id="lanctot2024soft_bibtex">
-          <div class="panel panel-info">
-          <pre class="panel-body details-panel">
-          @article{lanctot2024soft,
-            title={Soft Condorcet Optimization for Ranking of General Agents},
-            author={Lanctot, Marc and Larson, Kate and Kaisers, Michael and Berthet, Quentin and Gemp, Ian and Diaz, Manfred and Maura-Rivero, Roberto-Rafael and Bachrach, Yoram and Koop, Anna and Precup, Doina},
-            journal={arXiv preprint arXiv:2411.00119},
             year={2024}
           }
           </pre>
