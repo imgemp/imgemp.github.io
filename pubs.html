@@ -101,6 +101,7 @@
           Many real-world multi-agent or multi-task evaluation scenarios can be naturally modelled as normal-form games due to inherent strategic (adversarial, cooperative, and mixed motive) interactions. These strategic interactions may be agentic (e.g. players trying to win), fundamental (e.g. cost vs quality), or complementary (e.g. niche finding and specialization). In such a formulation, it is the strategies (actions, policies, agents, models, tasks, prompts, etc.) that are rated. However, the rating problem is complicated by redundancy and complexity of N-player strategic interactions. Repeated or similar strategies can distort ratings for those that counter or complement them. Previous work proposed ``clone invariant'' ratings to handle such redundancies, but this was limited to two-player zero-sum (i.e. strictly competitive) interactions. This work introduces the first N-player general-sum clone invariant rating, called deviation ratings, based on coarse correlated equilibria. The rating is explored on several domains including LLMs evaluation.
           </div>
           </div>
+          </div>
 
           <div class="collapse" id="marris2025deviation_bibtex">
           <div class="panel panel-info">
@@ -140,7 +141,9 @@
           <div class="collapse" id="gemp2024nashsvd_abstract">
           <div class="panel panel-primary">
           <div class="panel-body details-panel">
-          This work proposes a novel set of techniques for approximating a Nash equilibrium in a finite, normal-form game. It achieves this by constructing a new reformulation as solving a parameterized system of multivariate polynomials with tunable complexity. In doing so, it forges an itinerant loop from game theory to machine learning and back. We show a Nash equilibrium can be approximated with purely calls to stochastic, iterative variants of singular value decomposition and power iteration, with implications for biological plausibility. We provide pseudocode and experiments demonstrating solving for all equilibria of a general-sum game using only these readily available linear algebra tools.          </div>
+          This work proposes a novel set of techniques for approximating a Nash equilibrium in a finite, normal-form game. It achieves this by constructing a new reformulation as solving a parameterized system of multivariate polynomials with tunable complexity. In doing so, it forges an itinerant loop from game theory to machine learning and back. We show a Nash equilibrium can be approximated with purely calls to stochastic, iterative variants of singular value decomposition and power iteration, with implications for biological plausibility. We provide pseudocode and experiments demonstrating solving for all equilibria of a general-sum game using only these readily available linear algebra tools.
+          </div>
+          </div>
           </div>
 
           <div class="collapse" id="gemp2024nashsvd_bibtex">
@@ -181,7 +184,8 @@
           <div class="collapse" id="siedler2025llm_abstract">
           <div class="panel panel-primary">
           <div class="panel-body details-panel">
-          In complex multi-agent environments, achieving efficient learning and desirable behaviours is a significant challenge for Multi-Agent Reinforcement Learning (MARL) systems. This work explores the potential of combining MARL with Large Language Model (LLM)-mediated interventions to guide agents toward more desirable behaviours. Specifically, we investigate how LLMs can be used to interpret and facilitate interventions that shape the learning trajectories of multiple agents. We experimented with two types of interventions, referred to as controllers: a Natural Language (NL) Controller and a Rule-Based (RB) Controller. The NL Controller, which uses an LLM to simulate human-like interventions, showed a stronger impact than the RB Controller. Our findings indicate that agents particularly benefit from early interventions, leading to more efficient training and higher performance. Both intervention types outperform the baseline without interventions, highlighting the potential of LLM-mediated guidance to accelerate training and enhance MARL performance in challenging environments.          </div>
+          In complex multi-agent environments, achieving efficient learning and desirable behaviours is a significant challenge for Multi-Agent Reinforcement Learning (MARL) systems. This work explores the potential of combining MARL with Large Language Model (LLM)-mediated interventions to guide agents toward more desirable behaviours. Specifically, we investigate how LLMs can be used to interpret and facilitate interventions that shape the learning trajectories of multiple agents. We experimented with two types of interventions, referred to as controllers: a Natural Language (NL) Controller and a Rule-Based (RB) Controller. The NL Controller, which uses an LLM to simulate human-like interventions, showed a stronger impact than the RB Controller. Our findings indicate that agents particularly benefit from early interventions, leading to more efficient training and higher performance. Both intervention types outperform the baseline without interventions, highlighting the potential of LLM-mediated guidance to accelerate training and enhance MARL performance in challenging environments.
+          </div>
           </div>
           </div>
 
@@ -223,7 +227,8 @@
           <div class="collapse" id="liu2025re_abstract">
           <div class="panel panel-primary">
           <div class="panel-body details-panel">
-          Evaluation has traditionally focused on ranking candidates for a specific skill. Modern generalist models, such as Large Language Models (LLMs), decidedly outpace this paradigm. Open-ended evaluation systems, where candidate models are compared on user-submitted prompts, have emerged as a popular solution. Despite their many advantages, we show that the current Elo-based rating systems can be susceptible to and even reinforce biases in data, intentional or accidental, due to their sensitivity to redundancies. To address this issue, we propose evaluation as a 3-player game, and introduce novel game-theoretic solution concepts to ensure robustness to redundancy. We show that our method leads to intuitive ratings and provide insights into the competitive landscape of LLM development.          </div>
+          Evaluation has traditionally focused on ranking candidates for a specific skill. Modern generalist models, such as Large Language Models (LLMs), decidedly outpace this paradigm. Open-ended evaluation systems, where candidate models are compared on user-submitted prompts, have emerged as a popular solution. Despite their many advantages, we show that the current Elo-based rating systems can be susceptible to and even reinforce biases in data, intentional or accidental, due to their sensitivity to redundancies. To address this issue, we propose evaluation as a 3-player game, and introduce novel game-theoretic solution concepts to ensure robustness to redundancy. We show that our method leads to intuitive ratings and provide insights into the competitive landscape of LLM development.
+          </div>
           </div>
           </div>
 
@@ -351,6 +356,7 @@
           <div class="panel panel-primary">
           <div class="panel-body details-panel">
           We envision a world where humans and AI agents collaborate and interact beneficially, with AIs generating data-driven strategic recommendations that can be directly implemented by other AI agents, handed over to human decision-makers, or integrated into more complex interactive systems. Large Language Models (LLMs), and more generally foundation models (FMs), are bringing us closer to this vision by enabling laypeople to interact with AI using natural language, thereby providing significant, sometimes radical, efficiency gains in many tasks. When evaluating strategic reasoning, however, the capabilities of these models remain impoverished. We thus propose a collaborative research agenda that involves incorporating game-theoretic paradigms into the research and design of FMs and LLMs, and vice versa. This collaboration will enable strategic FMs-e.g., LLMs that communicate in natural language but exhibit strategic decision-making capabilities-and that can spawn the creation of a fertile ecosystem where humans and AI agents collaborate effectively.
+          </div>
           </div>
           </div>
 
