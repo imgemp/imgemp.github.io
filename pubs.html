@@ -53,6 +53,221 @@
 
           <li>
 
+          <span class="mainAuthor"><a href="https://www.kaggle.com/bovard">B. Doerschuk-Tiberi</a></span>, ..., <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, ... <span class="title">Game Arena: Strategic LLM Evaluation in Competitive Environments. </span><span class="venue">arXiv. </span><span class="year">2026</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2609.31473">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#doerschuktiberi2026game_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#doerschuktiberi2026game_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="doerschuktiberi2026game_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          We introduce Kaggle Game Arena, an open and ever-expanding platform to evaluate large language models (LLMs) through competitive games. Different from static benchmarks, game arena enables models to play head-to-head matchups in structured environments where the gameplay strength naturally increases as models evolve, preventing performance saturation. This technical report details the infrastructure behind Game Arena and describes the three pilot game environments: Chess, Poker, and Werewolf. These environments span perfect information, imperfect information, and multiplayer game settings, enabling a systematic study of models' strategic planning, adaptation, and robustness under uncertainty. For each game, we provide a detailed description of the environment, evaluation metrics, and results from running full competitions across models. Through robust infrastructure and large-scale ground-truth based evaluation, Game Arena ensures reproducibility, transparency and generalizability to new games and variants over time.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="doerschuktiberi2026game_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{doerschuktiberi2026game,
+            title={Game Arena: Strategic LLM Evaluation in Competitive Environments},
+            author={Doerschuk-Tiberi, Bovard and Yan, Yao and Chiu, Justin and Wang, Hann and Chung, Timothy and Plomecka, Martyna and Schultz, John and Lipovetz, Jon and Drazner, Clayton and Zhuang, Yuchen and Hwang, Jaimie and Keating, Nate and Jones, Riley and Lee, Andrew and Kelly, Oran and Gemp, Ian and Aaron, Michael and Prince, Laurel and Larson, Kate and Moser, Jeff and Jobe, Harrison and Woodford, Chad and Liu, Siqi and Wang, Andrew and Chang, Bo and D'Mello, Christopher and Chaleff, Diane and Howard, Addison and Yip, Johnny and Sugnet, Chuck and Gulli, Antonio and O'Connell, Meghan and Cukierski, Will and Tomasev, Nenad and Yeroshenko, Dima and Parekh, Kinjal and Daniel, Roxanne and Lanctot, Marc and Weir, Domino and Dong, Elsa and Hennes, Daniel and Nalubwama, Melissa and Fraser, Robert and Trostle, Ryan and Peng, Jun and Mason, Tom and Hightower, Lloyd and Chukwuka, Chiamaka and Zhai, Yuexiang and Kirk, Phoebe and Su, Yi and Han, Yuting and Ren, Jie and Prichard, Chris and Sharifzadeh, Sahand and Hakimzadeh, Karim and Sterling, DJ and Risdal, Meg and Olszewska, Kate and Xu, Ya and Firat, Orhan and Chen, Minmin},
+            journal={arXiv preprint arXiv:2609.31473},
+            year={2026}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://esd.sutd.edu.sg/people/faculty/georgios-piliouras/">G. Piliouras</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://siqi.fr/">S. Liu</a></span>, <span class="author"><a href="https://www.lukemarris.info/">L. Marris</a></span>. <span class="title">Paradoxes of Game Theoretic Equilibria and Price of Anarchy. </span><span class="venue">NeurIPS. </span><span class="year">2026</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2607.11752">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#piliouras2026paradoxes_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#piliouras2026paradoxes_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="piliouras2026paradoxes_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          For decades, static solution concepts (Nash, Correlated, and Coarse Correlated Equilibria) and the Price of Anarchy (PoA) have formed the bedrock of algorithmic game theory, with no-regret learning proving fast convergence to such game-theoretic equilibria. We show that reducing multi-agent learning to static equilibrium and black-box regret analysis obscures underlying dynamic disequilibrium and game theoretic bounds. First, interior Nash equilibria lack C¹ vector field information, meaning agents cannot distinguish aligned from strictly opposing incentives. Inheriting this geometry, the worst-case pure Nash equilibria dictating robust PoA bounds manifest as topologically unstable strict saddles, and in canonical congestion games, as global repellers supported on almost everywhere strictly dominated strategies. Anchoring efficiency guarantees to these unstable states causes algebraic sensitivity; we prove that accommodating all strictly positive affine costs renders the PoA unbounded. Furthermore, projecting learning trajectories onto the discrete simplex of correlated play systematically accommodates non-rationalizable behavior. Evaluating dynamics via Coarse Correlated Equilibria or proximal refinements fails to preclude strictly dominated strategies. Moreover, optimal O(1/T) swap-regret minimization does not preclude macroscopic turbulence, manifesting as chaotic limit sets even in minimal games. Finally, we examine the non-atomic limit of congestion games. Though considered highly stable with tight sub-linear Θ(p/ln p) PoA bounds (where p is the polynomial degree), we prove that under discrete-time learning, the unique equilibrium destabilizes into Li-Yorke chaos and global attractors whose time-averaged inefficiency degrades exponentially as 2ᵖ. These results necessitate re-evaluating worst-case equilibrium frameworks for dynamically grounded metrics.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="piliouras2026paradoxes_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @inproceedings{piliouras2026paradoxes,
+            title={Paradoxes of Game Theoretic Equilibria and Price of Anarchy},
+            author={Piliouras, Georgios and Gemp, Ian and Liu, Siqi and Marris, Luke},
+            booktitle={Advances in Neural Information Processing Systems},
+            year={2026}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://cjqian.github.io/">C. Qian</a></span>, <span class="author"><a href="https://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://cs.uwaterloo.ca/~klarson/">K. Larson</a></span>. <span class="title">Nash without Numbers: A Social Choice Approach to Mixed Equilibria in Context-Ordinal Games. </span><span class="venue">arXiv. </span><span class="year">2026</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2605.07996">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#gemp2026nash_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#gemp2026nash_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="gemp2026nash_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          Nash equilibrium serves as a fundamental mathematical tool in economics and game theory. However, it classically assumes knowledge of player utilities, whereas economics generally regards preferences as more fundamental. To leverage equilibrium analysis in strategic scenarios, one must first elicit numerical utilities consistent with player preferences, a delicate and time-consuming process. In this work, we forgo precise utilities and generalize the Nash equilibrium to a setting where we only assume a player is capable of providing an ordinal ranking of their actions within the context of other players' joint actions. The key technical challenge is to rethink the definition of a best-response. While the classical definition identifies actions maximizing expected payoff, we naturally look towards social choice theory for how to aggregate preferences to identify the most preferred actions. We define this generalized notion of a context-ordinal Nash equilibrium, establish its existence under mild conditions on aggregation methods, introduce notions of regularization, approximation, and regret, explore complexity for simple settings, and develop learning rules for computing such equilibria. In doing so, we provide a generalization of Nash equilibrium and demonstrate its direct applicability to elicited preferences in human experiments.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="gemp2026nash_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @article{gemp2026nash,
+            title={Nash without Numbers: A Social Choice Approach to Mixed Equilibria in Context-Ordinal Games},
+            author={Gemp, Ian and Qian, Crystal and Lanctot, Marc and Larson, Kate},
+            journal={arXiv preprint arXiv:2605.07996},
+            year={2026}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://www.andrew.cmu.edu/user/ianagnos/">I. Anagnostides</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://esd.sutd.edu.sg/people/faculty/georgios-piliouras/">G. Piliouras</a></span>, <span class="author"><a href="https://kellyspendlove.github.io/">K. Spendlove</a></span>. <span class="title">Chaos in Autobidding Auctions. </span><span class="venue">EC. </span><span class="year">2026</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2602.09118">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#anagnostides2026chaos_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#anagnostides2026chaos_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="anagnostides2026chaos_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          As autobidding systems increasingly dominate online advertising auctions, characterizing their long-term dynamical behavior is brought to the fore. In this paper, we examine the dynamics of autobidders who optimize value subject to a return-on-spend (RoS) constraint under uniform bid scaling. Our main set of results show that simple autobidding dynamics can exhibit formally chaotic behavior. This significantly strengthens the recent results of Leme, Piliouras, Schneider, Spendlove, and Zuo (EC '24) that went as far as quasiperiodicity. Our proof proceeds by establishing that autobidding dynamics can simulate -- up to an arbitrarily small error -- a broad class of continuous-time nonlinear dynamical systems. This class contains as a special case Chua's circuit, a classic chaotic system renowned for its iconic double scroll attractor. Our reduction develops several modular gadgets, which we anticipate will find other applications going forward. Moreover, in discrete time, we show that different incarnations of mirror descent can exhibit Li-Yorke chaos, topological transitivity, and sensitivity to initial conditions, connecting along the way those dynamics to classic dynamical systems such as the logistic map and the Ricker population model. Taken together, our results reveal that the long-term behavior of ostensibly simple second-price autobidding auctions can be inherently unpredictable and complex.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="anagnostides2026chaos_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @inproceedings{anagnostides2026chaos,
+            title={Chaos in Autobidding Auctions},
+            author={Anagnostides, Ioannis and Gemp, Ian and Piliouras, Georgios and Spendlove, Kelly},
+            booktitle={Proceedings of the 27th ACM Conference on Economics and Computation},
+            year={2026}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
+          <span class="mainAuthor"><a href="https://www.andrew.cmu.edu/user/ianagnos/">I. Anagnostides</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="https://esd.sutd.edu.sg/people/faculty/georgios-piliouras/">G. Piliouras</a></span>, <span class="author"><a href="https://kellyspendlove.github.io/">K. Spendlove</a></span>. <span class="title">Tight Inapproximability for Welfare-Maximizing Autobidding Equilibria. </span><span class="venue">EC. </span><span class="year">2026</span><br/>
+
+          <div class="btn-group">
+          <button type="button" class="btn btn-default details-btn dropdown-toggle" data-toggle="dropdown">Download<span class="caret"></span></button>
+          <ul class="dropdown-menu details-panel" role="menu">
+          <li><a href="https://arxiv.org/pdf/2602.09110">Paper (PDF)</a></li>
+          </ul>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary details-btn" data-toggle="collapse" data-target="#anagnostides2026tight_abstract">
+          <input type="checkbox" /> Abstract
+          </label>
+          <label class="btn btn-info details-btn" data-toggle="collapse" data-target="#anagnostides2026tight_bibtex">
+          <input type="checkbox" /> BibTex
+          </label>
+          </div>
+
+          <div class="collapse" id="anagnostides2026tight_abstract">
+          <div class="panel panel-primary">
+          <div class="panel-body details-panel">
+          We examine the complexity of computing welfare- and revenue-maximizing equilibria in autobidding second-price auctions subject to return-on-spend (RoS) constraints. We show that computing an autobidding equilibrium that approximates the welfare-optimal one within a factor of 2 − ε is NP-hard for any constant ε &gt; 0. Moreover, deciding whether there exists an autobidding equilibrium that attains a 1/2 + ε fraction of the optimal welfare -- unfettered by equilibrium constraints -- is NP-hard for any constant ε &gt; 0. This hardness result is tight in view of the fact that the price of anarchy (PoA) is at most 2, and shows that deciding whether a non-trivial autobidding equilibrium exists -- one that is even marginally better than the worst-case guarantee -- is intractable. For revenue, we establish a stronger logarithmic inapproximability, while under the projection games conjecture, our reduction rules out even a polynomial approximation factor. These results significantly strengthen the APX-hardness of Li and Tang (AAAI '24). Furthermore, we refine our reduction in the presence of ML advice concerning the buyers' valuations, revealing again a close connection between the inapproximability threshold and PoA bounds. Finally, we examine relaxed notions of equilibrium attained by simple learning algorithms, establishing constant inapproximability for both revenue and welfare.
+          </div>
+          </div>
+          </div>
+
+          <div class="collapse" id="anagnostides2026tight_bibtex">
+          <div class="panel panel-info">
+          <pre class="panel-body details-panel">
+          @inproceedings{anagnostides2026tight,
+            title={Tight Inapproximability for Welfare-Maximizing Autobidding Equilibria},
+            author={Anagnostides, Ioannis and Gemp, Ian and Piliouras, Georgios and Spendlove, Kelly},
+            booktitle={Proceedings of the 27th ACM Conference on Economics and Computation},
+            year={2026}
+          }
+          </pre>
+          </div>
+          </div>
+
+          </li>
+
+          <li>
+
           <span class="mainAuthor"><a href="https://mlanctot.info/">M. Lanctot</a></span>, <span class="author"><a href="https://cs.uwaterloo.ca/~klarson/">K. Larson</a></span>, <span class="author"><a href="https://imgemp.github.io/">I. Gemp</a></span>, <span class="author"><a href="http://michaelkaisers.com/">M. Kaisers</a></span>. <span class="title">Active Evaluation of General Agents: Problem Definition and Comparison of Baseline Algorithms. </span><span class="venue">AAMAS. </span><span class="year">2026</span><br/>
 
           <div class="btn-group">
