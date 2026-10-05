@@ -9,6 +9,7 @@
 %   main_authors    = {1, 2}    highlighted authors (default: first author),
 %   display_authors = {...}     shorter author list for the page ("..." elides),
 %   dataset         = {link}    adds a "Datasets (.zip)" download.
+%   video           = {link}    adds a "Video" button for a recorded talk.
 % Co-author links live in coauthors.json. Pushing to GitHub regenerates
 % pubs.html automatically (or run: python3 scripts/build_pubs.py).
 
@@ -415,6 +416,7 @@
   year = {2022},
   display_venue = {AAMAS},
   pdf = {https://arxiv.org/pdf/2010.00575.pdf},
+  video = {https://underline.io/lecture/49270-reducing-the-price-of-anarchy-in-multi-agent-learning},
   abstract = {In multiagent systems, the complex interaction of fixed incentives can lead agents to outcomes that are poor (inefficient) not only for the group, but also for each individual. Price of anarchy is a technical, game-theoretic definition that quantifies the inefficiency arising in these scenarios -- it compares the welfare that can be achieved through perfect coordination against that achieved by self-interested agents at a Nash equilibrium. We derive a differentiable, upper bound on a price of anarchy that agents can cheaply estimate during learning. Equipped with this estimator, agents can adjust their incentives in a way that improves the efficiency incurred at a Nash equilibrium. Agents do so by learning to mix their reward (equiv. negative loss) with that of other agents by following the gradient of our derived upper bound. We refer to this approach as D3C. In the case where agent incentives are differentiable, D3C resembles the celebrated Win-Stay, Lose-Shift strategy from behavioral game theory, thereby establishing a connection between the global goal of maximum welfare and an established agent-centric learning rule. In the non-differentiable setting, as is common in multiagent reinforcement learning, we show the upper bound can be reduced via evolutionary strategies, until a compromise is reached in a distributed fashion. We demonstrate that D3C improves outcomes for each agent and the group as a whole on several social dilemmas including a traffic network exhibiting Braess's paradox, a prisoner's dilemma, and several multiagent domains.}
 }
 
@@ -425,6 +427,7 @@
   year = {2022},
   display_venue = {AAMAS (Oral)},
   pdf = {https://arxiv.org/pdf/2106.01285.pdf},
+  video = {https://underline.io/lecture/49180-sample-based-approximation-of-nash-in-large-many-player-games-via-gradient-descent},
   abstract = {Nash equilibrium is a central concept in game theory. Several Nash solvers exist, yet none scale to normal-form games with many actions and many players, especially those with payoff tensors too big to be stored in memory. In this work, we propose an approach that iteratively improves an approximation to a Nash equilibrium through joint play. It accomplishes this by tracing a previously established homotopy that defines a continuum of equilibria for the game regularized with decaying levels of entropy. This continuum asymptotically approaches the limiting logit equilibrium, proven by McKelvey and Palfrey (1995) to be unique in almost all games, thereby partially circumventing the well-known equilibrium selection problem of many-player games. To encourage iterates to remain near this path, we efficiently minimize average deviation incentive via stochastic gradient descent, intelligently sampling entries in the payoff tensor as needed. Monte Carlo estimates of the stochastic gradient from joint play are biased due to the appearance of a nonlinear max operator in the objective, so we introduce additional innovations to the algorithm to alleviate gradient bias. The descent process can also be viewed as repeatedly constructing and reacting to a polymatrix approximation to the game. In these ways, our proposed approach, average deviation incentive descent with adaptive sampling (ADIDAS), is most similar to three classical approaches, namely homotopy-type, Lyapunov, and iterative polymatrix solvers. The lack of local convergence guarantees for biased gradient descent prevents guaranteed convergence to Nash, however, we demonstrate through extensive experiments the ability of this approach to approximate a unique Nash in normal-form games with as many as seven players and twenty one actions (several billion outcomes) that are orders of magnitude larger than those possible with prior algorithms.}
 }
 
@@ -445,6 +448,7 @@
   year = {2021},
   display_venue = {ICLR (Outstanding Paper Award)},
   pdf = {https://arxiv.org/pdf/2010.00554.pdf},
+  video = {https://youtu.be/uCWRCXUKobk},
   abstract = {We present a novel view on principal component analysis (PCA) as a competitive game in which each approximate eigenvector is controlled by a player whose goal is to maximize their own utility function. We analyze the properties of this PCA game and the behavior of its gradient based updates. The resulting algorithm which combines elements from Oja's rule with a generalized Gram-Schmidt orthogonalization is naturally decentralized and hence parallelizable through message passing. We demonstrate the scalability of the algorithm with experiments on large image datasets and neural network activations. We discuss how this new view of PCA as a differentiable game can lead to further algorithmic developments and insights.}
 }
 

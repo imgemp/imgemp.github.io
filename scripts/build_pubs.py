@@ -13,6 +13,7 @@ are used to build the page and left out of the BibTeX shown to visitors:
   display_venue   Venue as shown on the page, e.g. "AAMAS (Best Paper Award)".
   pdf             Link for the "Paper (PDF)" download button.
   dataset         Link for a "Datasets (.zip)" download button.
+  video           Link to a recorded talk, shown as a "Video" button.
   abstract        Abstract text (HTML allowed).
   main_authors    1-based positions of highlighted authors (default: 1).
                   Use an empty value to highlight nobody.
@@ -34,7 +35,8 @@ PAGE = os.path.join(ROOT, 'pubs.html')
 BEGIN = '<!-- BEGIN GENERATED PUBLICATIONS: edit pubs.bib, then run scripts/build_pubs.py -->'
 END = '<!-- END GENERATED PUBLICATIONS -->'
 
-CUSTOM_FIELDS = ['display_venue', 'pdf', 'dataset', 'main_authors', 'display_authors', 'abstract']
+CUSTOM_FIELDS = ['display_venue', 'pdf', 'dataset', 'video', 'main_authors', 'display_authors',
+                 'abstract']
 FIELD_ORDER = ['title', 'author', 'journal', 'booktitle', 'volume', 'number', 'pages', 'publisher',
                'year']
 
@@ -207,6 +209,11 @@ def render_entry(entry, coauthors, warnings):
                'data-toggle="dropdown">Download<span class="caret"></span></button>\n'
                '          <ul class="dropdown-menu details-panel" role="menu">\n'
                f'{items}\n          </ul>\n          </div>\n')
+  if f.get('video'):
+    # Kept out of the toggle-button group below, whose click handler blocks links.
+    out.append('          <div class="btn-group">\n'
+               f'          <a class="btn btn-default details-btn" href="{html.escape(f["video"])}">Video</a>\n'
+               '          </div>\n')
   buttons = [('btn-primary', 'abstract', 'Abstract')] if f.get('abstract') else []
   buttons.append(('btn-info', 'bibtex', 'BibTex'))
   out.append('          <div class="btn-group" data-toggle="buttons">\n' + ''.join(
