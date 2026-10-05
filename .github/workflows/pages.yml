@@ -1,0 +1,53 @@
+# Regenerates pubs.html from pubs.bib on every push to master, commits the
+# result back if it changed, and deploys the site to GitHub Pages.
+name: Build and deploy site
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Generate publication list
+        run: python3 scripts/build_pubs.py
+
+      - name: Commit regenerated pubs.html
+        run: |
+          if ! git diff --quiet pubs.html; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Regenerate pubs.html from pubs.bib" pubs.html
+            git pull --rebase
+            git push
+          fi
+
+      - name: Collect site files
+        run: rsync -a --exclude .git --exclude .github --exclude scripts ./ "$RUNNER_TEMP/site/"
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: ${{ runner.temp }}/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

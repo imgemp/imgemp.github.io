@@ -1,0 +1,716 @@
+% Publications shown on pubs.html, newest first. Entries are grouped by year
+% in the order they appear here.
+%
+% To add a paper: paste its BibTeX at the top of its year and add
+%   display_venue = {Venue as shown on the page, e.g. NeurIPS (Spotlight)},
+%   pdf           = {link to the PDF},
+%   abstract      = {abstract text; HTML such as <i>...</i> is allowed},
+% and optionally
+%   main_authors    = {1, 2}    highlighted authors (default: first author),
+%   display_authors = {...}     shorter author list for the page ("..." elides),
+%   dataset         = {link}    adds a "Datasets (.zip)" download.
+% Co-author links live in coauthors.json. Pushing to GitHub regenerates
+% pubs.html automatically (or run: python3 scripts/build_pubs.py).
+
+@article{doerschuktiberi2026game,
+  title = {Game Arena: Strategic LLM Evaluation in Competitive Environments},
+  author = {Doerschuk-Tiberi, Bovard and Yan, Yao and Chiu, Justin and Wang, Hann and Chung, Timothy and Plomecka, Martyna and Schultz, John and Lipovetz, Jon and Drazner, Clayton and Zhuang, Yuchen and Hwang, Jaimie and Keating, Nate and Jones, Riley and Lee, Andrew and Kelly, Oran and Gemp, Ian and Aaron, Michael and Prince, Laurel and Larson, Kate and Moser, Jeff and Jobe, Harrison and Woodford, Chad and Liu, Siqi and Wang, Andrew and Chang, Bo and D'Mello, Christopher and Chaleff, Diane and Howard, Addison and Yip, Johnny and Sugnet, Chuck and Gulli, Antonio and O'Connell, Meghan and Cukierski, Will and Tomasev, Nenad and Yeroshenko, Dima and Parekh, Kinjal and Daniel, Roxanne and Lanctot, Marc and Weir, Domino and Dong, Elsa and Hennes, Daniel and Nalubwama, Melissa and Fraser, Robert and Trostle, Ryan and Peng, Jun and Mason, Tom and Hightower, Lloyd and Chukwuka, Chiamaka and Zhai, Yuexiang and Kirk, Phoebe and Su, Yi and Han, Yuting and Ren, Jie and Prichard, Chris and Sharifzadeh, Sahand and Hakimzadeh, Karim and Sterling, DJ and Risdal, Meg and Olszewska, Kate and Xu, Ya and Firat, Orhan and Chen, Minmin},
+  journal = {arXiv preprint arXiv:2609.31473},
+  year = {2026},
+  display_venue = {arXiv},
+  pdf = {https://arxiv.org/pdf/2609.31473},
+  display_authors = {Doerschuk-Tiberi, Bovard and ... and Gemp, Ian and ...},
+  abstract = {We introduce Kaggle Game Arena, an open and ever-expanding platform to evaluate large language models (LLMs) through competitive games. Different from static benchmarks, game arena enables models to play head-to-head matchups in structured environments where the gameplay strength naturally increases as models evolve, preventing performance saturation. This technical report details the infrastructure behind Game Arena and describes the three pilot game environments: Chess, Poker, and Werewolf. These environments span perfect information, imperfect information, and multiplayer game settings, enabling a systematic study of models' strategic planning, adaptation, and robustness under uncertainty. For each game, we provide a detailed description of the environment, evaluation metrics, and results from running full competitions across models. Through robust infrastructure and large-scale ground-truth based evaluation, Game Arena ensures reproducibility, transparency and generalizability to new games and variants over time.}
+}
+
+@inproceedings{piliouras2026paradoxes,
+  title = {Paradoxes of Game Theoretic Equilibria and Price of Anarchy},
+  author = {Piliouras, Georgios and Gemp, Ian and Liu, Siqi and Marris, Luke},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year = {2026},
+  display_venue = {NeurIPS},
+  pdf = {https://arxiv.org/pdf/2607.11752},
+  abstract = {For decades, static solution concepts (Nash, Correlated, and Coarse Correlated Equilibria) and the Price of Anarchy (PoA) have formed the bedrock of algorithmic game theory, with no-regret learning proving fast convergence to such game-theoretic equilibria. We show that reducing multi-agent learning to static equilibrium and black-box regret analysis obscures underlying dynamic disequilibrium and game theoretic bounds. First, interior Nash equilibria lack C¹ vector field information, meaning agents cannot distinguish aligned from strictly opposing incentives. Inheriting this geometry, the worst-case pure Nash equilibria dictating robust PoA bounds manifest as topologically unstable strict saddles, and in canonical congestion games, as global repellers supported on almost everywhere strictly dominated strategies. Anchoring efficiency guarantees to these unstable states causes algebraic sensitivity; we prove that accommodating all strictly positive affine costs renders the PoA unbounded. Furthermore, projecting learning trajectories onto the discrete simplex of correlated play systematically accommodates non-rationalizable behavior. Evaluating dynamics via Coarse Correlated Equilibria or proximal refinements fails to preclude strictly dominated strategies. Moreover, optimal O(1/T) swap-regret minimization does not preclude macroscopic turbulence, manifesting as chaotic limit sets even in minimal games. Finally, we examine the non-atomic limit of congestion games. Though considered highly stable with tight sub-linear Θ(p/ln p) PoA bounds (where p is the polynomial degree), we prove that under discrete-time learning, the unique equilibrium destabilizes into Li-Yorke chaos and global attractors whose time-averaged inefficiency degrades exponentially as 2ᵖ. These results necessitate re-evaluating worst-case equilibrium frameworks for dynamically grounded metrics.}
+}
+
+@article{gemp2026nash,
+  title = {Nash without Numbers: A Social Choice Approach to Mixed Equilibria in Context-Ordinal Games},
+  author = {Gemp, Ian and Qian, Crystal and Lanctot, Marc and Larson, Kate},
+  journal = {arXiv preprint arXiv:2605.07996},
+  year = {2026},
+  display_venue = {arXiv},
+  pdf = {https://arxiv.org/pdf/2605.07996},
+  abstract = {Nash equilibrium serves as a fundamental mathematical tool in economics and game theory. However, it classically assumes knowledge of player utilities, whereas economics generally regards preferences as more fundamental. To leverage equilibrium analysis in strategic scenarios, one must first elicit numerical utilities consistent with player preferences, a delicate and time-consuming process. In this work, we forgo precise utilities and generalize the Nash equilibrium to a setting where we only assume a player is capable of providing an ordinal ranking of their actions within the context of other players' joint actions. The key technical challenge is to rethink the definition of a best-response. While the classical definition identifies actions maximizing expected payoff, we naturally look towards social choice theory for how to aggregate preferences to identify the most preferred actions. We define this generalized notion of a context-ordinal Nash equilibrium, establish its existence under mild conditions on aggregation methods, introduce notions of regularization, approximation, and regret, explore complexity for simple settings, and develop learning rules for computing such equilibria. In doing so, we provide a generalization of Nash equilibrium and demonstrate its direct applicability to elicited preferences in human experiments.}
+}
+
+@inproceedings{anagnostides2026chaos,
+  title = {Chaos in Autobidding Auctions},
+  author = {Anagnostides, Ioannis and Gemp, Ian and Piliouras, Georgios and Spendlove, Kelly},
+  booktitle = {Proceedings of the 27th ACM Conference on Economics and Computation},
+  year = {2026},
+  display_venue = {EC},
+  pdf = {https://arxiv.org/pdf/2602.09118},
+  abstract = {As autobidding systems increasingly dominate online advertising auctions, characterizing their long-term dynamical behavior is brought to the fore. In this paper, we examine the dynamics of autobidders who optimize value subject to a return-on-spend (RoS) constraint under uniform bid scaling. Our main set of results show that simple autobidding dynamics can exhibit formally chaotic behavior. This significantly strengthens the recent results of Leme, Piliouras, Schneider, Spendlove, and Zuo (EC '24) that went as far as quasiperiodicity. Our proof proceeds by establishing that autobidding dynamics can simulate -- up to an arbitrarily small error -- a broad class of continuous-time nonlinear dynamical systems. This class contains as a special case Chua's circuit, a classic chaotic system renowned for its iconic double scroll attractor. Our reduction develops several modular gadgets, which we anticipate will find other applications going forward. Moreover, in discrete time, we show that different incarnations of mirror descent can exhibit Li-Yorke chaos, topological transitivity, and sensitivity to initial conditions, connecting along the way those dynamics to classic dynamical systems such as the logistic map and the Ricker population model. Taken together, our results reveal that the long-term behavior of ostensibly simple second-price autobidding auctions can be inherently unpredictable and complex.}
+}
+
+@inproceedings{anagnostides2026tight,
+  title = {Tight Inapproximability for Welfare-Maximizing Autobidding Equilibria},
+  author = {Anagnostides, Ioannis and Gemp, Ian and Piliouras, Georgios and Spendlove, Kelly},
+  booktitle = {Proceedings of the 27th ACM Conference on Economics and Computation},
+  year = {2026},
+  display_venue = {EC},
+  pdf = {https://arxiv.org/pdf/2602.09110},
+  abstract = {We examine the complexity of computing welfare- and revenue-maximizing equilibria in autobidding second-price auctions subject to return-on-spend (RoS) constraints. We show that computing an autobidding equilibrium that approximates the welfare-optimal one within a factor of 2 − ε is NP-hard for any constant ε &gt; 0. Moreover, deciding whether there exists an autobidding equilibrium that attains a 1/2 + ε fraction of the optimal welfare -- unfettered by equilibrium constraints -- is NP-hard for any constant ε &gt; 0. This hardness result is tight in view of the fact that the price of anarchy (PoA) is at most 2, and shows that deciding whether a non-trivial autobidding equilibrium exists -- one that is even marginally better than the worst-case guarantee -- is intractable. For revenue, we establish a stronger logarithmic inapproximability, while under the projection games conjecture, our reduction rules out even a polynomial approximation factor. These results significantly strengthen the APX-hardness of Li and Tang (AAAI '24). Furthermore, we refine our reduction in the presence of ML advice concerning the buyers' valuations, revealing again a close connection between the inapproximability threshold and PoA bounds. Finally, we examine relaxed notions of equilibrium attained by simple learning algorithms, establishing constant inapproximability for both revenue and welfare.}
+}
+
+@article{lanctot2026active,
+  title = {Active Evaluation of General Agents: Problem Definition and Comparison of Baseline Algorithms},
+  author = {Lanctot, Marc and Larson, Kate and Gemp, Ian and Kaisers, Michael},
+  journal = {AAMAS},
+  year = {2026},
+  display_venue = {AAMAS},
+  pdf = {https://arxiv.org/pdf/2601.07651},
+  abstract = {As intelligent agents become more generally-capable, i.e. able to master a wide variety of tasks, the complexity and cost of properly evaluating them rises significantly. Tasks that assess specific capabilities of the agents can be correlated and stochastic, requiring many samples for accurate comparisons, leading to added costs. In this paper, we propose a formal definition and a conceptual framework for active evaluation of agents across multiple tasks, which assesses the performance of ranking algorithms as a function of number of evaluation data samples. Rather than curating, filtering, or compressing existing data sets as a preprocessing step, we propose an online framing: on every iteration, the ranking algorithm chooses the task and agents to sample scores from. Then, evaluation algorithms report a ranking of agents on each iteration and their performance is assessed with respect to the ground truth ranking over time. Several baselines are compared under different experimental contexts, with synthetic generated data and simulated online access to real evaluation data from Atari game-playing agents. We find that the classical Elo rating system -- while it suffers from well-known failure modes, in theory -- is a consistently reliable choice for efficient reduction of ranking error in practice. A recently-proposed method, Soft Condorcet Optimization, shows comparable performance to Elo on synthetic data and significantly outperforms Elo on real Atari agent evaluation. When task variation from the ground truth is high, selecting tasks based on proportional representation leads to higher rate of ranking error reduction.}
+}
+
+@inproceedings{lehrach2026code,
+  title = {Code World Models for General Game Playing},
+  author = {Lehrach, Wolfgang and Hennes, Daniel and Lazaro-Gredilla, Miguel and Lou, Xinghua and Wendelken, Carter and Li, Zun and Dedieu, Antoine and Grau-Moya, Jordi and Lanctot, Marc and Iscen, Atil and Schultz, John and Chiam, Marcus and Gemp, Ian and Zielinski, Piotr and Singh, Satinder and Murphy, Kevin P.},
+  booktitle = {The Fourteenth International Conference on Learning Representations},
+  year = {2026},
+  display_venue = {ICLR},
+  pdf = {https://arxiv.org/pdf/2510.04542},
+  main_authors = {1, 2, 3},
+  abstract = {Large Language Models (LLMs) reasoning abilities are increasingly being applied to classical board and card games, but the dominant approach---involving prompting for direct move generation---has significant drawbacks. It relies on the model's implicit fragile pattern-matching capabilities, leading to frequent illegal moves and strategically shallow play. Here we introduce an alternative approach: We use the LLM to translate natural language rules and game trajectories into a formal, executable world model  represented as Python code. This generated model---comprising functions for state transition, legal move enumeration, and termination checks---serves as a verifiable simulation engine for high-performance planning algorithms like Monte Carlo tree search (MCTS). In addition, we prompt the LLM to generate heuristic value functions (to make MCTS more efficient), and inference functions (to estimate hidden states in imperfect information games). Our method offers three distinct advantages compared to directly using the LLM as a policy: (1) Verifiability: The generated CWM serves as a formal specification of the game's rules, allowing planners to algorithmically enumerate valid actions and avoid illegal moves, contingent on the correctness of the synthesized model; (2) Strategic Depth: We combine LLM semantic understanding with the deep search power of classical planners; and (3) Generalization: We direct the LLM to focus on the meta-task of data-to-code translation, enabling it to adapt to new games more easily. We evaluate our agent on 10 different games, of which 4 are novel and created for this paper. 5 of the games are  fully observed (perfect information), and 5 are partially observed (imperfect information). We find that our method outperforms or matches Gemini 2.5 Pro in 9 out of the 10 considered games.}
+}
+
+@inproceedings{gemini2025,
+  title = {Gemini 2.5: Pushing the frontier with advanced reasoning, multimodality, long context, and next generation agentic capabilities},
+  author = {{Google DeepMind}},
+  booktitle = {arXiv preprint arXiv:2507.06261},
+  year = {2025},
+  display_venue = {arXiv},
+  pdf = {https://arxiv.org/pdf/2507.06261},
+  abstract = {In this report, we introduce the Gemini 2.X model family: Gemini 2.5 Pro and Gemini 2.5 Flash, as well as our earlier Gemini 2.0 Flash and Flash-Lite models. Gemini 2.5 Pro is our most capable model yet, achieving SoTA performance on frontier coding and reasoning benchmarks. In addition to its incredible coding and reasoning skills, Gemini 2.5 Pro is a thinking model that excels at multimodal understanding and it is now able to process up to 3 hours of video content. Its unique combination of long context, multimodal and reasoning capabilities can be combined to unlock new agentic workflows. Gemini 2.5 Flash provides excellent reasoning abilities at a fraction of the compute and latency requirements and Gemini 2.0 Flash and Flash-Lite provide high performance at low latency and cost. Taken together, the Gemini 2.X model generation spans the full Pareto frontier of model capability vs cost, allowing users to explore the boundaries of what is possible with complex agentic problem solving.}
+}
+
+@inproceedings{marris2025deviation,
+  title = {Deviation Ratings: A General, Clone-Invariant Rating Method},
+  author = {Marris, Luke and Liu, Siqi and Gemp, Ian and Piliouras, Georgios and Lanctot, Marc},
+  booktitle = {AAMAS Games, Agents, and Incentives Workshop (GAIW)},
+  year = {2025},
+  display_venue = {GAIW},
+  pdf = {https://arxiv.org/pdf/2502.11645},
+  abstract = {Many real-world multi-agent or multi-task evaluation scenarios can be naturally modelled as normal-form games due to inherent strategic (adversarial, cooperative, and mixed motive) interactions. These strategic interactions may be agentic (e.g. players trying to win), fundamental (e.g. cost vs quality), or complementary (e.g. niche finding and specialization). In such a formulation, it is the strategies (actions, policies, agents, models, tasks, prompts, etc.) that are rated. However, the rating problem is complicated by redundancy and complexity of N-player strategic interactions. Repeated or similar strategies can distort ratings for those that counter or complement them. Previous work proposed ``clone invariant'' ratings to handle such redundancies, but this was limited to two-player zero-sum (i.e. strictly competitive) interactions. This work introduces the first N-player general-sum clone invariant rating, called deviation ratings, based on coarse correlated equilibria. The rating is explored on several domains including LLMs evaluation.}
+}
+
+@inproceedings{gemp2024nashsvd,
+  title = {Nash Equilibria via Stochastic Eigendecomposition},
+  author = {Gemp, Ian},
+  booktitle = {AAMAS Workshop on Optimization and Learning in Multiagent Systems (OptLearnMAS)},
+  year = {2025},
+  display_venue = {AAMAS Workshop: OptLearnMAS},
+  pdf = {https://arxiv.org/pdf/2411.02308},
+  abstract = {This work proposes a novel set of techniques for approximating a Nash equilibrium in a finite, normal-form game. It achieves this by constructing a new reformulation as solving a parameterized system of multivariate polynomials with tunable complexity. In doing so, it forges an itinerant loop from game theory to machine learning and back. We show a Nash equilibrium can be approximated with purely calls to stochastic, iterative variants of singular value decomposition and power iteration, with implications for biological plausibility. We provide pseudocode and experiments demonstrating solving for all equilibria of a general-sum game using only these readily available linear algebra tools.}
+}
+
+@inproceedings{siedler2025llm,
+  title = {LLM-Mediated Guidance of MARL Systems},
+  author = {Siedler, Philipp and Gemp, Ian},
+  booktitle = {AAMAS Workshop on Optimization and Learning in Multiagent Systems (OptLearnMAS)},
+  year = {2025},
+  display_venue = {AAMAS Workshop: OptLearnMAS},
+  pdf = {https://arxiv.org/pdf/2503.13553},
+  abstract = {In complex multi-agent environments, achieving efficient learning and desirable behaviours is a significant challenge for Multi-Agent Reinforcement Learning (MARL) systems. This work explores the potential of combining MARL with Large Language Model (LLM)-mediated interventions to guide agents toward more desirable behaviours. Specifically, we investigate how LLMs can be used to interpret and facilitate interventions that shape the learning trajectories of multiple agents. We experimented with two types of interventions, referred to as controllers: a Natural Language (NL) Controller and a Rule-Based (RB) Controller. The NL Controller, which uses an LLM to simulate human-like interventions, showed a stronger impact than the RB Controller. Our findings indicate that agents particularly benefit from early interventions, leading to more efficient training and higher performance. Both intervention types outperform the baseline without interventions, highlighting the potential of LLM-mediated guidance to accelerate training and enhance MARL performance in challenging environments.}
+}
+
+@article{kalogiannis2025solving,
+  title = {Solving Zero-Sum Convex Markov Games},
+  author = {Kalogiannis, Fivos and Vlatakis-Gkaragkounis, Emmanouil-Vasileios and Gemp, Ian and Piliouras, Georgios},
+  journal = {International Conference on Machine Learning},
+  year = {2025},
+  display_venue = {ICML},
+  pdf = {https://arxiv.org/pdf/2506.16120},
+  abstract = {We contribute the first provable guarantees of global convergence to Nash equilibria (NE) in two-player zero-sum convex Markov games (cMGs) by using independent policy gradient methods. Convex Markov games, recently defined by Gemp et al. (2024), extend Markov decision processes to multi-agent settings with preferences that are convex over occupancy measures, offering a broad framework for modeling generic strategic interactions. However, even the fundamental min-max case of cMGs presents significant challenges, including inherent nonconvexity, the absence of Bellman consistency, and the complexity of the infinite horizon. We follow a two-step approach. First, leveraging properties of hidden-convex--hidden-concave functions, we show that a simple nonconvex regularization transforms the min-max optimization problem into a nonconvex-proximal Polyak-Lojasiewicz (NC-pPL) objective. Crucially, this regularization can stabilize the iterates of independent policy gradient methods and ultimately lead them to converge to equilibria. Second, building on this reduction, we address the general constrained min-max problems under NC-pPL and two-sided pPL conditions, providing the first global convergence guarantees for stochastic nested and alternating gradient descent-ascent methods, which we believe may be of independent interest.}
+}
+
+@article{gemp2025convex,
+  title = {Convex Markov Games: A New Frontier for Multi-Agent Reinforcement Learning},
+  author = {Gemp, Ian and Haupt, Andreas and Marris, Luke and Liu, Siqi and Piliouras, Georgios},
+  journal = {International Conference on Machine Learning},
+  year = {2025},
+  display_venue = {ICML},
+  pdf = {https://arxiv.org/pdf/2410.16600},
+  abstract = {Behavioral diversity, expert imitation, fairness, safety goals and others give rise to preferences in sequential decision making domains that do not decompose additively across time. We introduce the class of convex Markov games that allow general convex preferences over occupancy measures. Despite infinite time horizon and strictly higher generality than Markov games, pure strategy Nash equilibria exist. Furthermore, equilibria can be approximated empirically by performing gradient descent on an upper bound of exploitability. Our experiments reveal novel solutions to classic repeated normal-form games, find fair solutions in a repeated asymmetric coordination game, and prioritize safe long-term behavior in a robot warehouse environment. In the prisoner's dilemma, our algorithm leverages transient imitation to find a policy profile that deviates from observed human play only slightly, yet achieves higher per-player utility while also being three orders of magnitude less exploitable.}
+}
+
+@inproceedings{liu2025re,
+  title = {Re-evaluating Open-ended Evaluation of Large Language Models},
+  author = {Liu, Siqi and Gemp, Ian and Marris, Luke and Piliouras, Georgios and Heess, Nicolas and Lanctot, Marc},
+  booktitle = {The Thirteenth International Conference on Learning Representations},
+  year = {2025},
+  display_venue = {ICLR},
+  pdf = {https://arxiv.org/pdf/2502.20170},
+  main_authors = {1, 2},
+  abstract = {Evaluation has traditionally focused on ranking candidates for a specific skill. Modern generalist models, such as Large Language Models (LLMs), decidedly outpace this paradigm. Open-ended evaluation systems, where candidate models are compared on user-submitted prompts, have emerged as a popular solution. Despite their many advantages, we show that the current Elo-based rating systems can be susceptible to and even reinforce biases in data, intentional or accidental, due to their sensitivity to redundancies. To address this issue, we propose evaluation as a 3-player game, and introduce novel game-theoretic solution concepts to ensure robustness to redundancy. We show that our method leads to intuitive ratings and provide insights into the competitive landscape of LLM development.}
+}
+
+@article{lanctot2025soft,
+  title = {Soft Condorcet Optimization for Ranking of General Agents},
+  author = {Lanctot, Marc and Larson, Kate and Kaisers, Michael and Berthet, Quentin and Gemp, Ian and Diaz, Manfred and Maura-Rivero, Roberto-Rafael and Bachrach, Yoram and Koop, Anna and Precup, Doina},
+  journal = {AAMAS},
+  year = {2025},
+  display_venue = {AAMAS (Best Paper Award)},
+  pdf = {https://arxiv.org/pdf/2411.00119},
+  abstract = {A common way to drive progress of AI models and agents is to compare their performance on standardized benchmarks. Comparing the performance of general agents requires aggregating their individual performances across a potentially wide variety of different tasks. In this paper, we describe a novel ranking scheme inspired by social choice frameworks, called Soft Condorcet Optimization (SCO), to compute the optimal ranking of agents: the one that makes the fewest mistakes in predicting the agent comparisons in the evaluation data. This optimal ranking is the maximum likelihood estimate when evaluation data (which we view as votes) are interpreted as noisy samples from a ground truth ranking, a solution to Condorcet's original voting system criteria. SCO ratings are maximal for Condorcet winners when they exist, which we show is not necessarily true for the classical rating system Elo. We propose three optimization algorithms to compute SCO ratings and evaluate their empirical performance. When serving as an approximation to the Kemeny-Young voting method, SCO rankings are on average 0 to 0.043 away from the optimal ranking in normalized Kendall-tau distance across 865 preference profiles from the PrefLib open ranking archive. In a simulated noisy tournament setting, SCO achieves accurate approximations to the ground truth ranking and the best among several baselines when 59% or more of the preference data is missing. Finally, SCO ranking provides the best approximation to the optimal ranking, measured on held-out test sets, in a problem containing 52,958 human players across 31,049 games of the classic seven-player game of Diplomacy.}
+}
+
+@article{kempinski2025got,
+  title = {Game of Thoughts: Iterative Reasoning in Game-Theoretic Domains with Large Language Models},
+  author = {Kempinski, Benjamin and Gemp, Ian and Larson, Kate and Lanctot, Marc and Bachrach, Yoram and Kachman, Tal},
+  journal = {AAMAS},
+  year = {2025},
+  display_venue = {AAMAS},
+  pdf = {https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p1088.pdf},
+  abstract = {We explore the strategic reasoning capabilities of large language models (LLMs). We first show that naively allowing LLMs to select actions in games can lead to sub-optimal and easily exploitable strategies.  To address this limitation we propose several algorithms that guide LLMs to iteratively refine their action choices by simulating game outcomes in self-play, akin to cognitive hierarchy models used to characterize human thought processes in strategic settings. Our empirical results in several prominent resource allocation and auction settings indicate that our approach produces stronger and less exploitable strategies. Hence, emulating human decision-making models can enable us to improve the reasoning capabilities of LLMs in multiagent interactions.}
+}
+
+@inproceedings{goktas2025strategic,
+  title = {Strategic Foundation Models},
+  author = {Goktas, Denizalp and Greenwald, Amy and Osogami, Takayuki and Patel, Roma and Leyton-Brown, Kevin and Schoenebeck, Grant and Cornelisse, Daphne and Daskalakis, Constantinos and Gemp, Ian and Horton, John and Parkes, David C. and Pennock, David M. and Prakash, Arjun and Ravindranath, Sai Srivatsa and Smith, Max Olan and Swamy, Gokul and Vinitsky, Eugene and Wasserkrug, Segev and Wellman, Michael and Wu, Jibang and Xu, Haifen and Zhang, Jiayao and Zhang, Yichi and Zhao, Sadie and Zhu, Quanyan},
+  booktitle = {HAL Open Science},
+  year = {2025},
+  display_venue = {HAL Open Science},
+  pdf = {https://hal.science/hal-04925309v1/file/Large_Language_Models__Foundation_Models_and_Game_Theory___Research_Manifesto%20%2816%29.pdf},
+  abstract = {We envision a world where humans and AI agents collaborate and interact beneficially, with AIs generating data-driven strategic recommendations that can be directly implemented by other AI agents, handed over to human decision-makers, or integrated into more complex interactive systems. Large Language Models (LLMs), and more generally foundation models (FMs), are bringing us closer to this vision by enabling laypeople to interact with AI using natural language, thereby providing significant, sometimes radical, efficiency gains in many tasks. When evaluating strategic reasoning, however, the capabilities of these models remain impoverished. We thus propose a collaborative research agenda that involves incorporating game-theoretic paradigms into the research and design of FMs and LLMs, and vice versa. This collaboration will enable strategic FMs-e.g., LLMs that communicate in natural language but exhibit strategic decision-making capabilities-and that can spawn the creation of a fertile ecosystem where humans and AI agents collaborate effectively.}
+}
+
+@article{gemp2024stories,
+  title = {Charting the Shapes of Stories with Game Theory},
+  author = {Daskalakis, Constantinos and Gemp, Ian and Jiang, Yanchen and Paes Leme, Renato and Papadimitriou, Christos and Piliouras, Georgios},
+  journal = {Thirty-Eighth Conference on Neural Information Processing Systems: Creative AI Track},
+  year = {2024},
+  display_venue = {NeurIPS 2024 Creative AI Track},
+  pdf = {https://arxiv.org/pdf/2412.05747},
+  main_authors = {},
+  abstract = {Stories are records of our experiences and their analysis reveals insights into the nature of being human. Successful analyses are often interdisciplinary, leveraging mathematical tools to extract structure from stories and insights from structure. Historically, these tools have been restricted to one dimensional charts and dynamic social networks; however, modern AI offers the possibility of identifying more fully the plot structure, character incentives, and, importantly, counterfactual plot lines that the story could have taken but did not take. In this work, we use AI to model the structure of stories as game-theoretic objects, amenable to quantitative analysis. This allows us to not only interrogate each character's decision making, but also possibly peer into the original author's conception of the characters' world. We demonstrate our proposed technique on Shakespeare's famous Romeo and Juliet. We conclude with a discussion of how our analysis could be replicated in broader contexts, including real-life scenarios.}
+}
+
+@article{marris2024visualizing,
+  title = {Visualizing 2x2 Normal-Form Games: twoxtwogame LaTeX Package},
+  author = {Marris, Luke and Gemp, Ian and Liu, Siqi and Leibo, Joel Z and Piliouras, Georgios},
+  journal = {arXiv preprint arXiv:2402.16985},
+  year = {2024},
+  display_venue = {arXiv},
+  pdf = {https://arxiv.org/pdf/2402.16985},
+  abstract = {Normal-form games with two players, each with two strategies, are the most studied class of games. These so-called 2x2 games are used to model a variety of strategic interactions. They appear in game theory, economics, and artificial intelligence research. However, there lacks tools for describing and visualizing such games. This work introduces a LaTeX package for visualizing 2x2 games. This work has two goals: first, to provide high-quality tools and vector graphic visualizations, suitable for scientific publications. And second, to help promote standardization of names and representations of 2x2 games. The LaTeX package, twoxtwogame, is maintained on GitHub and mirrored on CTAN, and is available under a permissive Apache 2 license.}
+}
+
+@inproceedings{liunfgtransformer,
+  title = {NFGTransformer: Equivariant Representation Learning for Normal-Form Games},
+  author = {Liu, Siqi and Marris, Luke and Piliouras, Georgios and Gemp, Ian and Heess, Nicolas},
+  booktitle = {The Twelfth International Conference on Learning Representations},
+  year = {2024},
+  display_venue = {ICLR},
+  pdf = {https://arxiv.org/pdf/2402.08393},
+  abstract = {Normal-form games (NFGs) are the fundamental model of strategic interaction. We study their representation using neural networks. We describe the inherent equivariance of NFGs -- any permutation of strategies describes an equivalent game -- as well as the challenges this poses for representation learning. We then propose the NfgTransformer architecture that leverages this equivariance, leading to state-of-the-art performance in a range of game-theoretic tasks including equilibrium-solving, deviation gain estimation and ranking, with a common approach to NFG representation. We show that the resulting model is interpretable and versatile, paving the way towards deep learning systems capable of game-theoretic reasoning when interacting with humans and with each other.}
+}
+
+@article{gemp2024approximating,
+  title = {Approximating the Core via Iterative Coalition Sampling},
+  author = {Gemp, Ian and Lanctot, Marc and Marris, Luke and Mao, Yiran and Du{\'e}{\~n}ez-Guzm{\'a}n, Edgar and Perrin, Sarah and Gyorgy, Andras and Elie, Romuald and Piliouras, Georgios and Kaisers, Michael and Hennes, Daniel and Bullard, Kalesha and Larson, Kate and Bachrach, Yoram},
+  journal = {arXiv preprint arXiv:2402.03928},
+  year = {2024},
+  display_venue = {AAMAS},
+  pdf = {https://arxiv.org/pdf/2402.03928},
+  abstract = {The core is a central solution concept in cooperative game theory, defined as the set of feasible allocations or payments such that no subset of agents has incentive to break away and form their own subgroup or coalition. However, it has long been known that the core (and approximations, such as the least-core) are hard to compute. This limits our ability to analyze cooperative games in general, and to fully embrace cooperative game theory contributions in domains such as explainable AI (XAI), where the core can complement the Shapley values to identify influential features or instances supporting predictions by black-box models. We propose novel iterative algorithms for computing variants of the core, which avoid the computational bottleneck of many other approaches; namely solving large linear programs. As such, they scale better to very large problems as we demonstrate across different classes of cooperative games, including weighted voting games, induced subgraph games, and marginal contribution networks. We also explore our algorithms in the context of XAI, providing further evidence of the power of the core for such applications.}
+}
+
+@inproceedings{gemp2024steering,
+  title = {Steering Language Models with Game-Theoretic Solvers},
+  author = {Gemp, Ian and Patel, Roma and Bachrach, Yoram and Lanctot, Marc and Dasagi, Vibhavari and Marris, Luke and Piliouras, Georgios and Liu, Siqi and Tuyls, Karl},
+  booktitle = {Agentic Markets Workshop at ICML 2024},
+  year = {2024},
+  display_venue = {ICML Workshop: Agentic Markets},
+  pdf = {https://arxiv.org/pdf/2402.01704},
+  abstract = {Mathematical models of strategic interactions among rational agents have long been studied in game theory. However the interactions studied are often over a small set of discrete actions which is very different from how humans communicate in natural language. To bridge this gap, we introduce a framework that allows equilibrium solvers to work over the space of natural language dialogue generated by large language models (LLMs). Specifically, by modelling a dialogue task in terms of the players, strategies and payoffs of the ``game" of dialogue, we can create a binding from natural language interactions to the conventional symbolic logic of game theory. Given this binding, we can ask existing game-theoretic algorithms to provide us with strategic solutions (e.g., what string an LLM should generate to maximize payoff at equilibrium), giving us predictors of stable, rational conversational strategies that current LLMs can employ when generating dialogue. We focus on three domains that require different negotiation strategies: scheduling meetings, trading fruit and debate, and evaluate a state-of-the-art pre-trained LLM's ability to generate language when guided by solvers. Our evaluation assesses whether LLMs are more strategic against their partners when guided by equilibrium solvers and whether the language generated under these solutions results in higher payoff. We see that LLMs that do follow game-theory solvers result in dialogue generations that are less exploitable than the control (no guidance from solvers) in our three negotiation domains. We discuss future implications of this work, and how game-theoretic solvers that can leverage the expressivity of natural language can open up a new avenue of guiding language research.}
+}
+
+@inproceedings{jiralerspong2023feature,
+  title = {Feature Likelihood Divergence: Evaluating the Generalization of Generative Models using Samples},
+  author = {Jiralerspong, Marco and Bose, Joey and Gemp, Ian and Qin, Chongli and Bachrach, Yoram and Gidel, Gauthier},
+  booktitle = {Thirty-seventh Conference on Neural Information Processing Systems},
+  year = {2024},
+  display_venue = {NeurIPS},
+  pdf = {https://proceedings.neurips.cc/paper_files/paper/2023/file/68b138608ef80b08d65b1bd9594d9559-Paper-Conference.pdf},
+  abstract = {The past few years have seen impressive progress in the development of deep generative models capable of producing high-dimensional, complex, and photo-realistic data. However, current methods for evaluating such models remain incomplete: standard likelihood-based metrics do not always apply and rarely correlate with perceptual fidelity, while sample-based metrics, such as FID, are insensitive to overfitting, i.e., inability to generalize beyond the training set. To address these limitations, we propose a new metric called the Feature Likelihood Divergence (FLD), a parametric sample-based score that uses density estimation to provide a comprehensive trichotomic evaluation accounting for novelty (i.e., different from the training samples), fidelity, and diversity of generated samples. We empirically demonstrate the ability of FLD to identify specific overfitting problem cases, where previously proposed metrics fail. We also extensively evaluate FLD on various image datasets and model classes, demonstrating its ability to match intuitions of previous metrics like FID while offering a more comprehensive evaluation of generative models.}
+}
+
+@inproceedings{gempapproximating,
+  title = {Approximating Nash Equilibria in Normal-Form Games via Stochastic Optimization},
+  author = {Gemp, Ian and Marris, Luke and Piliouras, Georgios},
+  booktitle = {The Twelfth International Conference on Learning Representations},
+  year = {2024},
+  display_venue = {ICLR (Outstanding Paper Honorable Mention)},
+  pdf = {https://arxiv.org/pdf/2310.06689},
+  abstract = {We propose the first loss function for approximate Nash equilibria of normal-form games that is amenable to unbiased Monte Carlo estimation. This construction allows us to deploy standard non-convex stochastic optimization techniques for approximating Nash equilibria, resulting in novel algorithms with provable guarantees. We complement our theoretical analysis with experiments demonstrating that stochastic gradient descent can outperform previous state-of-the-art approaches.}
+}
+
+@inproceedings{kwon2023auto,
+  title = {Auto-Aligning Multiagent Incentives with Global Objectives},
+  author = {Kwon, Minae and Agapiou, John P and Du{\'e}{\~n}ez-Guzm{\'a}n, Edgar A and Elie, Romuald and Piliouras, Georgios and Bullard, Kalesha and Gemp, Ian},
+  booktitle = {AAMAS Workshop on Adaptive and Learning Agents (ALA)},
+  year = {2023},
+  display_venue = {AAMAS Workshop: Adaptive and Learning Agents (Most Visionary Paper)},
+  pdf = {https://openreview.net/pdf?id=U5gXo9zqNt},
+  abstract = {The general ability to achieve a singular task with a set of decentralized, intelligent agents is an important goal in multiagent research. The complex interaction between individual agents' incentives makes designing their objectives such that the resulting multiagent system aligns with a desired global goal particularly challenging. In this work, instead of considering the problem of designing suitable incentives from scratch, we assume a multiagent system with given preset incentives and consider <i>automatically modifying</i> these incentives online to achieve a new goal. This reduces the search space over possible individual incentives and takes advantage of the effort instilled by the previous system designer. We demonstrate the promise as well as the limitations of re-purposing multiagent systems in this way, both theoretically and empirically, on a variety of domains. Surprisingly, we show that training a diverse multiagent system to align with a modified global objective (<i>g</i> → <i>g′</i>) can, in at least one case, lead to better generalization performance in unseen test scenarios, when evaluated on the original objective (<i>g</i>).}
+}
+
+@inproceedings{goktasgenerative,
+  title = {Generative adversarial equilibrium solvers},
+  author = {Goktas, Denizalp and Parkes, David C and Gemp, Ian and Marris, Luke and Piliouras, Georgios and Elie, Romuald and Lever, Guy and Tacchetti, Andrea},
+  booktitle = {The Twelfth International Conference on Learning Representations},
+  year = {2023},
+  display_venue = {ICLR},
+  pdf = {https://arxiv.org/abs/2302.06607},
+  abstract = {We introduce the use of generative adversarial learning to compute equilibria in general game-theoretic settings, specifically the generalized Nash equilibrium (GNE) in pseudo-games, and its specific instantiation as the competitive equilibrium (CE) in Arrow-Debreu competitive economies. Pseudo-games are a generalization of games in which players' actions affect not only the payoffs of other players but also their feasible action spaces. Although the computation of GNE and CE is intractable in the worst-case, i.e., PPAD-hard, in practice, many applications only require solutions with high accuracy in expectation over a distribution of problem instances. We introduce Generative Adversarial Equilibrium Solvers (GAES): a family of generative adversarial neural networks that can learn GNE and CE from only a sample of problem instances. We provide computational and sample complexity bounds, and apply the framework to finding Nash equilibria in normal-form games, CE in Arrow-Debreu competitive economies, and GNE in an environmental economic model of the Kyoto mechanism.}
+}
+
+@article{li2023combining,
+  title = {Combining tree-search, generative models, and Nash bargaining concepts in game-theoretic reinforcement learning},
+  author = {Li, Zun and Lanctot, Marc and McKee, Kevin R and Marris, Luke and Gemp, Ian and Hennes, Daniel and Muller, Paul and Larson, Kate and Bachrach, Yoram and Wellman, Michael P},
+  journal = {arXiv preprint arXiv:2302.00797},
+  year = {2023},
+  display_venue = {arXiv},
+  pdf = {https://arxiv.org/pdf/2302.00797},
+  abstract = {Multiagent reinforcement learning (MARL) has benefited significantly from population-based and game-theoretic training regimes. One approach, Policy-Space Response Oracles (PSRO), employs standard reinforcement learning to compute response policies via approximate best responses and combines them via meta-strategy selection. We augment PSRO by adding a novel search procedure with generative sampling of world states, and introduce two new meta-strategy solvers based on the Nash bargaining solution. We evaluate PSRO's ability to compute approximate Nash equilibrium, and its performance in two negotiation games: Colored Trails, and Deal or No Deal. We conduct behavioral studies where human participants negotiate with our agents (N=346). We find that search with generative modeling finds stronger policies during both training time and test time, enables online Bayesian co-player prediction, and can produce agents that achieve comparable social welfare negotiating with humans as humans trading among themselves.}
+}
+
+@article{marris2023equilibrium,
+  title = {Equilibrium-Invariant Embedding, Metric Space, and Fundamental Set of 2x2 Normal-Form Games},
+  author = {Marris, Luke and Gemp, Ian and Piliouras, Georgios},
+  journal = {arXiv preprint arXiv:2304.09978},
+  year = {2023},
+  display_venue = {arXiv},
+  pdf = {https://arxiv.org/pdf/2304.09978},
+  abstract = {Equilibrium solution concepts of normal-form games, such as Nash equilibria, correlated equilibria, and coarse correlated equilibria, describe the joint strategy profiles from which no player has incentive to unilaterally deviate. They are widely studied in game theory, economics, and multiagent systems. Equilibrium concepts are invariant under certain transforms of the payoffs. We define an equilibrium-inspired distance metric for the space of all normal-form games and uncover a distance-preserving equilibrium-invariant embedding. Furthermore, we propose an additional transform which defines a better-response-invariant distance metric and embedding. To demonstrate these metric spaces we study 2x2 games. The equilibrium-invariant embedding of 2x2 games has an efficient two variable parameterization (a reduction from eight), where each variable geometrically describes an angle on a unit circle. Interesting properties can be spatially inferred from the embedding, including: equilibrium support, cycles, competition, coordination, distances, best-responses, and symmetries. The best-response-invariant embedding of 2x2 games, after considering symmetries, rediscovers a set of 15 games, and their respective equivalence classes. We propose that this set of game classes is fundamental and captures all possible interesting strategic interactions in 2x2 games. We introduce a directed graph representation and name for each class. Finally, we leverage the tools developed for 2x2 games to develop game theoretic visualizations of large normal-form and extensive-form games that aim to fingerprint the strategic interactions that occur within.}
+}
+
+@inproceedings{du2023alphasnake,
+  title = {Alpha{S}nake: Policy Iteration on a Nondeterministic {NP}-hard {M}arkov Decision Process},
+  author = {Du, Kevin and Gemp, Ian and Wu, Yi and Wu, Yingying},
+  booktitle = {AAAI 2023 Student Abstract and Poster Program},
+  year = {2023},
+  display_venue = {AAAI Student Program},
+  pdf = {https://arxiv.org/pdf/2211.09622},
+  abstract = {Reinforcement learning has recently been used to approach well-known NP-hard combinatorial problems in graph theory. Among these problems, Hamiltonian cycle problems are exceptionally difficult to analyze, even when restricted to individual instances of structurally complex graphs. In this paper, we use Monte Carlo Tree Search (MCTS), the search algorithm behind many state-of-the-art reinforcement learning algorithms such as AlphaZero, to create autonomous agents that learn to play the game of Snake, a game centered on properties of Hamiltonian cycles on grid graphs. The game of Snake can be formulated as a single-player discounted Markov Decision Process (MDP) where the agent must behave optimally in a stochastic environment. Determining the optimal policy for Snake, defined as the policy that maximizes the probability of winning - or win rate - with higher priority and minimizes the expected number of time steps to win with lower priority, is conjectured to be NP-hard. Performance-wise, compared to prior work in the Snake game, our algorithm is the first to achieve a win rate over 0.5 (a uniform random policy achieves a win rate <2.57×10^15), demonstrating the versatility of AlphaZero in approaching NP-hard environments.}
+}
+
+@article{gemp2023generalized,
+  title = {The Symmetric Generalized Eigenvalue Problem as a {N}ash Equilibrium},
+  author = {Gemp, Ian and Chen, Charlie and McWilliams, Brian},
+  journal = {ICLR},
+  year = {2023},
+  display_venue = {ICLR (Spotlight: Notable Top-25%)},
+  pdf = {https://arxiv.org/pdf/2206.04993},
+  main_authors = {1, 2},
+  abstract = {The symmetric generalized eigenvalue problem (SGEP) is a fundamental concept in numerical linear algebra. It captures the solution of many classical machine learning problems such as canonical correlation analysis, independent components analysis, partial least squares, linear discriminant analysis, principal components and others. Despite this, most general solvers are prohibitively expensive when dealing with streaming data sets (i.e., minibatches) and research has instead concentrated on finding efficient solutions to specific problem instances. In this work, we develop a game-theoretic formulation of the top-k SGEP whose Nash equilibrium is the set of generalized eigenvectors. We also present a parallelizable algorithm with guaranteed asymptotic convergence to the Nash. Current state-of-the-art methods require O(d2k) runtime complexity per iteration which is prohibitively expensive when the number of dimensions (d) is large. We show how to modify this parallel approach to achieve O(dk) runtime complexity. Empirically we demonstrate that this resulting algorithm is able to solve a variety of SGEP problem instances including a large-scale analysis of neural network activations.}
+}
+
+@article{kramar2022negotiation,
+  title = {Negotiation and honesty in artificial intelligence methods for the board game of Diplomacy},
+  author = {Kram{\'a}r, J{\'a}nos and Eccles, Tom and Gemp, Ian and Tacchetti, Andrea and McKee, Kevin R. and Malinowski, Mateusz and Graepel, Thore and Bachrach, Yoram},
+  journal = {Nature Communications},
+  volume = {13},
+  pages = {7214},
+  year = {2022},
+  display_venue = {Nature Communications},
+  pdf = {https://www.nature.com/articles/s41467-022-34473-5.pdf},
+  abstract = {The success of human civilization is rooted in our ability to cooperate by communicating and making joint plans. We study how artificial agents may use communication to better cooperate in Diplomacy, a long-standing AI challenge. We propose negotiation algorithms allowing agents to agree on contracts regarding joint plans, and show they outperform agents lacking this ability. For humans, misleading others about our intentions forms a barrier to cooperation. Diplomacy requires reasoning about our opponents’ future plans, enabling us to study broken commitments between agents and the conditions for honest cooperation. We find that artificial agents face a similar problem as humans: communities of communicating agents are susceptible to peers who deviate from agreements. To defend against this, we show that the inclination to sanction peers who break contracts dramatically reduces the advantage of such deviators. Hence, sanctioning helps foster mostly truthful communication, despite conditions that initially favor deviations from agreements.}
+}
+
+@article{marris2022nes,
+  title = {Turbocharging Solution Concepts: Solving NEs, CEs and CCEs with Neural Equilibrium Solvers},
+  author = {Marris, Luke and Gemp, Ian and Anthony, Thomas and Tacchetti, Andrea and Liu, Siqi and Tuyls, Karl},
+  journal = {NeurIPS},
+  year = {2022},
+  display_venue = {NeurIPS},
+  pdf = {https://openreview.net/pdf?id=RczPtvlaXPH},
+  abstract = {Solution concepts such as Nash Equilibria, Correlated Equilibria, and Coarse Correlated Equilibria are useful components for many multiagent machine learning algorithms. Unfortunately, solving a normal-form game could take prohibitive or non-deterministic time to converge, and could fail. We introduce the Neural Equilibrium Solver which utilizes a special equivariant neural network architecture to approximately solve the space of all games of fixed shape, buying speed and determinism. We define a flexible equilibrium selection framework, that is capable of uniquely selecting an equilibrium that minimizes relative entropy, or maximizes welfare. The network is trained without needing to generate any supervised training data. We show remarkable zero-shot generalization to larger games. We argue that such a network is a powerful component for many possible multiagent algorithms.}
+}
+
+@article{gemp2022allpay,
+  title = {Designing All-pay Auctions using Deep Learning and Multi-agent Simulation},
+  author = {Gemp, Ian and Anthony, Thomas and Kramar, Janos and Eccles, Tom and Tacchetti, Andrea and Bachrach, Yoram},
+  journal = {Scientific Reports},
+  volume = {12},
+  number = {1},
+  pages = {1--15},
+  publisher = {Nature Publishing Group},
+  year = {2022},
+  display_venue = {Nature: Scientific Reports},
+  pdf = {https://www.nature.com/articles/s41598-022-20234-3.pdf},
+  abstract = {We propose a multi-agent learning approach for designing crowdsourcing contests and All-Pay auctions. Prizes in contests incentivise contestants to expend effort on their entries, with different prize allocations resulting in different incentives and bidding behaviors. In contrast to auctions designed manually by economists, our method searches the possible design space using a simulation of the multi-agent learning process, and can thus handle settings where a game-theoretic equilibrium analysis is not tractable. Our method simulates agent learning in contests and evaluates the utility of the resulting outcome for the auctioneer. Given a large contest design space, we assess through simulation many possible contest designs within the space, and fit a neural network to predict outcomes for previously untested contest designs. Finally, we apply mirror ascent to optimize the design so as to achieve more desirable outcomes. Our empirical analysis shows our approach closely matches the optimal outcomes in settings where the equilibrium is known, and can produce high quality designs in settings where the equilibrium strategies are not solvable analytically.}
+}
+
+@article{marris2022game,
+  title = {Game Theoretic Rating in N-player General-sum Games with Equilibria},
+  author = {Marris, Luke and Lanctot, Marc and Gemp, Ian and Omidshafiei, Shayegan and McAleer, Stephen and Connor, Jerome and Tuyls, Karl and Graepel, Thore},
+  journal = {arXiv preprint arXiv:2210.02205},
+  year = {2022},
+  display_venue = {arXiv},
+  pdf = {https://arxiv.org/pdf/2210.02205.pdf},
+  abstract = {Rating strategies in a game is an important area of research in game theory and artificial intelligence, and can be applied to any real-world competitive or cooperative setting. Traditionally, only transitive dependencies between strategies have been used to rate strategies (e.g. Elo), however recent work has expanded ratings to utilize game theoretic solutions to better rate strategies in non-transitive games. This work generalizes these ideas and proposes novel algorithms suitable for N-player, general-sum rating of strategies in normal-form games according to the payoff rating system. This enables well-established solution concepts, such as equilibria, to be leveraged to efficiently rate strategies in games with complex strategic interactions, which arise in multiagent training and real-world interactions between many agents. We empirically validate our methods on real world normal-form data (Premier League) and multiagent reinforcement learning agent evaluation.}
+}
+
+@article{evpol2022dilation,
+  title = {Stochastic Parallelizable Eigengap Dilation for Large Graph Clustering},
+  author = {van der Pol, Elise and Gemp, Ian and Bachrach, Yoram and Everett, Richard},
+  journal = {arXiv preprint arXiv:2207.14589},
+  year = {2022},
+  display_venue = {ICML Workshop: Topology, Algebra, and Geometry in Machine Learning},
+  pdf = {https://arxiv.org/abs/2207.14589},
+  abstract = {Large graphs commonly appear in social networks, knowledge graphs, recommender systems, life sciences, and decision making problems. Summarizing large graphs by their high level properties is helpful in solving problems in these settings. In spectral clustering, we aim to identify clusters of nodes where most edges fall within clusters and only few edges fall between clusters. This task is important for many downstream applications and exploratory analysis. A core step of spectral clustering is performing an eigendecomposition of the corresponding graph Laplacian matrix (or equivalently, a singular value decomposition, SVD, of the incidence matrix). The convergence of iterative singular value decomposition approaches depends on the eigengaps of the spectrum of the given matrix, i.e., the difference between consecutive eigenvalues. For a graph Laplacian corresponding to a well-clustered graph, the eigenvalues will be non-negative but very small (much less than ) slowing convergence. This paper introduces a parallelizable approach to dilating the spectrum in order to accelerate SVD solvers and in turn, spectral clustering. This is accomplished via polynomial approximations to matrix operations that favorably transform the spectrum of a matrix without changing its eigenvectors. Experiments demonstrate that this approach significantly accelerates convergence, and we explain how this transformation can be parallelized and stochastically approximated to scale with available compute.}
+}
+
+@inproceedings{yu2022teamwork,
+  title = {Teamwork Reinforcement Learning with Concave Utilities},
+  author = {Yu, Zheng and Zhang, Junyu and Wen, Zheng and Tacchetti, Andrea and Wang, Mengdi and Gemp, Ian},
+  booktitle = {ICLR 2022 Workshop on Gamification and Multiagent Solutions},
+  year = {2022},
+  display_venue = {ICLR Workshop: Gamification and Multiagent Solutions},
+  pdf = {https://openreview.net/pdf?id=H-MDj5kaxc},
+  abstract = {Complex reinforcement learning (RL) tasks often require a divide-and-conquer approach, where a large task is divided into pieces and solved by individual agents. In this paper, we study a teamwork RL setting where individual agents make decisions on disjoint subsets (blocks) of the state space and have private interests (reward functions), while the entire team aims to maximize a general long-term team utility function and may be subject to constraints. This team utility, which is not necessarily a cumulative sum of rewards, is modeled as a nonlinear function of the team's joint state-action occupancy distribution. By leveraging the inherent duality of policy optimization, we propose a min-max multi-block policy optimization framework to decompose the overall problem into individual local tasks. This enables a federated teamwork mechanism where a team lead coordinates individual agents via reward shaping, and each agent solves her local task defined only on their local state subset. We analyze the convergence of this teamwork policy optimization mechanism and establish an O(1/T) convergence rate to the team's joint optimum. This mechanism allows team members to jointly find the global socially optimal policy while keeping their local privacy.}
+}
+
+@article{dmgamma2022,
+  title = {Developing, Evaluating and Scaling Learning Agents in Multi-agent Environments},
+  author = {Gemp, Ian and Anthony, Thomas and Bachrach, Yoram and Bhoopchand, Avishkar and Bullard, Kalesha and Connor, Jerome and Dasagi, Vibhavari and De Vylder, Bart and Du{\'e}{\~n}ez-Guzm{\'a}n, Edgar A and Elie, Romuald and Everett, Richard and Hennes, Daniel and Hughes, Edward and Khan, Mina and Lanctot, Marc and Larson, Kate and Lever, Guy and Liu, Siqi and Marris, Luke and McKee, Kevin R. and Muller, Paul and Pérolat, Julien and Strub, Florian and Tacchetti, Andrea and Tarassov, Eugene and Wang, Zhe and Tuyls, Karl},
+  journal = {AI Communications},
+  number = {Preprint},
+  pages = {1--14},
+  publisher = {IOS Press},
+  year = {2022},
+  display_venue = {AI Communications},
+  pdf = {https://arxiv.org/pdf/2209.10958.pdf},
+  main_authors = {1, 27},
+  abstract = {The Game Theory & Multi-Agent team at DeepMind studies several aspects of multi-agent learning ranging from computing approximations to fundamental concepts in game theory to simulating social dilemmas in rich spatial environments and training 3-d humanoids in difficult team coordination tasks. A signature aim of our group is to use the resources and expertise made available to us at DeepMind in deep reinforcement learning to explore multi-agent systems in complex environments and use these benchmarks to advance our understanding. Here, we summarise the recent work of our team and present a taxonomy that we feel highlights many important open challenges in multi-agent research.}
+}
+
+@article{gemp2022mueigengame,
+  title = {EigenGame Unloaded: When playing games is better than optimizing},
+  author = {Gemp, Ian and McWilliams, Brian and Vernade, Claire and Graepel, Thore},
+  journal = {ICLR},
+  year = {2022},
+  display_venue = {ICLR},
+  pdf = {https://arxiv.org/pdf/2102.04152.pdf},
+  main_authors = {1, 2},
+  abstract = {We build on the recently proposed EigenGame that views eigendecomposition as a competitive game. EigenGame's updates are biased if computed using minibatches of data, which hinders convergence and more sophisticated parallelism in the stochastic setting. In this work, we propose an unbiased stochastic update that is asymptotically equivalent to EigenGame, enjoys greater parallelism allowing computation on datasets of larger sample sizes, and outperforms EigenGame in experiments. We present applications to finding the principal components of massive datasets and performing spectral clustering of graphs. We analyze and discuss our proposed update in the context of EigenGame and the shift in perspective from optimization to games.}
+}
+
+@article{gemp2022d3c,
+  title = {D3C: Reducing the Price of Anarchy in Multi-Agent Learning},
+  author = {Gemp, Ian and McKee, Kevin R. and Everett, Richard and Duéñez-Guzmán, Edgar A. and Bachrach, Yoram and Balduzzi, David and Tacchetti, Andrea},
+  journal = {AAMAS},
+  year = {2022},
+  display_venue = {AAMAS},
+  pdf = {https://arxiv.org/pdf/2010.00575.pdf},
+  abstract = {In multiagent systems, the complex interaction of fixed incentives can lead agents to outcomes that are poor (inefficient) not only for the group, but also for each individual. Price of anarchy is a technical, game-theoretic definition that quantifies the inefficiency arising in these scenarios -- it compares the welfare that can be achieved through perfect coordination against that achieved by self-interested agents at a Nash equilibrium. We derive a differentiable, upper bound on a price of anarchy that agents can cheaply estimate during learning. Equipped with this estimator, agents can adjust their incentives in a way that improves the efficiency incurred at a Nash equilibrium. Agents do so by learning to mix their reward (equiv. negative loss) with that of other agents by following the gradient of our derived upper bound. We refer to this approach as D3C. In the case where agent incentives are differentiable, D3C resembles the celebrated Win-Stay, Lose-Shift strategy from behavioral game theory, thereby establishing a connection between the global goal of maximum welfare and an established agent-centric learning rule. In the non-differentiable setting, as is common in multiagent reinforcement learning, we show the upper bound can be reduced via evolutionary strategies, until a compromise is reached in a distributed fashion. We demonstrate that D3C improves outcomes for each agent and the group as a whole on several social dilemmas including a traffic network exhibiting Braess's paradox, a prisoner's dilemma, and several multiagent domains.}
+}
+
+@article{gemp2022adidas,
+  title = {Sample-based Approximation of Nash in Large Many-Player Games via Gradient Descent},
+  author = {Gemp, Ian and Savani, Rahul and Lanctot, Marc and Bachrach, Yoram and Anthony, Thomas and Everett, Richard and Tacchetti, Andrea and Eccles, Tom and Kramár, János},
+  journal = {AAMAS},
+  year = {2022},
+  display_venue = {AAMAS (Oral)},
+  pdf = {https://arxiv.org/pdf/2106.01285.pdf},
+  abstract = {Nash equilibrium is a central concept in game theory. Several Nash solvers exist, yet none scale to normal-form games with many actions and many players, especially those with payoff tensors too big to be stored in memory. In this work, we propose an approach that iteratively improves an approximation to a Nash equilibrium through joint play. It accomplishes this by tracing a previously established homotopy that defines a continuum of equilibria for the game regularized with decaying levels of entropy. This continuum asymptotically approaches the limiting logit equilibrium, proven by McKelvey and Palfrey (1995) to be unique in almost all games, thereby partially circumventing the well-known equilibrium selection problem of many-player games. To encourage iterates to remain near this path, we efficiently minimize average deviation incentive via stochastic gradient descent, intelligently sampling entries in the payoff tensor as needed. Monte Carlo estimates of the stochastic gradient from joint play are biased due to the appearance of a nonlinear max operator in the objective, so we introduce additional innovations to the algorithm to alleviate gradient bias. The descent process can also be viewed as repeatedly constructing and reacting to a polymatrix approximation to the game. In these ways, our proposed approach, average deviation incentive descent with adaptive sampling (ADIDAS), is most similar to three classical approaches, namely homotopy-type, Lyapunov, and iterative polymatrix solvers. The lack of local convergence guarantees for biased gradient descent prevents guaranteed convergence to Nash, however, we demonstrate through extensive experiments the ability of this approach to approximate a unique Nash in normal-form games with as many as seven players and twenty one actions (several billion outcomes) that are orders of magnitude larger than those possible with prior algorithms.}
+}
+
+@article{bachrachneural,
+  title = {A Neural Network Auction For Group Decision Making Over a Continuous Space},
+  author = {Bachrach, Yoram and Gemp, Ian and Garnelo, Marta and Kramar, Janos and Eccles, Tom and Rosenbaum, Dan and Graepel, Thore},
+  journal = {IJCAI-21 Demonstrations Track},
+  year = {2021},
+  display_venue = {IJCAI-21 Demonstrations Track},
+  pdf = {https://www.ijcai.org/proceedings/2021/0706.pdf},
+  abstract = {We propose a system for conducting an auction over locations in a continuous space. It enables participants to express their preferences over possible choices of location in the space, selecting the location that maximizes the total utility of all agents. We prevent agents from tricking the system into selecting a location that improves their individual utility at the expense of others by using a pricing rule that gives agents no incentive to misreport their true preferences. The system queries participants for their utility in many random locations, then trains a neural network to approximate the preference function of each participant. The parameters of these neural network models are transmitted and processed by the auction mechanism, which composes these into differentiable models that are optimized through gradient ascent to compute the final chosen location and charged prices.}
+}
+
+@article{gemp2021eigengame,
+  title = {EigenGame: PCA as a Nash Equilibrium},
+  author = {Gemp, Ian and McWilliams, Brian and Vernade, Claire and Graepel, Thore},
+  journal = {ICLR},
+  year = {2021},
+  display_venue = {ICLR (Outstanding Paper Award)},
+  pdf = {https://arxiv.org/pdf/2010.00554.pdf},
+  abstract = {We present a novel view on principal component analysis (PCA) as a competitive game in which each approximate eigenvector is controlled by a player whose goal is to maximize their own utility function. We analyze the properties of this PCA game and the behavior of its gradient based updates. The resulting algorithm which combines elements from Oja's rule with a generalized Gram-Schmidt orthogonalization is naturally decentralized and hence parallelizable through message passing. We demonstrate the scalability of the algorithm with experiments on large image datasets and neural network activations. We discuss how this new view of PCA as a differentiable game can lead to further algorithmic developments and insights.}
+}
+
+@inproceedings{patel2021game,
+  title = {Game-theoretic Vocabulary Selection via the Shapley Value and Banzhaf Index},
+  author = {Patel, Roma and Garnelo, Marta and Gemp, Ian and Dyer, Chris and Bachrach, Yoram},
+  booktitle = {Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  pages = {2789--2798},
+  year = {2021},
+  display_venue = {NAACL},
+  pdf = {https://aclanthology.org/2021.naacl-main.223.pdf},
+  abstract = {The input vocabulary and their learned representations are crucial to the performance of neural NLP models. Using the full vocabulary results in less explainable and more memory intensive models, with the embedding layer often constituting the majority of model parameters. It is thus common to use a smaller vocabulary to lower memory requirements and construct more interpertable models.
+
+We propose a vocabulary selection method that views words as members of a team trying to maximize the model’s performance. We apply power indices from cooperative game theory, including the Shapley value and Banzhaf index, that measure the relative importance of individual team members in accomplishing a
+joint task. We approximately compute these indices to identify the most influential words.
+
+Our empirical evaluation examines multiple NLP tasks, including sentence and document classification, question answering and textual entailment. We compare to baselines that select words based on frequency, TF-IDF and regression coefficients under L1 regularization, and show that this game-theoretic vocabulary selection outperforms all baselines on a range of different tasks and datasets.}
+}
+
+@article{gemp2020d3c,
+  title = {D3C: Reducing the Price of Anarchy in Multi-Agent Learning},
+  author = {Gemp, Ian and McKee, Kevin R. and Everett, Richard and Duéñez-Guzmán, Edgar A. and Bachrach, Yoram and Balduzzi, David and Tacchetti, Andrea},
+  journal = {NeurIPS Workshop: Cooperative AI},
+  year = {2020},
+  display_venue = {NeurIPS Workshop: Cooperative AI},
+  pdf = {https://arxiv.org/pdf/2010.00575.pdf},
+  abstract = {Even in simple multi-agent systems, fixed incentives can lead to outcomes that are poor for the group and each individual agent. We propose a method, D3C, for online adjustment of agent incentives that reduces the loss incurred at a Nash equilibrium. Agents adjust their incentives by learning to mix their incentive with that of other agents, until a compromise is reached in a distributed fashion. We show that D3C improves outcomes for each agent and the group as a whole on several social dilemmas including a traffic network with Braess's paradox, a prisoner's dilemma, and several reinforcement learning domains.}
+}
+
+@article{anthony2020learning,
+  title = {Learning to Play No-Press Diplomacy with Best Response Policy Iteration},
+  author = {Anthony, Thomas and Eccles, Tom and Tacchetti, Andrea and Kramár, János and Gemp, Ian and Hudson, Thomas C. and Porcel, Nicolas and Lanctot, Marc and Pérolat, Julien and Everett, Richard and Singh, Satinder and Graepel, Thore and Bachrach, Yoram},
+  journal = {NeurIPS},
+  year = {2020},
+  display_venue = {NeurIPS (Spotlight)},
+  pdf = {https://arxiv.org/pdf/2006.04635.pdf},
+  main_authors = {1, 2},
+  abstract = {Recent advances in deep reinforcement learning (RL) have led to considerable progress in many 2-player zero-sum games, such as Go, Poker and Starcraft. The purely adversarial nature of such games allows for conceptually simple and principled application of RL methods. However real-world settings are many-agent, and agent interactions are complex mixtures of common-interest and competitive aspects. We consider Diplomacy, a 7-player board game designed to accentuate dilemmas resulting from many-agent interactions. It also features a large combinatorial action space and simultaneous moves, which are challenging for RL algorithms. We propose a simple yet effective approximate best response operator, designed to handle large combinatorial action spaces and simultaneous moves. We also introduce a family of policy iteration methods that approximate fictitious play. With these methods, we successfully apply RL to Diplomacy: we show that our agents convincingly outperform the previous state-of-the-art, and game theoretic equilibrium analysis shows that the new process yields consistent improvements.}
+}
+
+@article{kmckee2020divers,
+  title = {Social Diversity and Social Preferences in Mixed-Motive Reinforcement Learning},
+  author = {McKee, Kevin and Gemp, Ian and McWilliams, Brian and Duéñez-Guzmán, Edgar and Hughes, Edward and Leibo, Joel},
+  journal = {AAMAS},
+  year = {2020},
+  display_venue = {AAMAS},
+  pdf = {https://arxiv.org/pdf/2002.02325.pdf},
+  abstract = {Recent research on reinforcement learning in pure-conflict and pure-common interest games has emphasized the importance of population heterogeneity. In contrast, studies of reinforcement learning in mixed-motive games have primarily leveraged homogeneous approaches. Given the defining characteristic of mixedmotive games—the imperfect correlation of incentives between group members—we study the effect of population heterogeneity on mixed-motive reinforcement learning. We draw on interdependence theory from social psychology and imbue reinforcement learning agents with Social Value Orientation (SVO), a flexible formalization of preferences over group outcome distributions. We subsequently explore the effects of diversity in SVO on populations of reinforcement learning agents in two mixed-motive Markov games. We demonstrate that heterogeneity in SVO generates meaningful and complex behavioral variation among agents similar to that suggested by interdependence theory. Empirical results in these mixed-motive dilemmas suggest agents trained in heterogeneous populations develop particularly generalized, high-performing policies relative to those trained in homogeneous populations.}
+}
+
+@article{balduzzi2020smoothmarkets,
+  title = {Smooth Markets: A Basic Mechanism for Organizing Gradient-Based Learners},
+  author = {Balduzzi, David and Czarnecki, Wojciech and Anthony, Thomas and Gemp, Ian and Hughes, Edward and Leibo, Joel and Piliouras, George and Graepel, Thore},
+  journal = {ICLR},
+  year = {2020},
+  display_venue = {ICLR},
+  pdf = {https://arxiv.org/pdf/2001.04678.pdf},
+  abstract = {With the success of modern machine learning, it is becoming increasingly importantly to understand and control how learning algorithms interact. Unfortunately, negative results from game theory show there is little hope of understanding or controlling general n-player games. We therefore introduce smooth markets (SM-games), a class of n-player games with pairwise zero sum interactions. SM-games codify a common design pattern in machine learning that includes (some) GANs, adversarial training, and other recent algorithms. We show that SM-games are amenable to analysis and optimization using first-order methods.}
+}
+
+@article{gempmcwilliams2019adamcycles,
+  title = {The Unreasonable Effectiveness of Adam on Cycles},
+  author = {Gemp, Ian and McWilliams, Brian},
+  journal = {NeurIPS Workshop: Bridging Game Theory & Deep Learning},
+  year = {2019},
+  display_venue = {NeurIPS Workshop: Bridging Game Theory & Deep Learning},
+  pdf = {https://sgo-workshop.github.io/CameraReady2019/11.pdf},
+  main_authors = {1, 2},
+  abstract = {Generative adversarial networks (GANs) are state of the art generative models for images and other domains. Training GANs is difficult, although not nearly as difficult as expected given theoretical results on finding a Nash (PPAD complete) and our understanding of dynamical systems. Several new algorithms and techniques have been proposed to stabilize GAN training, but nearly all employ Adam or RMSProp. In fact, training a GAN with SGD instead of Adam often fails. Here, we aim to understand how Adam circumvents some of the difficulties associated with GAN training. To this end, we study Adam in the context of a cycle problem. The cycle problem is a canonical equilibrium problem for which naive optimization approaches, e.g., simultaneous SGD, fail. Understanding how Adam works in this context helps reveal reasons for its unexpected success.}
+}
+
+@article{gemp2019ssntm,
+  title = {Weakly Semi-Supervised Neural Topic Models},
+  author = {Gemp, Ian and Nallapati, Ramesh and Ding, Ran and Nan, Feng and Xiang, Bing},
+  journal = {ICLR Workshop: Learning with Limited Labeled Data},
+  year = {2019},
+  display_venue = {ICLR Workshop: Learning with Limited Labeled Data},
+  pdf = {pubs/iclr_ws_2019.pdf},
+  abstract = {We consider the problem of topic modeling in a weakly semi-supervised setting. In this scenario, we assume that the user knows a priori a subset of the topics she wants the model to learn and is able to provide a few exemplar documents for those topics. In addition, while each document may typically consist of multiple topics, we do not assume that the user will identify all its topics exhaustively. Recent state-of-the-art topic models such as NVDM, referred to herein as Neural Topic Models (NTMs), fall under the variational autoencoder framework. We extend NTMs to the weakly semi-supervised setting by using informative priors in the training objective. After analyzing the effect of informative priors, we propose a simple modification of the NVDM model using a logit-normal posterior that we show achieves better alignment to user-desired topics versus other NTM models.}
+}
+
+@article{gemp2018thesis,
+  title = {From Optimization to Equilibration: Understanding an Emerging Paradigm in Artificial Intelligence and Machine Learning},
+  author = {Gemp, Ian},
+  journal = {UMass Amherst Technical Report},
+  year = {2018},
+  display_venue = {UMass Amherst Thesis},
+  pdf = {pubs/thesis_2018.pdf},
+  abstract = {Many existing machine learning (ML) algorithms cannot be viewed as gradient descent on some single objective. The solution trajectories taken by these algorithms naturally exhibit rotation, sometimes forming cycles, a behavior that is not expected with (full-batch) gradient descent. However, these algorithms can be viewed more generally as solving for the equilibrium of a game with possibly multiple competing objectives. Moreover, some recent ML models, specifically generative adversarial net- works (GANs) and its variants, are now explicitly formulated as equilibrium problems. Equilibrium problems present challenges beyond those encountered in optimization such as limit-cycles and chaotic attractors and are able to abstract away some of the difficulties encountered when training models like GANs.
+<br><br>
+In this thesis, I aim to advance our understanding of equilibrium problems so as to improve state-of-the-art in GANs and related domains. In the following chapters, I will present work on
+<ol>
+<li>designing a no-regret framework for solving monotone equilibrium problems in online or streaming settings (with applications to Reinforcement Learning),</li>
+<li>ensuring convergence when training a GAN to fit a normal distribution to data by Crossing-the-Curl,</li>
+<li>improving state-of-the-art image generation with techniques derived from theory,</li>
+<li>and borrowing tools from dynamical systems theory for analyzing the complex dynamics of GAN training.</li>
+</ol>}
+}
+
+@article{gemp2018crosscurl,
+  title = {Global Convergence to the Equilibrium of GANs using Variational Inequalities},
+  author = {Gemp, Ian and Mahadevan, Sridhar},
+  journal = {arXiv preprint arXiv:1808.01531},
+  year = {2018},
+  display_venue = {arXiv preprint arXiv:1808.01531},
+  pdf = {https://arxiv.org/pdf/1808.01531.pdf},
+  abstract = {In optimization, the negative gradient of a function denotes the direction of steepest descent. Furthermore, traveling in any direction orthogonal to the gradient maintains the value of the function. In this work, we show that these orthogonal directions that are ignored by gradient descent can be critical in equilibrium problems. Equilibrium problems have drawn heightened attention in machine learning due to the emergence of the Generative Adversarial Network (GAN). We use the framework of Variational Inequalities to analyze popular training algorithms for a fundamental GAN variant: the Wasserstein Linear-Quadratic GAN. We show that the steepest descent direction causes divergence from the equilibrium, and guaranteed convergence to the equilibrium is achieved through following a particular orthogonal direction. We call this successful technique Crossing-the-Curl, named for its mathematical derivation as well as its intuition: identify the game's axis of rotation and move "across" space in the direction towards smaller "curling".}
+}
+
+@article{liu2018proximal,
+  title = {Proximal Gradient Temporal Difference Learning: Stable Reinforcement Learning with Polynomial Sample Complexity},
+  author = {Liu, Bo and Gemp, Ian and Ghavamzadeh, Mohammad and Liu, Ji and Mahadevan, Sridhar and Petrik, Marek},
+  journal = {Journal of Artificial Intelligence Research},
+  volume = {63},
+  pages = {461--494},
+  year = {2018},
+  display_venue = {Journal of Artificial Intelligence Research},
+  pdf = {https://www.eng.auburn.edu/~bzl0056/public_html/j-2018-jair.pdf},
+  abstract = {In this paper, we introduce proximal gradient temporal difference learning, which provides a principled way of designing and analyzing true stochastic gradient temporal difference learning algorithms. We show how gradient TD (GTD) reinforcement learning methods can be formally derived,  not by starting from their original objective functions, as previously attempted, but rather from a primal-dual saddle-point objective function. We also conduct a saddle-point error analysis to obtain finite-sample bounds on their performance. Previous analyses of this class of algorithms use stochastic approximation techniques to prove asymptotic convergence, and do not provide any finite-sample analysis. We also propose an accelerated algorithm, called GTD2-MP, that uses proximal ``mirror maps'' to yield an improved convergence rate. The results of our theoretical analysis imply that the GTD family of algorithms are comparable and may indeed be preferred over existing least squares TD methods for off-policy learning, due to their linear complexity. We provide experimental results showing the improved performance of our accelerated gradient TD methods.}
+}
+
+@article{gemp2017nips,
+  title = {Inverting VAEs for Improved Generative Accuracy},
+  author = {Gemp, Ian and Parente, Mario and Mahadevan, Sridhar},
+  journal = {NIPS Workshop: Advances in Approximate Bayesian Inference},
+  year = {2017},
+  display_venue = {NIPS Workshop: Advances in Approximate Bayesian Inference},
+  pdf = {pubs/nips_ws_2017.pdf},
+  abstract = {Recent advances in semi-supervised learning with deep generative models have shown promise in generalizing from small labeled datasets (<b>x</b><sub>l</sub>, <b>y</b><sub>l</sub>) to large unlabeled ones (<b>x</b><sub>u</sub>). When the codomain (<b>y</b>) has known structure, a large un<i>featured</i> dataset (<b>y</b><sub>u</sub>) is potentially available. We develop a parameter-efficient, deep semi-supervised generative model for the purpose of exploiting this untapped data source. Empirical results show improved performance in disentangling variable semantics as well as improved discriminative prediction on a new MNIST task.}
+}
+
+@article{gemp2017omg,
+  title = {Online Monotone Games},
+  author = {Gemp, Ian and Mahadevan, Sridhar},
+  journal = {arXiv preprint arXiv:1710.07328},
+  year = {2017},
+  display_venue = {arXiv preprint arXiv:1710.07328},
+  pdf = {https://arxiv.org/pdf/1710.07328.pdf},
+  abstract = {Algorithmic game theory (AGT) focuses on the design and analysis of algorithms for interacting agents, with interactions rigorously formalized within the framework of games. Results from AGT find applications in domains such as online bidding auctions for web advertisements and network routing protocols. Monotone games are games where agent strategies naturally converge to an equilibrium state. Previous results in AGT have been obtained for convex, socially-convex, or smooth games, but not monotone games. Our primary theoretical contributions are defining the monotone game setting and its extension to the online setting, a new notion of regret for this setting, and accompanying algorithms that achieve sub-linear regret. We demonstrate the utility of online monotone game theory on a variety of problem domains including variational inequalities, reinforcement learning, and generative adversarial networks.}
+}
+
+@article{gemp2017untapped,
+  title = {Inverting Variational Autoencoders for Improved Generative Accuracy},
+  author = {Gemp, Ian and Parente, Mario and Durugkar, Ishan and Dyar, Darby and Mahadevan, Sridhar},
+  journal = {arXiv preprint arXiv:1608.05983},
+  year = {2017},
+  display_venue = {arXiv preprint arXiv:1608.05983},
+  pdf = {https://arxiv.org/pdf/1608.05983.pdf},
+  abstract = {Recent advances in semi-supervised learning with deep generative models have shown promise in generalizing from small labeled datasets (x,y) to large unlabeled ones (x). In the case where the codomain has known structure, a large unfeatured dataset (y) is potentially available. We develop a parameter-efficient, deep semi-supervised generative model for the purpose of exploiting this untapped data source. Empirical results show improved performance in disentangling latent variable semantics as well as improved discriminative prediction on Martian spectroscopic and handwritten digit domains.}
+}
+
+@article{durugkargemp2017gman,
+  title = {Generative Multi-Adversarial Networks},
+  author = {Durugkar, Ishan and Gemp, Ian and Mahadevan, Sridhar},
+  journal = {ICLR},
+  year = {2017},
+  display_venue = {ICLR},
+  pdf = {https://openreview.net/pdf?id=Byk-VI9eg},
+  main_authors = {1, 2},
+  abstract = {Generative adversarial networks (GANs) are a framework for producing a generative model by way of a two-player minimax game. In this paper, we propose the Generative Multi-Adversarial Network (GMAN), a framework that extends GANs to multiple discriminators. In previous work, the successful training of GANs requires modifying the minimax objective to accelerate training early on. In contrast, GMAN can be reliably trained with the original, untampered objective. We explore a number of design perspectives with the discriminator role ranging from formidable adversary to forgiving teacher. Image generation tasks comparing the proposed framework to standard GANs demonstrate GMAN produces higher quality samples in a fraction of the iterations when measured by a pairwise GAM-type metric.}
+}
+
+@article{gemp2017datacleanse,
+  title = {Automated Data Cleansing through Meta-Learning},
+  author = {Gemp, Ian and Theocharous, Georgios and Ghavamzadeh, Mohammad},
+  journal = {IAAI},
+  year = {2017},
+  display_venue = {IAAI Challenge Paper},
+  pdf = {pubs/iaai_2017.pdf},
+  dataset = {datasets/iaai_2017.zip},
+  abstract = {Data preprocessing or cleansing is one of the biggest hurdles in industry for developing successful machine learning applications. The process of data cleansing includes data imputation, feature normalization &amp; selection, dimensionality reduction, and data balancing applications. Currently such preprocessing is manual. One approach for automating this process is meta-learning. In this paper we experiment with state of the art meta-learning methodologies and identify the inadequacies and research challenges for solving such a problem.}
+}
+
+@article{gemp2016online,
+  title = {Online Monotone Optimization},
+  author = {Gemp, Ian and Mahadevan, Sridhar},
+  journal = {arXiv preprint arXiv:1608.07888},
+  year = {2016},
+  display_venue = {arXiv preprint arXiv:1608.07888},
+  pdf = {https://arxiv.org/pdf/1608.07888.pdf},
+  abstract = {This paper presents a new framework for analyzing and designing no-regret algorithms for dynamic (possibly adversarial) systems. The proposed framework generalizes the popular online convex optimization framework and extends it to its natural limit allowing it to capture a notion of regret that is intuitive for more general problems such as those encountered in game theory and variational inequalities. The framework hinges on a special choice of a system-wide loss function we have developed. Using this framework, we prove that a simple update scheme provides a no-regret algorithm for monotone systems. While previous results in game theory prove individual agents can enjoy unilateral no-regret guarantees, our result proves monotonicity sufficient for guaranteeing no-regret when considering the adjustments of multiple agent strategies in parallel. Furthermore, to our knowledge, this is the first framework to provide a suitable notion of regret for variational inequalities. Most importantly, our proposed framework ensures monotonicity a sufficient condition for employing multiple online learners safely in parallel.}
+}
+
+@inproceedings{gemp2015nonconcave,
+  title = {Exploring the Dynamics of Variational Inequality Games with Non-Concave Utilities},
+  author = {Gemp, Ian},
+  booktitle = {NIPS Workshop: Learning, Inference, and Control of Multi-Agent Systems},
+  year = {2015},
+  display_venue = {NIPS Workshop: Learning, Inference, and Control of Multi-Agent Systems},
+  pdf = {pubs/nips_ws_2015.pdf},
+  abstract = {Variational inequality (VI) theory has proven useful in modeling and analyzing a variety economic markets. However, in order to ensure the analysis is tractable, models are usually constrained to an unrealistic regime of concave utilities and monotone operators undermining the reliability of real-world conclusions such as the uniqueness and location of equilibria. We argue that machine learning can help address this issue. In this paper, we ignore typical monotonicity requirements and construct a generic, yet more realistic market model possessing several desirable qualities. We then borrow a tool from dynamical systems to cope with our model’s lack of theoretical guarantees. Additionally, in order to handle the large size of standard VI game formulations, we further enhance the tool to accommodate more sophisticated numerical algorithms and propose a heuristic for efficient use of generated trajectories. We illustrate these enhancements by applying the resulting pipeline in the context of cloud services.}
+}
+
+@inproceedings{gemp2015games,
+  title = {Finding Equilibria in Large Games using Variational Inequalities},
+  author = {Gemp, Ian and Mahadevan, Sridhar},
+  booktitle = {AAAI Spring Symposium},
+  year = {2015},
+  display_venue = {AAAI Spring Symposium},
+  pdf = {pubs/aaai_ss_2015.pdf},
+  abstract = {In this paper, we explore an approach to computational game theory based on variational inequalities (VIs).  VIs represent a comprehensive framework that provides a way to model and analyze both cooperative and non-cooperative games.  Given the potentially large size of real-world games, suitable algorithms must be designed that can scale gracefully with the dimension of the problems (e.g.,  number of players).  In this paper, we explore the effectiveness of novel Runge-Kutta methods on finding equilibrium solutions to two real-world games defined by oligopolistic economies.}
+}
+
+@inproceedings{gemp2015supplychain,
+  title = {Solving Large Sustainable Supply Chain Networks using Variational Inequalities},
+  author = {Gemp, Ian and Mahadevan, Sridhar and Liu, Bo},
+  booktitle = {AAAI Workshop: Computational Sustainability},
+  year = {2015},
+  display_venue = {AAAI Workshop: Computational Sustainability},
+  pdf = {pubs/aaai_ws_2015.pdf},
+  abstract = {In this paper, we explore a new approach to computational sustainability based on variational inequalities (VIs). Our challenge is to compute the steady state behaviors of networks of sustainable supply chains with possibly conflicting objectives. VIs provide a way to model large networks with numerous conflicting goals. Given the size of real-world networks, suitable algorithms must be selected that can scale with the dimension of the problems. In this paper, we explore the effectiveness of novel Runge-Kutta methods on finding equilibrium solutions to two real-world sustainable supply chain problems.}
+}
+
+@inproceedings{gemp2014context,
+  title = {Modeling Context in Cognition using Variational Inequalities},
+  author = {Gemp, Ian and Mahadevan, Sridhar},
+  booktitle = {AAAI Fall Symposium},
+  year = {2014},
+  display_venue = {AAAI Fall Symposium},
+  pdf = {pubs/aaai_fs_2014.pdf},
+  abstract = {Important aspects of human cognition, like creativity and play, involve dealing with multiple divergent views of objects, goals, and plans. We argue in this paper that the current model of optimization that drives much of modern machine learning research is far too restrictive a paradigm to mathematically model the richness of human cognition. Instead, we propose a much more flexible and powerful framework of equilibration, which not only generalizes optimization, but also captures a rich variety of other problems, from game theory, complementarity problems, network equilibrium problems in economics, and equation solving. Our thesis is that creative activity involves dealing not with a single objective function, which optimization requires, but rather balancing multiple divergent and possibly  contradictory goals. Such modes of cognition are better modeled using the framework of variational inequalities (VIs). We provide a brief review of this paradigm for readers unfamiliar with the underlying mathematics, and sketch out how VIs can account for creativity and play in human and animal cognition.}
+}
+
+@article{mahadevan2014proximal,
+  title = {Proximal Reinforcement Learning: A New Theory of Sequential Decision Making in Primal-Dual Spaces},
+  author = {Mahadevan, Sridhar and Liu, Bo and Thomas, Philip and Dabney, Will and Giguere, Steve and Jacek, Nicholas and Gemp, Ian and Liu, Ji},
+  journal = {arXiv preprint arXiv:1405.6757},
+  year = {2014},
+  display_venue = {arXiv preprint arXiv:1405.6757},
+  pdf = {https://arxiv.org/pdf/1405.6757v1},
+  abstract = {In this paper, we set forth a new vision of reinforcement learning developed by us over the past few years, one that yields mathematically rigorous solutions to longstanding important questions that have remained unresolved: (i) how to design reliable, convergent, and robust reinforcement learning algorithms (ii) how to guarantee that reinforcement learning satisfies pre-specified "safety" guarantees, and remains in a stable region of the parameter space (iii) how to design "off-policy" temporal difference learning algorithms in a reliable and stable manner, and finally (iv) how to integrate the study of reinforcement learning into the rich theory of stochastic optimization. In this paper, we provide detailed answers to all these questions using the powerful framework of proximal operators.
+The key idea that emerges is the use of primal dual spaces connected through the use of a Legendre transform. This allows temporal difference updates to occur in dual spaces, allowing a variety of important technical advantages. The Legendre transform elegantly generalizes past algorithms for solving reinforcement learning problems, such as natural gradient methods, which we show relate closely to the previously unconnected framework of mirror descent methods. Equally importantly, proximal operator theory enables the systematic development of operator splitting methods that show how to safely and reliably decompose complex products of gradients that occur in recent variants of gradient-based temporal difference learning. This key technical innovation makes it possible to finally design "true" stochastic gradient methods for reinforcement learning. Finally, Legendre transforms enable a variety of other benefits, including modeling sparsity and domain geometry. Our work builds extensively on recent work on the convergence of saddle-point algorithms, and on the theory of monotone operators.}
+}
+
+@article{gemp2011cadherin,
+  title = {Cadherin-dependent Cell Morphology in an Epithelium: constructing a quantitative dynamical model},
+  author = {Gemp, Ian M and Carthew, Richard W and Hilgenfeldt, Sascha},
+  journal = {PLoS computational biology},
+  volume = {7},
+  number = {7},
+  pages = {e1002115},
+  publisher = {Public Library of Science},
+  year = {2011},
+  display_venue = {PLoS Computational Biology},
+  pdf = {https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1002115&type=printable},
+  abstract = {Cells in the Drosophila retina have well-defined morphologies that are attained during tissue morphogenesis. We present a
+computer simulation of the epithelial tissue in which the global interfacial energy between cells is minimized. Experimental
+data for both normal cells and mutant cells either lacking or misexpressing the adhesion protein N-cadherin can be
+explained by a simple model incorporating salient features of morphogenesis that include the timing of N-cadherin
+expression in cells and its temporal relationship to the remodeling of cell-cell contacts. The simulations reproduce the
+geometries of wild-type and mutant cells, distinguish features of cadherin dynamics, and emphasize the importance of
+adhesion protein biogenesis and its timing with respect to cell remodeling. The simulations also indicate that N-cadherin
+protein is recycled from inactive interfaces to active interfaces, thereby modulating adhesion strengths between cells.}
+}
+
+@article{duncan2010quantitative,
+  title = {Quantitative Analysis of Synaptic Release at the Photoreceptor Synapse},
+  author = {Duncan, Gabriel and Rabl, Katalin and Gemp, Ian and Heidelberger, Ruth and Thoreson, Wallace B},
+  journal = {Biophysical journal},
+  volume = {98},
+  number = {10},
+  pages = {2102--2110},
+  publisher = {Elsevier},
+  year = {2010},
+  display_venue = {Biophysical Journal},
+  pdf = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2872209/pdf/main.pdf},
+  main_authors = {4},
+  abstract = {Exocytosis from the rod photoreceptor is stimulated by submicromolar Ca2+ and exhibits an unusually shallow dependence on presynaptic Ca2+. To provide a quantitative description of the photoreceptor Ca2+ sensor for exocytosis, we tested a family of conventional and allosteric computational models describing the final Ca2+-binding steps leading to exocytosis. Simulations were fit to two measures of release, evoked by flash-photolysis of caged Ca2+: exocytotic capacitance changes from individual rods and postsynaptic currents of second-order neurons. The best simulations supported the occupancy of only two Ca2+ binding sites on the rod Ca2+ sensor rather than the typical four or five. For most models, the on-rates for Ca2+ binding and maximal fusion rate were comparable to those of other neurons. However, the off-rates for Ca2+ unbinding were unexpectedly slow. In addition to contributing to the high-affinity of the photoreceptor Ca2+ sensor, slow Ca2+ unbinding may support the fusion of vesicles located at a distance from Ca2+ channels. In addition, partial sensor occupancy due to slow unbinding may contribute to the linearization of the first synapse in vision.}
+}
